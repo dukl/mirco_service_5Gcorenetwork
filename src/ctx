@@ -1,0 +1,995 @@
+./nas/api/network/as_message.c:  msg->msg_id = *(uint16_t *) (buffer);
+./nas/api/network/as_message.c:  switch (msg->msg_id) {
+./nas/api/network/as_message.c:    data = &msg->msg.nas_establish_req.initial_nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.nas_establish_ind.initial_nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.nas_establish_rsp.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.nas_establish_cnf.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.ul_info_transfer_req.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.ul_info_transfer_ind.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.dl_info_transfer_req.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.dl_info_transfer_ind.nas_msg->data;
+./nas/api/network/as_message.c:    data = &msg->msg.activate_bearer_context_req.nas_msg->data;
+./nas/api/network/as_message.c:    OAILOG_WARNING(LOG_NAS, "NET-API   - AS message 0x%x is not valid", msg->msg_id);
+./nas/api/network/as_message.c:    OAILOG_FUNC_RETURN (LOG_NAS, msg->msg_id);
+./nas/api/network/as_message.c:  OAILOG_WARNING(LOG_NAS, "NET-API   - Failed to decode AS message 0x%x", msg->msg_id);
+./nas/api/network/as_message.c://  int                                     bytes = sizeof (msg->msg_id);
+./nas/api/network/as_message.c://  switch (msg->msg_id) {
+./nas/api/network/as_message.c://    nas_msg = msg->msg.nas_establish_req.initial_nas_msg;
+./nas/api/network/as_message.c://    msg->msg.nas_establish_req.initial_nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.nas_establish_ind.initial_nas_msg;
+./nas/api/network/as_message.c://    msg->msg.nas_establish_ind.initial_nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.nas_establish_rsp.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.nas_establish_rsp.nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.nas_establish_cnf.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.nas_establish_cnf.nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.ul_info_transfer_req.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.ul_info_transfer_req.nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.ul_info_transfer_ind.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.ul_info_transfer_ind.nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.dl_info_transfer_req.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.dl_info_transfer_req.nas_msg = NULL;
+./nas/api/network/as_message.c://    nas_msg = msg->msg.dl_info_transfer_ind.nas_msg;
+./nas/api/network/as_message.c://    msg->msg.dl_info_transfer_ind.nas_msg = NULL;
+./nas/api/network/as_message.c://    OAILOG_WARNING(LOG_NAS, "NET-API   - AS message 0x%x is not valid", msg->msg_id);
+./nas/api/network/as_message.c://  OAILOG_WARNING(LOG_NAS, "NET-API   - Failed to encode AS message 0x%x", msg->msg_id);
+./nas/api/network/nas_message.c:  size  = nas_message_header_decode (buffer, &msg->header, length, status, &is_sr);
+./nas/api/network/nas_message.c:    msg->plain.emm.header.message_type                       = SERVICE_REQUEST;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.ksiandsequencenumber.ksi  = sequence_number >> 5;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.ksiandsequencenumber.sequencenumber  = sequence_number & 0x1F;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.messageauthenticationcode = short_mac;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.protocoldiscriminator     = EPS_MOBILITY_MANAGEMENT_MESSAGE;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.securityheadertype        = SECURITY_HEADER_TYPE_SERVICE_REQUEST;
+./nas/api/network/nas_message.c:    msg->plain.emm.service_request.messagetype               = SERVICE_REQUEST;
+./nas/api/network/nas_message.c:    if (short_mac == msg->plain.emm.service_request.messageauthenticationcode) {
+./nas/api/network/nas_message.c:      OAILOG_DEBUG (LOG_NAS, "Service Request: message MAC = %04X == computed = %04X\n", msg->plain.emm.service_request.messageauthenticationcode, short_mac);
+./nas/api/network/nas_message.c:      OAILOG_DEBUG (LOG_NAS, "Service Request: message MAC = %04X != computed = %04X\n", msg->plain.emm.service_request.messageauthenticationcode, short_mac);
+./nas/api/network/nas_message.c:        if (emm_security_context->ul_count.seq_num > msg->header.sequence_number) {
+./nas/api/network/nas_message.c:        emm_security_context->ul_count.seq_num = msg->header.sequence_number;
+./nas/api/network/nas_message.c:        if (emm_security_context->dl_count.seq_num > msg->header.sequence_number) {
+./nas/api/network/nas_message.c:        emm_security_context->dl_count.seq_num = msg->header.sequence_number;
+./nas/api/network/nas_message.c:      if (mac == msg->header.message_authentication_code) {
+./nas/api/network/nas_message.c:        OAILOG_DEBUG (LOG_NAS, "msg->header.message_authentication_code = %04X != computed = %04X\n", msg->header.message_authentication_code, mac);
+./nas/api/network/nas_message.c:    // LG WARNING  msg->plain versus msg->security.plain.
+./nas/api/network/nas_message.c:    bytes = _nas_message_protected_decode ((unsigned char *const)(buffer + size), &msg->header, &msg->plain, length - size, emm_security_context, status);
+./nas/api/network/nas_message.c:    bytes = _nas_message_plain_decode (buffer, &msg->header, &msg->plain, length);
+./nas/api/network/nas_message.c:  int                                     size = _nas_message_header_encode (buffer, &msg->header, length);
+./nas/api/network/nas_message.c:    bytes = _nas_message_protected_encode (buffer + size, &msg->security_protected, length - size, emm_security_context);
+./nas/api/network/nas_message.c:    bytes = _nas_message_plain_encode (buffer, &msg->header, &msg->plain, length);
+./nas/api/network/nas_message.c:    bytes = emm_msg_decode (&msg->emm, (uint8_t *) buffer, length);
+./nas/api/network/nas_message.c:    bytes = esm_msg_decode (&msg->esm, (uint8_t *) buffer, length);
+./nas/api/network/nas_message.c:  if (EPS_MOBILITY_MANAGEMENT_MESSAGE == msg->emm.header.protocol_discriminator) {
+./nas/api/network/nas_message.c:    bytes = emm_msg_encode ((EMM_msg *) (&msg->emm), (uint8_t *) buffer, length);
+./nas/api/network/nas_message.c:  } else if (EPS_SESSION_MANAGEMENT_MESSAGE == msg->emm.header.protocol_discriminator) {
+./nas/api/network/nas_message.c:    bytes = esm_msg_encode ((ESM_msg *) (&msg->esm), (uint8_t *) buffer, length);
+./nas/api/network/nas_message.c:    int                                     size = _nas_message_plain_encode (plain_msg, &msg->header,
+./nas/api/network/nas_message.c:                                                                              &msg->plain, length);
+./nas/api/network/nas_message.c:      bytes = _nas_message_encrypt (buffer, plain_msg, msg->header.security_header_type, msg->header.message_authentication_code, msg->header.sequence_number,
+./nas/esm/msg/esm_msg.c:  header_result = esm_msg_decode_header (&msg->header, buffer, len);
+./nas/esm/msg/esm_msg.c:  switch (msg->header.message_type) {
+./nas/esm/msg/esm_msg.c:    decode_result = decode_pdn_disconnect_request (&msg->pdn_disconnect_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_deactivate_eps_bearer_context_accept (&msg->deactivate_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_bearer_resource_allocation_request (&msg->bearer_resource_allocation_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_default_eps_bearer_context_accept (&msg->activate_default_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_pdn_connectivity_reject (&msg->pdn_connectivity_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_modify_eps_bearer_context_reject (&msg->modify_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_dedicated_eps_bearer_context_reject (&msg->activate_dedicated_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_modify_eps_bearer_context_accept (&msg->modify_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_deactivate_eps_bearer_context_request (&msg->deactivate_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_dedicated_eps_bearer_context_accept (&msg->activate_dedicated_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_default_eps_bearer_context_reject (&msg->activate_default_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_modify_eps_bearer_context_request (&msg->modify_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_pdn_disconnect_reject (&msg->pdn_disconnect_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_dedicated_eps_bearer_context_request (&msg->activate_dedicated_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_bearer_resource_modification_reject (&msg->bearer_resource_modification_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_bearer_resource_allocation_reject (&msg->bearer_resource_allocation_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_activate_default_eps_bearer_context_request (&msg->activate_default_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_pdn_connectivity_request (&msg->pdn_connectivity_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_esm_information_response (&msg->esm_information_response, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_bearer_resource_modification_request (&msg->bearer_resource_modification_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_esm_information_request (&msg->esm_information_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    decode_result = decode_esm_status (&msg->esm_status, buffer, len);
+./nas/esm/msg/esm_msg.c:    OAILOG_ERROR (LOG_NAS_ESM, "ESM-MSG   - Unexpected message type: 0x%x\n", msg->header.message_type);
+./nas/esm/msg/esm_msg.c:    OAILOG_ERROR (LOG_NAS_ESM, "ESM-MSG   - Failed to decode L3 ESM message 0x%x " "(%u)\n", msg->header.message_type, decode_result);
+./nas/esm/msg/esm_msg.c:  header_result = _esm_msg_encode_header (&msg->header, buffer, len);
+./nas/esm/msg/esm_msg.c:  switch (msg->header.message_type) {
+./nas/esm/msg/esm_msg.c:    encode_result = encode_pdn_disconnect_request (&msg->pdn_disconnect_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_deactivate_eps_bearer_context_accept (&msg->deactivate_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_bearer_resource_allocation_request (&msg->bearer_resource_allocation_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_default_eps_bearer_context_accept (&msg->activate_default_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_pdn_connectivity_reject (&msg->pdn_connectivity_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_modify_eps_bearer_context_reject (&msg->modify_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_dedicated_eps_bearer_context_reject (&msg->activate_dedicated_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_modify_eps_bearer_context_accept (&msg->modify_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_deactivate_eps_bearer_context_request (&msg->deactivate_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_dedicated_eps_bearer_context_accept (&msg->activate_dedicated_eps_bearer_context_accept, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_default_eps_bearer_context_reject (&msg->activate_default_eps_bearer_context_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_modify_eps_bearer_context_request (&msg->modify_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_pdn_disconnect_reject (&msg->pdn_disconnect_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_dedicated_eps_bearer_context_request (&msg->activate_dedicated_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_bearer_resource_modification_reject (&msg->bearer_resource_modification_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_bearer_resource_allocation_reject (&msg->bearer_resource_allocation_reject, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_activate_default_eps_bearer_context_request (&msg->activate_default_eps_bearer_context_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_pdn_connectivity_request (&msg->pdn_connectivity_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_esm_information_response (&msg->esm_information_response, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_bearer_resource_modification_request (&msg->bearer_resource_modification_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_esm_information_request (&msg->esm_information_request, buffer, len);
+./nas/esm/msg/esm_msg.c:    encode_result = encode_esm_status (&msg->esm_status, buffer, len);
+./nas/esm/msg/esm_msg.c:    OAILOG_ERROR (LOG_NAS_ESM, "ESM-MSG   - Unexpected message type: 0x%x\n", msg->header.message_type);
+./nas/esm/msg/esm_msg.c:    OAILOG_ERROR (LOG_NAS_ESM, "ESM-MSG   - Failed to encode L3 ESM message 0x%x " "(%d)\n", msg->header.message_type, encode_result);
+./nas/esm/sap/esm_recv.c:  esm_cause = msg->esmcause;
+./nas/esm/sap/esm_recv.c:  if (msg->requesttype == REQUEST_TYPE_INITIAL_REQUEST) {
+./nas/esm/sap/esm_recv.c:  } else if (msg->requesttype == REQUEST_TYPE_HANDOVER) {
+./nas/esm/sap/esm_recv.c:  } else if (msg->requesttype == REQUEST_TYPE_EMERGENCY) {
+./nas/esm/sap/esm_recv.c:  if (msg->pdntype == PDN_TYPE_IPV4) {
+./nas/esm/sap/esm_recv.c:  } else if (msg->pdntype == PDN_TYPE_IPV6) {
+./nas/esm/sap/esm_recv.c:  } else if (msg->pdntype == PDN_TYPE_IPV4V6) {
+./nas/esm/sap/esm_recv.c:  if (msg->presencemask & PDN_CONNECTIVITY_REQUEST_ACCESS_POINT_NAME_PRESENT) {
+./nas/esm/sap/esm_recv.c:    esm_data->apn = msg->accesspointname;
+./nas/esm/sap/esm_recv.c:  if (msg->presencemask & PDN_CONNECTIVITY_REQUEST_PROTOCOL_CONFIGURATION_OPTIONS_PRESENT) {
+./nas/esm/sap/esm_recv.c:    copy_protocol_configuration_options(&esm_data->pco, &msg->protocolconfigurationoptions);
+./nas/esm/sap/esm_recv.c:  if (msg->presencemask & PDN_CONNECTIVITY_REQUEST_ESM_INFORMATION_TRANSFER_FLAG_PRESENT) {
+./nas/esm/sap/esm_recv.c:    *linked_ebi = msg->linkedepsbeareridentity;
+./nas/esm/sap/esm_recv.c:  int pid = esm_proc_esm_information_response (emm_context, pti, msg->accesspointname, &msg->protocolconfigurationoptions, &esm_cause);
+./nas/esm/sap/esm_sap.c:		    rc = _esm_sap_recv (PDN_CONNECTIVITY_REQUEST, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c:		    rc = esm_proc_default_eps_bearer_context_failure (msg->ctx, &pid);
+./nas/esm/sap/esm_sap.c:		      rc = esm_proc_pdn_connectivity_failure (msg->ctx, pid);
+./nas/esm/sap/esm_sap.c:		    rc = _esm_sap_recv (ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_ACCEPT, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c:		    if((rc != RETURNerror) && (msg->err == ESM_SAP_SUCCESS)) {
+./nas/esm/sap/esm_sap.c:			 msg->ctx->is_attached = true;
+./nas/esm/sap/esm_sap.c:			 EMM_REG_DATA_IND(emm_reg_p).ue_id=msg->ue_id;
+./nas/esm/sap/esm_sap.c:			 EMM_REG_DATA_IND(emm_reg_p).ctx=msg->ctx;
+./nas/esm/sap/esm_sap.c:			 EMM_REG_DATA_IND(emm_reg_p).u.attach.proc=(nas_emm_attach_proc_t *)msg->ctx->emm_procedures->emm_specific_proc;
+./nas/esm/sap/esm_sap.c:		    }else if(msg->err != ESM_SAP_DISCARDED){
+./nas/esm/sap/esm_sap.c:			    EMM_REG_DATA_IND (emm_reg_p).ue_id = msg->ue_id ;
+./nas/esm/sap/esm_sap.c:			    EMM_REG_DATA_IND (emm_reg_p).ctx = msg->ctx;
+./nas/esm/sap/esm_sap.c:			    EMM_REG_DATA_IND (emm_reg_p).u.attach.proc = (nas_emm_attach_proc_t *)msg->ctx->emm_procedures->emm_specific_proc;
+./nas/esm/sap/esm_sap.c:		    rc = _esm_sap_recv (ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REJECT, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c:		      esm_eps_dedicated_bearer_context_activate_t* bearer_activate = &msg->data.eps_dedicated_bearer_context_activate;
+./nas/esm/sap/esm_sap.c:		      if (msg->is_standalone) {
+./nas/esm/sap/esm_sap.c:		        rc = esm_proc_dedicated_eps_bearer_context (msg->ctx,
+./nas/esm/sap/esm_sap.c:		            msg->is_standalone, msg->ctx, (proc_tid_t)0 , bearer_activate->ebi,
+./nas/esm/sap/esm_sap.c:		            &msg->data, msg->send);
+./nas/esm/sap/esm_sap.c:		      rc = esm_proc_eps_bearer_context_deactivate (msg->ctx, true, msg->data.eps_bearer_context_deactivate.ebi, &pid, &bid, NULL);
+./nas/esm/sap/esm_sap.c:		      _pdn_connectivity_delete (msg->ctx, pid);
+./nas/esm/sap/esm_sap.c:		    rc = _esm_sap_recv (-1, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c:		    if ((rc != RETURNerror) && (msg->err == ESM_SAP_SUCCESS)){
+./nas/esm/sap/esm_sap.c:		    }else if(msg->err != ESM_SAP_DISCARDED){ //not tested yet ---by wluhan
+./nas/esm/sap/esm_sap.c:			  NAS_EMMAS_ESTABLISH_REJ(emmas_rej_p).emm_context=msg->ctx; 
+./nas/esm/sap/esm_sap.c:			  NAS_EMMAS_ESTABLISH_REJ(emmas_rej_p).send=msg->send; 
+./nas/esm/sap/esm_sap.c://  esm_primitive_t                         primitive = msg->primitive;
+./nas/esm/sap/esm_sap.c://    rc = _esm_sap_recv (PDN_CONNECTIVITY_REQUEST, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c://    rc = esm_proc_default_eps_bearer_context_failure (msg->ctx, &pid);
+./nas/esm/sap/esm_sap.c://      rc = esm_proc_pdn_connectivity_failure (msg->ctx, pid);
+./nas/esm/sap/esm_sap.c://    rc = _esm_sap_recv (ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_ACCEPT, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c://    rc = _esm_sap_recv (ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REJECT, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c://      esm_eps_dedicated_bearer_context_activate_t* bearer_activate = &msg->data.eps_dedicated_bearer_context_activate;
+./nas/esm/sap/esm_sap.c://      if (msg->is_standalone) {
+./nas/esm/sap/esm_sap.c://        rc = esm_proc_dedicated_eps_bearer_context (msg->ctx,
+./nas/esm/sap/esm_sap.c://            msg->is_standalone, msg->ctx, (proc_tid_t)0 , bearer_activate->ebi,
+./nas/esm/sap/esm_sap.c://            &msg->data, msg->send);
+./nas/esm/sap/esm_sap.c://      rc = esm_proc_eps_bearer_context_deactivate (msg->ctx, true, msg->data.eps_bearer_context_deactivate.ebi, &pid, &bid, NULL);
+./nas/esm/sap/esm_sap.c://      _pdn_connectivity_delete (msg->ctx, pid);
+./nas/esm/sap/esm_sap.c://    rc = _esm_sap_recv (-1, msg->is_standalone, msg->ctx, msg->recv, msg->send, &msg->err);
+./nas/esm/sap/esm_sap.c:      rc = qos_params_to_eps_qos(msg->qci, msg->mbr_dl, msg->mbr_ul, msg->gbr_dl, msg->gbr_ul,
+./nas/esm/sap/esm_sap.c:            pti, msg->ebi,
+./nas/esm/sap/esm_sap.c:            msg->linked_ebi, &eps_qos, msg->tft, msg->pco);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator        = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity            = ebi;
+./nas/esm/sap/esm_send.c:  msg->messagetype                  = ESM_INFORMATION_REQUEST;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  OAILOG_NOTICE (LOG_NAS_ESM, "ESM-SAP   - Send ESM_INFORMATION_REQUEST message (pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = ebi;
+./nas/esm/sap/esm_send.c:  msg->messagetype = ESM_STATUS;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->esmcause = esm_cause;
+./nas/esm/sap/esm_send.c:  OAILOG_WARNING (LOG_NAS_ESM, "ESM-SAP   - Send ESM Status message (pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = EPS_BEARER_IDENTITY_UNASSIGNED;
+./nas/esm/sap/esm_send.c:  msg->messagetype = PDN_CONNECTIVITY_REJECT;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->esmcause = esm_cause;
+./nas/esm/sap/esm_send.c:  msg->presencemask = 0;
+./nas/esm/sap/esm_send.c:  OAILOG_DEBUG (LOG_NAS_ESM, "ESM-SAP   - Send PDN Connectivity Reject message " "(pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = EPS_BEARER_IDENTITY_UNASSIGNED;
+./nas/esm/sap/esm_send.c:  msg->messagetype = PDN_DISCONNECT_REJECT;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->esmcause = esm_cause;
+./nas/esm/sap/esm_send.c:  msg->presencemask = 0;
+./nas/esm/sap/esm_send.c:  OAILOG_INFO (LOG_NAS_ESM, "ESM-SAP   - Send PDN Disconnect Reject message " "(pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = ebi;
+./nas/esm/sap/esm_send.c:  msg->messagetype = ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->epsqos = *qos;
+./nas/esm/sap/esm_send.c:  msg->accesspointname = apn;
+./nas/esm/sap/esm_send.c:  msg->pdnaddress.pdntypevalue = pdn_type;
+./nas/esm/sap/esm_send.c:  msg->pdnaddress.pdnaddressinformation = pdn_addr;
+./nas/esm/sap/esm_send.c:  msg->presencemask = 0;
+./nas/esm/sap/esm_send.c:    msg->presencemask |= ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST_ESM_CAUSE_PRESENT;
+./nas/esm/sap/esm_send.c:    msg->esmcause = esm_cause;
+./nas/esm/sap/esm_send.c:    msg->presencemask |= ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST_PROTOCOL_CONFIGURATION_OPTIONS_PRESENT;
+./nas/esm/sap/esm_send.c:    copy_protocol_configuration_options(&msg->protocolconfigurationoptions, pco);
+./nas/esm/sap/esm_send.c:  msg->presencemask |= ACTIVATE_DEFAULT_EPS_BEARER_CONTEXT_REQUEST_APNAMBR_PRESENT;
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrfordownlink = 0xfe;       // (8640kbps)
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrforuplink = 0xfe; // (8640kbps)
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrfordownlink_extended = 0xde;      // (200Mbps)
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrforuplink_extended = 0x9e;        // (100Mbps)
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrfordownlink_extended2 = 0;
+./nas/esm/sap/esm_send.c:  msg->apnambr.apnambrforuplink_extended2 = 0;
+./nas/esm/sap/esm_send.c:  msg->apnambr.extensions = 0 | APN_AGGREGATE_MAXIMUM_BIT_RATE_MAXIMUM_EXTENSION_PRESENT;
+./nas/esm/sap/esm_send.c:      msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = ebi;
+./nas/esm/sap/esm_send.c:  msg->messagetype = ACTIVATE_DEDICATED_EPS_BEARER_CONTEXT_REQUEST;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->linkedepsbeareridentity = linked_ebi;
+./nas/esm/sap/esm_send.c:  msg->epsqos = *qos;
+./nas/esm/sap/esm_send.c:    memcpy(&msg->tft, tft, sizeof(traffic_flow_template_t));
+./nas/esm/sap/esm_send.c:  msg->presencemask = 0;
+./nas/esm/sap/esm_send.c:    memcpy(&msg->protocolconfigurationoptions, pco, sizeof(protocol_configuration_options_t));
+./nas/esm/sap/esm_send.c:    msg->presencemask |= ACTIVATE_DEDICATED_EPS_BEARER_CONTEXT_REQUEST_PROTOCOL_CONFIGURATION_OPTIONS_IEI;
+./nas/esm/sap/esm_send.c:  OAILOG_INFO (LOG_NAS_ESM, "ESM-SAP   - Send Activate Dedicated EPS Bearer Context " "Request message (pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/esm/sap/esm_send.c:  msg->protocoldiscriminator = EPS_SESSION_MANAGEMENT_MESSAGE;
+./nas/esm/sap/esm_send.c:  msg->epsbeareridentity = ebi;
+./nas/esm/sap/esm_send.c:  msg->messagetype = DEACTIVATE_EPS_BEARER_CONTEXT_REQUEST;
+./nas/esm/sap/esm_send.c:  msg->proceduretransactionidentity = pti;
+./nas/esm/sap/esm_send.c:  msg->esmcause = esm_cause;
+./nas/esm/sap/esm_send.c:  msg->presencemask = 0;
+./nas/esm/sap/esm_send.c:  OAILOG_INFO (LOG_NAS_ESM, "ESM-SAP   - Send Deactivate EPS Bearer Context Request " "message (pti=%d, ebi=%d)\n", msg->proceduretransactionidentity, msg->epsbeareridentity);
+./nas/test/as_simulator/nas_process.c:  printf ("INFO\t: Process %s\n", emmMsgType (msg->header.message_type));
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "%s (", emmMsgType (msg->header.message_type));
+./nas/test/as_simulator/nas_process.c:  switch (msg->header.message_type) {
+./nas/test/as_simulator/nas_process.c:    esm_container = &msg->attach_request.esmmessagecontainer;
+./nas/test/as_simulator/nas_process.c:    index += _attach_request (buffer + index, length - index, &msg->attach_request);
+./nas/test/as_simulator/nas_process.c:    esm_container = &msg->attach_accept.esmmessagecontainer;
+./nas/test/as_simulator/nas_process.c:    index += _attach_accept (buffer + index, length - index, &msg->attach_accept);
+./nas/test/as_simulator/nas_process.c:    esm_container = &msg->attach_reject.esmmessagecontainer;
+./nas/test/as_simulator/nas_process.c:    index += _attach_reject (buffer + index, length - index, &msg->attach_reject);
+./nas/test/as_simulator/nas_process.c:    esm_container = &msg->attach_complete.esmmessagecontainer;
+./nas/test/as_simulator/nas_process.c:    index += _attach_complete (buffer + index, length - index, &msg->attach_complete);
+./nas/test/as_simulator/nas_process.c:    index += _detach_request (buffer + index, length - index, &msg->detach_request);
+./nas/test/as_simulator/nas_process.c:    index += _detach_accept (buffer + index, length - index, &msg->detach_accept);
+./nas/test/as_simulator/nas_process.c:    index += _identity_request (buffer + index, length - index, &msg->identity_request);
+./nas/test/as_simulator/nas_process.c:    index += _identity_response (buffer + index, length - index, &msg->identity_response);
+./nas/test/as_simulator/nas_process.c:    index += _authentication_request (buffer + index, length - index, &msg->authentication_request);
+./nas/test/as_simulator/nas_process.c:    index += _authentication_response (buffer + index, length - index, &msg->authentication_response);
+./nas/test/as_simulator/nas_process.c:    index += _authentication_failure (buffer + index, length - index, &msg->authentication_failure);
+./nas/test/as_simulator/nas_process.c:    index += _authentication_reject (buffer + index, length - index, &msg->authentication_reject);
+./nas/test/as_simulator/nas_process.c:    index += _security_mode_command (buffer + index, length - index, &msg->security_mode_command);
+./nas/test/as_simulator/nas_process.c:    index += _security_mode_complete (buffer + index, length - index, &msg->security_mode_complete);
+./nas/test/as_simulator/nas_process.c:    index += _security_mode_reject (buffer + index, length - index, &msg->security_mode_reject);
+./nas/test/as_simulator/nas_process.c:    index += _emm_status (buffer + index, length - index, &msg->emm_status);
+./nas/test/as_simulator/nas_process.c:    printf ("WARNING\t: %s - EMM NAS message is not valid (0x%x)\n", __FUNCTION__, msg->header.message_type);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "Type = %s", attachType (&msg->epsattachtype));
+./nas/test/as_simulator/nas_process.c:  index += nasKeySetIdentifier (buffer + index, length - index, &msg->naskeysetidentifier);
+./nas/test/as_simulator/nas_process.c:  index += epsIdentity (buffer + index, length - index, &msg->oldgutiorimsi);
+./nas/test/as_simulator/nas_process.c:  index += gprsTimer (buffer + index, length - index, &msg->t3412value);
+./nas/test/as_simulator/nas_process.c:  index += taiList (buffer + index, length - index, &msg->tailist);
+./nas/test/as_simulator/nas_process.c:  if (msg->presencemask & ATTACH_ACCEPT_GUTI_PRESENT) {
+./nas/test/as_simulator/nas_process.c:    index += epsIdentity (buffer + index, length - index, &msg->guti);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "EmmCause = %s (%d)", emmCauseCode (msg->emmcause), msg->emmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "Type = %s", identityType (&msg->identitytype));
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "Type = %s", detachType (&msg->detachtype));
+./nas/test/as_simulator/nas_process.c:  index += nasKeySetIdentifier (buffer + index, length - index, &msg->naskeysetidentifier);
+./nas/test/as_simulator/nas_process.c:  index += epsIdentity (buffer + index, length - index, &msg->gutiorimsi);
+./nas/test/as_simulator/nas_process.c:  index += mobileIdentity (buffer + index, length - index, &msg->mobileidentity);
+./nas/test/as_simulator/nas_process.c:  index += nasKeySetIdentifier (buffer + index, length - index, &msg->naskeysetidentifierasme);
+./nas/test/as_simulator/nas_process.c:  index += authenticationParameter (buffer + index, length - index, &msg->authenticationparameterrand.rand);
+./nas/test/as_simulator/nas_process.c:  index += authenticationParameter (buffer + index, length - index, &msg->authenticationparameterautn.autn);
+./nas/test/as_simulator/nas_process.c:  index += authenticationParameter (buffer + index, length - index, &msg->authenticationresponseparameter.res);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "EmmCause = %s (%d)", emmCauseCode (msg->emmcause), msg->emmcause);
+./nas/test/as_simulator/nas_process.c:  if (msg->presencemask & AUTHENTICATION_FAILURE_AUTHENTICATION_FAILURE_PARAMETER_PRESENT) {
+./nas/test/as_simulator/nas_process.c:    index += authenticationParameter (buffer + index, length - index, &msg->authenticationfailureparameter.auts);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "%s (%d)", nasCipheringAlgorithm (&msg->selectednassecurityalgorithms), msg->selectednassecurityalgorithms.typeofcipheringalgorithm);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", %s (%d)", nasIntegrityAlgorithm (&msg->selectednassecurityalgorithms), msg->selectednassecurityalgorithms.typeofintegrityalgorithm);
+./nas/test/as_simulator/nas_process.c:  index += nasKeySetIdentifier (buffer + index, length - index, &msg->naskeysetidentifier);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "EmmCause = %s (%d)", emmCauseCode (msg->emmcause), msg->emmcause);
+./nas/test/as_simulator/nas_process.c:  if (msg->esmmessagecontainercontents.length > 0) {
+./nas/test/as_simulator/nas_process.c:    bytes = nas_message_decode ((char *)msg->esmmessagecontainercontents.value, &nas_msg, msg->esmmessagecontainercontents.length);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "EmmCause = %s (%d)", emmCauseCode (msg->emmcause), msg->emmcause);
+./nas/test/as_simulator/nas_process.c:  printf ("INFO\t: Process %s\n", esmMsgType (msg->header.message_type));
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, "%s (pti=%d, ebi=%d", esmMsgType (msg->header.message_type), msg->header.procedure_transaction_identity, msg->header.eps_bearer_identity);
+./nas/test/as_simulator/nas_process.c:  switch (msg->header.message_type) {
+./nas/test/as_simulator/nas_process.c:    index += _pdn_connectivity_request (buffer + index, length - index, &msg->pdn_connectivity_request);
+./nas/test/as_simulator/nas_process.c:    index += _pdn_connectivity_reject (buffer + index, length - index, &msg->pdn_connectivity_reject);
+./nas/test/as_simulator/nas_process.c:    index += _pdn_disconnect_request (buffer + index, length - index, &msg->pdn_disconnect_request);
+./nas/test/as_simulator/nas_process.c:    index += _pdn_disconnect_reject (buffer + index, length - index, &msg->pdn_disconnect_reject);
+./nas/test/as_simulator/nas_process.c:    index += _activate_default_eps_bearer_context_request (buffer + index, length - index, &msg->activate_default_eps_bearer_context_request);
+./nas/test/as_simulator/nas_process.c:    index += _activate_default_eps_bearer_context_accept (buffer + index, length - index, &msg->activate_default_eps_bearer_context_accept);
+./nas/test/as_simulator/nas_process.c:    index += _activate_default_eps_bearer_context_reject (buffer + index, length - index, &msg->activate_default_eps_bearer_context_reject);
+./nas/test/as_simulator/nas_process.c:    index += _activate_dedicated_eps_bearer_context_request (buffer + index, length - index, &msg->activate_dedicated_eps_bearer_context_request);
+./nas/test/as_simulator/nas_process.c:    index += _activate_dedicated_eps_bearer_context_accept (buffer + index, length - index, &msg->activate_dedicated_eps_bearer_context_accept);
+./nas/test/as_simulator/nas_process.c:    index += _activate_dedicated_eps_bearer_context_reject (buffer + index, length - index, &msg->activate_dedicated_eps_bearer_context_reject);
+./nas/test/as_simulator/nas_process.c:    index += _deactivate_eps_bearer_context_request (buffer + index, length - index, &msg->deactivate_eps_bearer_context_request);
+./nas/test/as_simulator/nas_process.c:    index += _deactivate_eps_bearer_context_accept (buffer + index, length - index, &msg->deactivate_eps_bearer_context_accept);
+./nas/test/as_simulator/nas_process.c:    index += _esm_status (buffer + index, length - index, &msg->esm_status);
+./nas/test/as_simulator/nas_process.c:    printf ("WARNING\t: %s - ESM NAS message is not valid (0x%x)\n", __FUNCTION__, msg->header.message_type);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", RequestType = %s, PdnType = %s", requestType (&msg->requesttype), pdnType (&msg->pdntype));
+./nas/test/as_simulator/nas_process.c:  if (msg->presencemask & PDN_CONNECTIVITY_REQUEST_ACCESS_POINT_NAME_PRESENT) {
+./nas/test/as_simulator/nas_process.c:    index += snprintf (buffer + index, length - index, ", APN = %s", (char *)msg->accesspointname.accesspointnamevalue.value);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", Linked EBI = %d", msg->linkedepsbeareridentity);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", APN = %s", (char *)msg->accesspointname.accesspointnamevalue.value);
+./nas/test/as_simulator/nas_process.c:  index += pdnAddress (buffer + index, length - index, &msg->pdnaddress);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", Linked EBI = %d", msg->linkedepsbeareridentity);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/nas_process.c:  index += snprintf (buffer + index, length - index, ", EsmCause = %s (%d)", esmCauseCode (msg->esmcause), msg->esmcause);
+./nas/test/as_simulator/as_simulator.c:    cnf.msgID = process_cell_info_req (msg_id, &msg->msg.cell_info_req, &cnf.msg.cell_info_cnf);
+./nas/test/as_simulator/as_simulator.c:    ind.msgID = process_nas_establish_req (msg_id, &msg->msg.nas_establish_req, &ind.msg.nas_establish_ind, &cnf.msg.nas_establish_cnf);
+./nas/test/as_simulator/as_simulator.c:    ind.msgID = process_ul_info_transfer_req (msg_id, &msg->msg.ul_info_transfer_req, &ind.msg.ul_info_transfer_ind, &cnf.msg.ul_info_transfer_cnf);
+./nas/test/as_simulator/as_simulator.c:    ind.msgID = process_nas_release_req (msg_id, &msg->msg.nas_release_req);
+./nas/test/as_simulator/as_simulator.c:    cnf.msgID = process_nas_establish_rsp (msg_id, &msg->msg.nas_establish_rsp, &cnf.msg.nas_establish_cnf);
+./nas/test/as_simulator/as_simulator.c:    ind.msgID = process_dl_info_transfer_req (msg_id, &msg->msg.dl_info_transfer_req, &ind.msg.dl_info_transfer_ind, &cnf.msg.dl_info_transfer_cnf);
+./nas/test/as_simulator/as_simulator.c:    ind.msgID = process_nas_release_ind (msg_id, &msg->msg.nas_release_req, &ind.msg.nas_release_ind);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: EMM message id         = 0x%.2x\n", msg->header.message_type);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: Protocol Discriminator = %d\n", msg->header.protocol_discriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: Security Header Type   = %d\n", msg->header.security_header_type);
+./nas/test/network/network_simulator.c:  switch (msg->header.message_type) {
+./nas/test/network/network_simulator.c:    bytes = _process_attach_complete (&msg->attach_complete);
+./nas/test/network/network_simulator.c:    printf ("ERROR\t: EMM message 0x%x is not valid\n", msg->header.message_type);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tSecurityHeaderType\t= %d\n", msg->securityheadertype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t= 0x%.2x\n", msg->messagetype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsAttachType\t\t= %d\n", msg->epsattachtype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tNasKeySetIdentifier\t= [%d][%d]\n", msg->naskeysetidentifier.tsc, msg->naskeysetidentifier.naskeysetidentifier);
+./nas/test/network/network_simulator.c:  if (msg->oldgutiorimsi.guti.typeofidentity == EPS_MOBILE_IDENTITY_GUTI) {
+./nas/test/network/network_simulator.c:    const GutiEpsMobileIdentity_t          *guti = &msg->oldgutiorimsi.guti;
+./nas/test/network/network_simulator.c:  } else if (msg->oldgutiorimsi.imsi.typeofidentity == EPS_MOBILE_IDENTITY_IMSI) {
+./nas/test/network/network_simulator.c:    const ImeiEpsMobileIdentity_t          *imsi = &msg->oldgutiorimsi.imsi;
+./nas/test/network/network_simulator.c:  } else if (msg->oldgutiorimsi.imei.typeofidentity == EPS_MOBILE_IDENTITY_IMEI) {
+./nas/test/network/network_simulator.c:    const ImeiEpsMobileIdentity_t          *imei = &msg->oldgutiorimsi.imei;
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    eea   = %d\n", msg->uenetworkcapability.eea);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    eia   = %d\n", msg->uenetworkcapability.eia);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    uea   = %d\n", msg->uenetworkcapability.uea);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    ucs2  = %d\n", msg->uenetworkcapability.ucs2);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    uia   = %d\n", msg->uenetworkcapability.uia);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    spare = %d\n", msg->uenetworkcapability.spare);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    csfb  = %d\n", msg->uenetworkcapability.csfb);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    lpp   = %d\n", msg->uenetworkcapability.lpp);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    lcs   = %d\n", msg->uenetworkcapability.lcs);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    srvcc = %d\n", msg->uenetworkcapability.srvcc);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\t    nf    = %d\n", msg->uenetworkcapability.nf);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: ESM message container (length = %d)\n", msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  _dump_buffer (msg->esmmessagecontainer.esmmessagecontainercontents.value, msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  rc = esm_msg_decode (&esm_msg, msg->esmmessagecontainer.esmmessagecontainercontents.value, msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: ESM message container (length = %d)\n", msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  _dump_buffer (msg->esmmessagecontainer.esmmessagecontainercontents.value, msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  bytes = esm_msg_decode (&esm_msg, msg->esmmessagecontainer.esmmessagecontainercontents.value, msg->esmmessagecontainer.esmmessagecontainercontents.length);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: ESM message id                 = 0x%.2x\n", msg->header.message_type);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: Protocol Discriminator         = %d\n", msg->header.protocol_discriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: EPS Bearer Identity            = %d\n", msg->header.eps_bearer_identity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t: Procedure Transaction Identity = %d\n", msg->header.procedure_transaction_identity);
+./nas/test/network/network_simulator.c:  switch (msg->header.message_type) {
+./nas/test/network/network_simulator.c:    rc = _process_pdn_connectivity_request (&msg->pdn_connectivity_request, &rsp);
+./nas/test/network/network_simulator.c:    rc = _process_pdn_disconnect_request (&msg->pdn_disconnect_request, &rsp);
+./nas/test/network/network_simulator.c:    rc = _process_activate_default_eps_bearer_context_accept (&msg->activate_default_eps_bearer_context_accept);
+./nas/test/network/network_simulator.c:    rc = _process_activate_default_eps_bearer_context_reject (&msg->activate_default_eps_bearer_context_reject);
+./nas/test/network/network_simulator.c:    rc = _process_deactivate_eps_bearer_context_accept (&msg->deactivate_eps_bearer_context_accept);
+./nas/test/network/network_simulator.c:    printf ("ERROR\t: ESM message 0x%x is not valid\n", msg->header.message_type);
+./nas/test/network/network_simulator.c:  int                                     pti = msg->proceduretransactionidentity;
+./nas/test/network/network_simulator.c:  if (msg->presencemask & PDN_CONNECTIVITY_REQUEST_ACCESS_POINT_NAME_PRESENT) {
+./nas/test/network/network_simulator.c:    const OctetString                      *apn_value = &msg->accesspointname.accesspointnamevalue;
+./nas/test/network/network_simulator.c:  int                                     requested_pdn_type = msg->pdntype;
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsBearerIdentity\t\t= %d\n", msg->epsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProcedureTransactionIdentity\t= %d\n", msg->proceduretransactionidentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t\t= 0x%.2x\n", msg->messagetype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tRequestType\t\t\t= %d\n", msg->requesttype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tPdnType\t\t\t\t= %d\n", msg->pdntype);
+./nas/test/network/network_simulator.c:  int                                     pti = msg->proceduretransactionidentity;
+./nas/test/network/network_simulator.c:  int                                     ebi = msg->linkedepsbeareridentity;
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsBearerIdentity\t\t= %d\n", msg->epsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProcedureTransactionIdentity\t= %d\n", msg->proceduretransactionidentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t\t= 0x%.2x\n", msg->messagetype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tLinkedEpsBearerIdentity\t= %d\n", msg->linkedepsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsBearerIdentity\t\t= %d\n", msg->epsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProcedureTransactionIdentity\t= %d\n", msg->proceduretransactionidentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t\t= 0x%.2x\n", msg->messagetype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsBearerIdentity\t\t= %d\n", msg->epsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProcedureTransactionIdentity\t= %d\n", msg->proceduretransactionidentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t\t= 0x%.2x\n", msg->messagetype);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tESM cause\t\t\t= %d\n", msg->esmcause);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProtocolDiscriminator\t\t= %d\n", msg->protocoldiscriminator);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tEpsBearerIdentity\t\t= %d\n", msg->epsbeareridentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tProcedureTransactionIdentity\t= %d\n", msg->proceduretransactionidentity);
+./nas/test/network/network_simulator.c:  printf ("INFO\t:\tMessageType\t\t\t= 0x%.2x\n", msg->messagetype);
+./nas/emm/Attach.c:	emm_context=msg->emm_context;
+./nas/emm/Attach.c:        attach_proc->esm_msg_out = msg->send;
+./nas/emm/msg/emm_msg.c:  header_result = emm_msg_decode_header (&msg->header, buffer, len);
+./nas/emm/msg/emm_msg.c:  OAILOG_DEBUG (LOG_NAS_EMM, "EMM-MSG   - Message Type 0x%02x\n", msg->header.message_type);
+./nas/emm/msg/emm_msg.c:  switch (msg->header.message_type) {
+./nas/emm/msg/emm_msg.c:    decode_result = decode_attach_accept (&msg->attach_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_attach_complete (&msg->attach_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_attach_reject (&msg->attach_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_attach_request (&msg->attach_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_authentication_failure (&msg->authentication_failure, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_authentication_reject (&msg->authentication_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_authentication_response (&msg->authentication_response, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_authentication_request (&msg->authentication_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_cs_service_notification (&msg->cs_service_notification, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_detach_accept (&msg->detach_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_detach_request (&msg->detach_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_downlink_nas_transport (&msg->downlink_nas_transport, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_emm_information (&msg->emm_information, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_emm_status (&msg->emm_status, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_extended_service_request (&msg->extended_service_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_guti_reallocation_command (&msg->guti_reallocation_command, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_guti_reallocation_complete (&msg->guti_reallocation_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_identity_request (&msg->identity_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_identity_response (&msg->identity_response, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_security_mode_command (&msg->security_mode_command, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_security_mode_complete (&msg->security_mode_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_security_mode_reject (&msg->security_mode_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_service_reject (&msg->service_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_tracking_area_update_accept (&msg->tracking_area_update_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_tracking_area_update_complete (&msg->tracking_area_update_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_tracking_area_update_reject (&msg->tracking_area_update_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_tracking_area_update_request (&msg->tracking_area_update_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    decode_result = decode_uplink_nas_transport (&msg->uplink_nas_transport, buffer, len);
+./nas/emm/msg/emm_msg.c:    OAILOG_ERROR (LOG_NAS_EMM, "EMM-MSG   - Unexpected message type: 0x%x\n", msg->header.message_type);
+./nas/emm/msg/emm_msg.c:    OAILOG_ERROR (LOG_NAS_EMM, "EMM-MSG   - Failed to decode L3 EMM message 0x%x " "(%d)\n", msg->header.message_type, decode_result);
+./nas/emm/msg/emm_msg.c:  header_result = emm_msg_encode_header (&msg->header, buffer, len);
+./nas/emm/msg/emm_msg.c:  switch (msg->header.message_type) {
+./nas/emm/msg/emm_msg.c:    encode_result = encode_attach_accept (&msg->attach_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_attach_complete (&msg->attach_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_attach_reject (&msg->attach_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_authentication_failure (&msg->authentication_failure, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_authentication_reject (&msg->authentication_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_authentication_request (&msg->authentication_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_authentication_response (&msg->authentication_response, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_cs_service_notification (&msg->cs_service_notification, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_detach_accept (&msg->detach_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_detach_request (&msg->detach_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_downlink_nas_transport (&msg->downlink_nas_transport, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_emm_information (&msg->emm_information, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_emm_status (&msg->emm_status, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_extended_service_request (&msg->extended_service_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_guti_reallocation_command (&msg->guti_reallocation_command, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_guti_reallocation_complete (&msg->guti_reallocation_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_identity_request (&msg->identity_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_identity_response (&msg->identity_response, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_security_mode_command (&msg->security_mode_command, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_security_mode_complete (&msg->security_mode_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_security_mode_reject (&msg->security_mode_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_service_reject (&msg->service_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_service_request (&msg->service_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_tracking_area_update_accept (&msg->tracking_area_update_accept, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_tracking_area_update_complete (&msg->tracking_area_update_complete, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_tracking_area_update_reject (&msg->tracking_area_update_reject, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_tracking_area_update_request (&msg->tracking_area_update_request, buffer, len);
+./nas/emm/msg/emm_msg.c:    encode_result = encode_uplink_nas_transport (&msg->uplink_nas_transport, buffer, len);
+./nas/emm/msg/emm_msg.c:    OAILOG_ERROR (LOG_NAS_EMM, "EMM-MSG   - Unexpected message type: 0x%x\n", msg->header.message_type);
+./nas/emm/msg/emm_msg.c:    OAILOG_ERROR (LOG_NAS_EMM, "EMM-MSG   - Failed to encode L3 EMM message 0x%x " "(%d)\n", msg->header.message_type, encode_result);
+./nas/emm/sap/emm_recv.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Received EMM Status message (cause=%d)\n", msg->emmcause);
+./nas/emm/sap/emm_recv.c:  rc = emm_proc_status_ind (ue_id, msg->emmcause);
+./nas/emm/sap/emm_recv.c:  if (msg->uenetworkcapability.spare != 0b000) {
+./nas/emm/sap/emm_recv.c:  if (msg->epsattachtype == EPS_ATTACH_TYPE_EPS) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->epsattachtype == EPS_ATTACH_TYPE_COMBINED_EPS_IMSI) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->epsattachtype == EPS_ATTACH_TYPE_EMERGENCY) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->epsattachtype == EPS_ATTACH_TYPE_RESERVED) {
+./nas/emm/sap/emm_recv.c:  if (msg->oldgutiorimsi.guti.typeofidentity == EPS_MOBILE_IDENTITY_GUTI) {
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit1 = msg->oldgutiorimsi.guti.mcc_digit1;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit2 = msg->oldgutiorimsi.guti.mcc_digit2;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit3 = msg->oldgutiorimsi.guti.mcc_digit3;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit1 = msg->oldgutiorimsi.guti.mnc_digit1;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit2 = msg->oldgutiorimsi.guti.mnc_digit2;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit3 = msg->oldgutiorimsi.guti.mnc_digit3;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.mme_gid = msg->oldgutiorimsi.guti.mme_group_id;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.mme_code = msg->oldgutiorimsi.guti.mme_code;
+./nas/emm/sap/emm_recv.c:    params->guti->m_tmsi = msg->oldgutiorimsi.guti.m_tmsi;
+./nas/emm/sap/emm_recv.c:  } else if (msg->oldgutiorimsi.imsi.typeofidentity == EPS_MOBILE_IDENTITY_IMSI) {
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit1 = msg->oldgutiorimsi.imsi.identity_digit1;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit2 = msg->oldgutiorimsi.imsi.identity_digit2;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit3 = msg->oldgutiorimsi.imsi.identity_digit3;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit4 = msg->oldgutiorimsi.imsi.identity_digit4;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit5 = msg->oldgutiorimsi.imsi.identity_digit5;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit6 = msg->oldgutiorimsi.imsi.identity_digit6;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit7 = msg->oldgutiorimsi.imsi.identity_digit7;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit8 = msg->oldgutiorimsi.imsi.identity_digit8;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit9 = msg->oldgutiorimsi.imsi.identity_digit9;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit10 = msg->oldgutiorimsi.imsi.identity_digit10;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit11 = msg->oldgutiorimsi.imsi.identity_digit11;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit12 = msg->oldgutiorimsi.imsi.identity_digit12;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit13 = msg->oldgutiorimsi.imsi.identity_digit13;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit14 = msg->oldgutiorimsi.imsi.identity_digit14;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit15 = msg->oldgutiorimsi.imsi.identity_digit15;
+./nas/emm/sap/emm_recv.c:  } else if (msg->oldgutiorimsi.imei.typeofidentity == EPS_MOBILE_IDENTITY_IMEI) {
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac1 = msg->oldgutiorimsi.imei.identity_digit1;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac2 = msg->oldgutiorimsi.imei.identity_digit2;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac3 = msg->oldgutiorimsi.imei.identity_digit3;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac4 = msg->oldgutiorimsi.imei.identity_digit4;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac5 = msg->oldgutiorimsi.imei.identity_digit5;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac6 = msg->oldgutiorimsi.imei.identity_digit6;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac7 = msg->oldgutiorimsi.imei.identity_digit7;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac8 = msg->oldgutiorimsi.imei.identity_digit8;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr1 = msg->oldgutiorimsi.imei.identity_digit9;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr2 = msg->oldgutiorimsi.imei.identity_digit10;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr3 = msg->oldgutiorimsi.imei.identity_digit11;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr4 = msg->oldgutiorimsi.imei.identity_digit12;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr5 = msg->oldgutiorimsi.imei.identity_digit13;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr6 = msg->oldgutiorimsi.imei.identity_digit14;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.cdsd = msg->oldgutiorimsi.imei.identity_digit15;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.parity = msg->oldgutiorimsi.imei.oddeven;
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & ATTACH_REQUEST_LAST_VISITED_REGISTERED_TAI_PRESENT) {
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mcc_digit1 = msg->lastvisitedregisteredtai.mcc_digit1;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mcc_digit2 = msg->lastvisitedregisteredtai.mcc_digit2;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mcc_digit3 = msg->lastvisitedregisteredtai.mcc_digit3;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mnc_digit1 = msg->lastvisitedregisteredtai.mnc_digit1;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mnc_digit2 = msg->lastvisitedregisteredtai.mnc_digit2;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->mnc_digit3 = msg->lastvisitedregisteredtai.mnc_digit3;
+./nas/emm/sap/emm_recv.c:    params->last_visited_registered_tai->tac = msg->lastvisitedregisteredtai.tac;
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & ATTACH_REQUEST_DRX_PARAMETER_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(params->drx_parameter, &msg->drxparameter, sizeof(drx_parameter_t));
+./nas/emm/sap/emm_recv.c:  params->is_native_sc   = (msg->naskeysetidentifier.tsc != NAS_KEY_SET_IDENTIFIER_MAPPED);
+./nas/emm/sap/emm_recv.c:  params->ksi            = msg->naskeysetidentifier.naskeysetidentifier;
+./nas/emm/sap/emm_recv.c:  params->is_native_guti = (msg->oldgutitype != GUTI_MAPPED);
+./nas/emm/sap/emm_recv.c:  memcpy(&params->ue_network_capability, &msg->uenetworkcapability, sizeof(ue_network_capability_t));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & ATTACH_REQUEST_MS_NETWORK_CAPABILITY_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(params->ms_network_capability, &msg->msnetworkcapability, sizeof(ms_network_capability_t));
+./nas/emm/sap/emm_recv.c:  params->esm_msg = msg->esmmessagecontainer;
+./nas/emm/sap/emm_recv.c:  msg->esmmessagecontainer = NULL;
+./nas/emm/sap/emm_recv.c:  rc = emm_proc_attach_complete (ue_id, msg->esmmessagecontainer, *emm_cause, *status);
+./nas/emm/sap/emm_recv.c:  if (msg->detachtype.typeofdetach == DETACH_TYPE_EPS) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->detachtype.typeofdetach == DETACH_TYPE_IMSI) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->detachtype.typeofdetach == DETACH_TYPE_EPS_IMSI) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->detachtype.typeofdetach == DETACH_TYPE_RESERVED_1) {
+./nas/emm/sap/emm_recv.c:  } else if (msg->detachtype.typeofdetach == DETACH_TYPE_RESERVED_2) {
+./nas/emm/sap/emm_recv.c:  if (msg->gutiorimsi.guti.typeofidentity == EPS_MOBILE_IDENTITY_GUTI) {
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit1 = msg->gutiorimsi.guti.mcc_digit1;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit2 = msg->gutiorimsi.guti.mcc_digit2;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mcc_digit3 = msg->gutiorimsi.guti.mcc_digit3;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit1 = msg->gutiorimsi.guti.mnc_digit1;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit2 = msg->gutiorimsi.guti.mnc_digit2;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.plmn.mnc_digit3 = msg->gutiorimsi.guti.mnc_digit3;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.mme_gid = msg->gutiorimsi.guti.mme_group_id;
+./nas/emm/sap/emm_recv.c:    params->guti->gummei.mme_code = msg->gutiorimsi.guti.mme_code;
+./nas/emm/sap/emm_recv.c:    params->guti->m_tmsi = msg->gutiorimsi.guti.m_tmsi;
+./nas/emm/sap/emm_recv.c:  } else if (msg->gutiorimsi.imsi.typeofidentity == EPS_MOBILE_IDENTITY_IMSI) {
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit1 = msg->gutiorimsi.imsi.identity_digit1;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit2 = msg->gutiorimsi.imsi.identity_digit2;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit3 = msg->gutiorimsi.imsi.identity_digit3;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit4 = msg->gutiorimsi.imsi.identity_digit4;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit5 = msg->gutiorimsi.imsi.identity_digit5;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit6 = msg->gutiorimsi.imsi.identity_digit6;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit7 = msg->gutiorimsi.imsi.identity_digit7;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit8 = msg->gutiorimsi.imsi.identity_digit8;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit9 = msg->gutiorimsi.imsi.identity_digit9;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit10 = msg->gutiorimsi.imsi.identity_digit10;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit11 = msg->gutiorimsi.imsi.identity_digit11;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit12 = msg->gutiorimsi.imsi.identity_digit12;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit13 = msg->gutiorimsi.imsi.identity_digit13;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit14 = msg->gutiorimsi.imsi.identity_digit14;
+./nas/emm/sap/emm_recv.c:    params->imsi->u.num.digit15 = msg->gutiorimsi.imsi.identity_digit15;
+./nas/emm/sap/emm_recv.c:  } else if (msg->gutiorimsi.imei.typeofidentity == EPS_MOBILE_IDENTITY_IMEI) {
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac1 = msg->gutiorimsi.imei.identity_digit1;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac2 = msg->gutiorimsi.imei.identity_digit2;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac3 = msg->gutiorimsi.imei.identity_digit3;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac4 = msg->gutiorimsi.imei.identity_digit4;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac5 = msg->gutiorimsi.imei.identity_digit5;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac6 = msg->gutiorimsi.imei.identity_digit6;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac7 = msg->gutiorimsi.imei.identity_digit7;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.tac8 = msg->gutiorimsi.imei.identity_digit8;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr1 = msg->gutiorimsi.imei.identity_digit9;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr2 = msg->gutiorimsi.imei.identity_digit10;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr3 = msg->gutiorimsi.imei.identity_digit11;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr4 = msg->gutiorimsi.imei.identity_digit12;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr5 = msg->gutiorimsi.imei.identity_digit13;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.snr6 = msg->gutiorimsi.imei.identity_digit14;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.cdsd = msg->gutiorimsi.imei.identity_digit15;
+./nas/emm/sap/emm_recv.c:    params->imei->u.num.parity = msg->gutiorimsi.imei.oddeven;
+./nas/emm/sap/emm_recv.c:  params->switch_off   = (msg->detachtype.switchoff != DETACH_TYPE_NORMAL_DETACH);
+./nas/emm/sap/emm_recv.c:  params->is_native_sc = (msg->naskeysetidentifier.tsc != NAS_KEY_SET_IDENTIFIER_MAPPED);
+./nas/emm/sap/emm_recv.c:  params->ksi          = msg->naskeysetidentifier.naskeysetidentifier;
+./nas/emm/sap/emm_recv.c:  ies->eps_update_type = msg->epsupdatetype;
+./nas/emm/sap/emm_recv.c:  ies->is_native_sc   = (msg->naskeysetidentifier.tsc != NAS_KEY_SET_IDENTIFIER_MAPPED);
+./nas/emm/sap/emm_recv.c:  ies->ksi            = msg->naskeysetidentifier.naskeysetidentifier;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mcc_digit1 = msg->oldguti.guti.mcc_digit1;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mcc_digit2 = msg->oldguti.guti.mcc_digit2;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mcc_digit3 = msg->oldguti.guti.mcc_digit3;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mnc_digit1 = msg->oldguti.guti.mnc_digit1;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mnc_digit2 = msg->oldguti.guti.mnc_digit2;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.plmn.mnc_digit3 = msg->oldguti.guti.mnc_digit3;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.mme_gid         = msg->oldguti.guti.mme_group_id;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.gummei.mme_code        = msg->oldguti.guti.mme_code;
+./nas/emm/sap/emm_recv.c:  ies->old_guti.m_tmsi                 = msg->oldguti.guti.m_tmsi;
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_NONCURRENT_NATIVE_NAS_KEY_SET_IDENTIFIER_PRESENT) {
+./nas/emm/sap/emm_recv.c:    ies->is_native_non_current_sc   = (msg->noncurrentnativenaskeysetidentifier.tsc != NAS_KEY_SET_IDENTIFIER_MAPPED);
+./nas/emm/sap/emm_recv.c:    ies->non_current_ksi            = msg->noncurrentnativenaskeysetidentifier.naskeysetidentifier;
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_UE_NETWORK_CAPABILITY_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->ue_network_capability, &msg->uenetworkcapability, sizeof(*ies->ue_network_capability));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_LAST_VISITED_REGISTERED_TAI_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->last_visited_registered_tai, &msg->lastvisitedregisteredtai, sizeof(*ies->last_visited_registered_tai));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_DRX_PARAMETER_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->drx_parameter, &msg->drxparameter, sizeof(*ies->drx_parameter));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_UE_RADIO_CAPABILITY_INFORMATION_UPDATE_NEEDED_PRESENT) {
+./nas/emm/sap/emm_recv.c:    ies->is_ue_radio_capability_information_update_needed = (msg->ueradiocapabilityinformationupdateneeded) ? true:false;
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_EPS_BEARER_CONTEXT_STATUS_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->eps_bearer_context_status, &msg->epsbearercontextstatus, sizeof(*ies->eps_bearer_context_status));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_MS_NETWORK_CAPABILITY_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->ms_network_capability, &msg->msnetworkcapability, sizeof(*ies->ms_network_capability));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_TMSI_STATUS_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->tmsi_status, &msg->tmsistatus, sizeof(*ies->tmsi_status));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_MOBILE_STATION_CLASSMARK_2_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->mobile_station_classmark2, &msg->mobilestationclassmark2, sizeof(*ies->mobile_station_classmark2));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_MOBILE_STATION_CLASSMARK_3_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->mobile_station_classmark3, &msg->mobilestationclassmark3, sizeof(*ies->mobile_station_classmark3));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_SUPPORTED_CODECS_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->supported_codecs, &msg->supportedcodecs, sizeof(*ies->supported_codecs));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_ADDITIONAL_UPDATE_TYPE_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->additional_updatetype, &msg->additionalupdatetype, sizeof(*ies->additional_updatetype));
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & TRACKING_AREA_UPDATE_REQUEST_OLD_GUTI_TYPE_PRESENT) {
+./nas/emm/sap/emm_recv.c:    memcpy(ies->old_guti_type, &msg->oldgutitype, sizeof(*ies->old_guti_type));
+./nas/emm/sap/emm_recv.c:  if (msg->mobileidentity.imsi.typeofidentity == MOBILE_IDENTITY_IMSI) {
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit1 = msg->mobileidentity.imsi.digit1;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit2 = msg->mobileidentity.imsi.digit2;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit3 = msg->mobileidentity.imsi.digit3;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit4 = msg->mobileidentity.imsi.digit4;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit5 = msg->mobileidentity.imsi.digit5;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit6 = msg->mobileidentity.imsi.digit6;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit7 = msg->mobileidentity.imsi.digit7;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit8 = msg->mobileidentity.imsi.digit8;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit9 = msg->mobileidentity.imsi.digit9;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit10 = msg->mobileidentity.imsi.digit10;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit11 = msg->mobileidentity.imsi.digit11;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit12 = msg->mobileidentity.imsi.digit12;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit13 = msg->mobileidentity.imsi.digit13;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit14 = msg->mobileidentity.imsi.digit14;
+./nas/emm/sap/emm_recv.c:    imsi.u.num.digit15 = msg->mobileidentity.imsi.digit15;
+./nas/emm/sap/emm_recv.c:  } else if (msg->mobileidentity.imei.typeofidentity == MOBILE_IDENTITY_IMEI) {
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac1 = msg->mobileidentity.imei.tac1;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac2 = msg->mobileidentity.imei.tac2;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac3 = msg->mobileidentity.imei.tac3;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac4 = msg->mobileidentity.imei.tac4;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac5 = msg->mobileidentity.imei.tac5;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac6 = msg->mobileidentity.imei.tac6;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac7 = msg->mobileidentity.imei.tac7;
+./nas/emm/sap/emm_recv.c:    imei.u.num.tac8 = msg->mobileidentity.imei.tac8;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr1 = msg->mobileidentity.imei.snr1;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr2 = msg->mobileidentity.imei.snr2;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr3 = msg->mobileidentity.imei.snr3;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr4 = msg->mobileidentity.imei.snr4;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr5 = msg->mobileidentity.imei.snr5;
+./nas/emm/sap/emm_recv.c:    imei.u.num.snr6 = msg->mobileidentity.imei.snr6;
+./nas/emm/sap/emm_recv.c:    imei.u.num.cdsd = msg->mobileidentity.imei.cdsd;
+./nas/emm/sap/emm_recv.c:    imei.u.num.parity = msg->mobileidentity.imei.oddeven;
+./nas/emm/sap/emm_recv.c:  } else if (msg->mobileidentity.imeisv.typeofidentity == MOBILE_IDENTITY_IMEISV) {
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac1 = msg->mobileidentity.imeisv.tac1;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac2 = msg->mobileidentity.imeisv.tac2;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac3 = msg->mobileidentity.imeisv.tac3;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac4 = msg->mobileidentity.imeisv.tac4;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac5 = msg->mobileidentity.imeisv.tac5;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac6 = msg->mobileidentity.imeisv.tac6;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac7 = msg->mobileidentity.imeisv.tac7;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.tac8 = msg->mobileidentity.imeisv.tac8;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr1 = msg->mobileidentity.imeisv.snr1;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr2 = msg->mobileidentity.imeisv.snr2;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr3 = msg->mobileidentity.imeisv.snr3;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr4 = msg->mobileidentity.imeisv.snr4;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr5 = msg->mobileidentity.imeisv.snr5;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.snr6 = msg->mobileidentity.imeisv.snr6;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.svn1 = msg->mobileidentity.imeisv.svn1;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.svn2 = msg->mobileidentity.imeisv.svn2;
+./nas/emm/sap/emm_recv.c:    imeisv.u.num.parity = msg->mobileidentity.imeisv.oddeven;
+./nas/emm/sap/emm_recv.c:  } else if (msg->mobileidentity.tmsi.typeofidentity == MOBILE_IDENTITY_TMSI) {
+./nas/emm/sap/emm_recv.c:    tmsi  = ((tmsi_t)msg->mobileidentity.tmsi.tmsi[0]) << 24;
+./nas/emm/sap/emm_recv.c:    tmsi |= (((tmsi_t)msg->mobileidentity.tmsi.tmsi[1]) << 16);
+./nas/emm/sap/emm_recv.c:    tmsi |= (((tmsi_t)msg->mobileidentity.tmsi.tmsi[2]) << 8);
+./nas/emm/sap/emm_recv.c:    tmsi |= ((tmsi_t)msg->mobileidentity.tmsi.tmsi[3]);
+./nas/emm/sap/emm_recv.c:  if ((NULL == msg->authenticationresponseparameter) || (!blength(msg->authenticationresponseparameter))) {
+./nas/emm/sap/emm_recv.c:  rc = emm_proc_authentication_complete (ue_id, EMM_CAUSE_SUCCESS, msg->authenticationresponseparameter);
+./nas/emm/sap/emm_recv.c:  if (msg->emmcause == EMM_CAUSE_SUCCESS) {
+./nas/emm/sap/emm_recv.c:  } else if ((msg->emmcause == EMM_CAUSE_SYNCH_FAILURE) && !(msg->presencemask & AUTHENTICATION_FAILURE_AUTHENTICATION_FAILURE_PARAMETER_PRESENT)) {
+./nas/emm/sap/emm_recv.c:  rc = emm_proc_authentication_failure (ue_id, msg->emmcause, msg->authenticationfailureparameter);
+./nas/emm/sap/emm_recv.c:  if (msg->presencemask & SECURITY_MODE_COMMAND_IMEISV_REQUEST_PRESENT) {
+./nas/emm/sap/emm_recv.c:    rc = emm_proc_security_mode_complete (ue_id, &msg->imeisv.imeisv);
+./nas/emm/sap/emm_recv.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Received Security Mode Reject message " "(cause=%d)\n", msg->emmcause);
+./nas/emm/sap/emm_recv.c:  if (msg->emmcause == EMM_CAUSE_SUCCESS) {
+./nas/emm/sap/emm_as.c:  emm_as_primitive_t                      primitive = msg->primitive;
+./nas/emm/sap/emm_as.c:    rc = _emm_as_data_ind (&msg->u.data, &emm_cause);
+./nas/emm/sap/emm_as.c:    ue_id = msg->u.data.ue_id;
+./nas/emm/sap/emm_as.c:    rc = _emm_as_establish_req (&msg->u.establish, &emm_cause);
+./nas/emm/sap/emm_as.c:    ue_id = msg->u.establish.ue_id;
+./nas/emm/sap/emm_as.c:    rc = _emm_as_release_ind (&msg->u.release, &emm_cause);
+./nas/emm/sap/emm_as.c:    ue_id = msg->u.release.ue_id;
+./nas/emm/sap/emm_as.c:  decoder_rc = nas_message_decode (msg->data, &nas_msg, len, emm_security_context, decode_status);
+./nas/emm/sap/emm_as.c:      msg->ue_id, (msg->delivered) ? "true" : "false", blength(msg->nas_msg));
+./nas/emm/sap/emm_as.c:  if ( EMM_AS_DATA_DELIVERED_TRUE == msg->delivered) {
+./nas/emm/sap/emm_as.c:    if (blength(msg->nas_msg) > 0) {
+./nas/emm/sap/emm_as.c:      bstring                                   plain_msg = bstrcpy(msg->nas_msg);
+./nas/emm/sap/emm_as.c:        ue_mm_context_t *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:        int  bytes = nas_message_decrypt (msg->nas_msg->data,
+./nas/emm/sap/emm_as.c:            blength(msg->nas_msg),
+./nas/emm/sap/emm_as.c:          memcpy(&originating_tai, msg->tai, sizeof(originating_tai));
+./nas/emm/sap/emm_as.c:          rc = _emm_as_recv (msg->ue_id, &originating_tai, &msg->ecgi, plain_msg, bytes, emm_cause, &decode_status);
+./nas/emm/sap/emm_as.c:          rc = lowerlayer_data_ind (msg->ue_id, plain_msg);
+./nas/emm/sap/emm_as.c:      rc = lowerlayer_success (msg->ue_id, &msg->nas_msg);
+./nas/emm/sap/emm_as.c:  } else if ( EMM_AS_DATA_DELIVERED_LOWER_LAYER_FAILURE == msg->delivered) {
+./nas/emm/sap/emm_as.c:    rc = lowerlayer_failure (msg->ue_id, &msg->nas_msg);
+./nas/emm/sap/emm_as.c:    rc = lowerlayer_non_delivery_indication (msg->ue_id, &msg->nas_msg);
+./nas/emm/sap/emm_as.c:  bdestroy_wrapper (&msg->nas_msg);
+./nas/emm/sap/emm_as.c:  ue_mm_context_t *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:  decoder_rc = nas_message_decode (msg->nas_msg->data, &nas_msg, blength(msg->nas_msg), emm_security_context, &decode_status);
+./nas/emm/sap/emm_as.c:  bdestroy_wrapper(&msg->nas_msg);
+./nas/emm/sap/emm_as.c:    memcpy(&originating_tai, msg->tai, sizeof(originating_tai));
+./nas/emm/sap/emm_as.c:    rc = emm_recv_attach_request (msg->ue_id, &originating_tai, &msg->ecgi, &emm_msg->attach_request, msg->is_initial, msg->is_mm_ctx_new, emm_cause, &decode_status);
+./nas/emm/sap/emm_as.c:      nas_itti_detach_req(msg->ue_id);
+./nas/emm/sap/emm_as.c:      msg->ue_id, &emm_msg->detach_request, msg->is_initial, emm_cause, &decode_status);
+./nas/emm/sap/emm_as.c:      rc = emm_proc_tracking_area_update_reject (msg->ue_id, EMM_CAUSE_UE_IDENTITY_CANT_BE_DERIVED_BY_NW);
+./nas/emm/sap/emm_as.c:    rc = emm_recv_tracking_area_update_request (msg->ue_id, &emm_msg->tracking_area_update_request,  msg->is_initial, emm_cause, &decode_status);
+./nas/emm/sap/emm_as.c:      rc = emm_proc_service_reject (msg->ue_id, EMM_CAUSE_UE_IDENTITY_CANT_BE_DERIVED_BY_NW);
+./nas/emm/sap/emm_as.c:    rc = emm_recv_service_request (msg->ue_id, &emm_msg->service_request, msg->is_initial, emm_cause, &decode_status);
+./nas/emm/sap/emm_as.c:  msg->header.protocol_discriminator = EPS_MOBILITY_MANAGEMENT_MESSAGE;
+./nas/emm/sap/emm_as.c:          msg->header.security_header_type = SECURITY_HEADER_TYPE_INTEGRITY_PROTECTED_CYPHERED_NEW;
+./nas/emm/sap/emm_as.c:          msg->header.security_header_type = SECURITY_HEADER_TYPE_INTEGRITY_PROTECTED_NEW;
+./nas/emm/sap/emm_as.c:        OAILOG_FUNC_RETURN (LOG_NAS_EMM, &msg->security_protected.plain.emm);
+./nas/emm/sap/emm_as.c:        msg->header.security_header_type = SECURITY_HEADER_TYPE_INTEGRITY_PROTECTED_CYPHERED;
+./nas/emm/sap/emm_as.c:        msg->header.security_header_type = SECURITY_HEADER_TYPE_INTEGRITY_PROTECTED;
+./nas/emm/sap/emm_as.c:      OAILOG_FUNC_RETURN (LOG_NAS_EMM, &msg->security_protected.plain.emm);
+./nas/emm/sap/emm_as.c:      msg->header.security_header_type = SECURITY_HEADER_TYPE_NOT_PROTECTED;
+./nas/emm/sap/emm_as.c:      OAILOG_FUNC_RETURN (LOG_NAS_EMM, &msg->plain.emm);
+./nas/emm/sap/emm_as.c:    msg->header.security_header_type = SECURITY_HEADER_TYPE_NOT_PROTECTED;
+./nas/emm/sap/emm_as.c:    OAILOG_FUNC_RETURN (LOG_NAS_EMM, &msg->plain.emm);
+./nas/emm/sap/emm_as.c:  if (msg->header.security_header_type != SECURITY_HEADER_TYPE_NOT_PROTECTED) {
+./nas/emm/sap/emm_as.c:    emm_msg_header_t                       *header = &msg->security_protected.plain.emm.header;
+./nas/emm/sap/emm_as.c:  switch (msg->primitive) {
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_data_req (&msg->u.data, &as_msg.msg.dl_info_transfer_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_erab_setup_req (&msg->u.activate_bearer_context_req, &as_msg.msg.activate_bearer_context_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_status_ind (&msg->u.status, &as_msg.msg.dl_info_transfer_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_release_req (&msg->u.release, &as_msg.msg.nas_release_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_security_req (&msg->u.security, &as_msg.msg.dl_info_transfer_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_security_rej (&msg->u.security, &as_msg.msg.dl_info_transfer_req);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_establish_cnf (&msg->u.establish, &as_msg.msg.nas_establish_rsp);
+./nas/emm/sap/emm_as.c:    as_msg.msg_id = _emm_as_establish_rej (&msg->u.establish, &as_msg.msg.nas_establish_rsp);
+./nas/emm/sap/emm_as.c:    OAILOG_DEBUG (LOG_NAS_EMM, "EMMAS-SAP - " "Sending msg with id 0x%x, primitive %s (%d) to S1AP layer for transmission\n", as_msg.msg_id, _emm_as_primitive_str[msg->primitive - _EMMAS_START - 1], msg->primitive);
+./nas/emm/sap/emm_as.c:  if (msg->guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  EMM_msg                                *emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    switch (msg->nas_info) {
+./nas/emm/sap/emm_as.c:      size = msg->nas_msg->slen;
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:      bytes = _emm_as_encrypt (&as_msg->nas_msg, &nas_msg.header, msg->nas_msg->data, size, emm_security_context);
+./nas/emm/sap/emm_as.c:      if (msg->nas_info == EMM_AS_NAS_DATA_TAU) {
+./nas/emm/sap/emm_as.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Send AS status indication (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_as.c:  if (msg->guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  EMM_msg                                *emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:  if (msg->guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  if (msg->cause == EMM_AS_CAUSE_AUTHENTICATION) {
+./nas/emm/sap/emm_as.c:  } else if (msg->cause == EMM_AS_CAUSE_DETACH) {
+./nas/emm/sap/emm_as.c:  if (msg->guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  EMM_msg                                *emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    switch (msg->msg_type) {
+./nas/emm/sap/emm_as.c:      if (msg->guti) {
+./nas/emm/sap/emm_as.c:      if (msg->guti) {
+./nas/emm/sap/emm_as.c:      if (msg->guti) {
+./nas/emm/sap/emm_as.c:      OAILOG_WARNING (LOG_NAS_EMM, "EMMAS-SAP - Type of NAS security " "message 0x%.2x is not valid\n", msg->msg_type);
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:      nas_emm_procedure_register_emm_message(msg->ue_id, msg->puid, as_msg->nas_msg);
+./nas/emm/sap/emm_as.c:  if (msg->guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  EMM_msg                                *emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    switch (msg->msg_type) {
+./nas/emm/sap/emm_as.c:      if (msg->guti) {
+./nas/emm/sap/emm_as.c:      OAILOG_WARNING (LOG_NAS_EMM, "EMMAS-SAP - Type of NAS security " "message 0x%.2x is not valid\n", msg->msg_type);
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:  as_msg->ue_id  = msg->ue_id;
+./nas/emm/sap/emm_as.c:  as_msg->ebi    = msg->ebi;
+./nas/emm/sap/emm_as.c:  as_msg->gbr_dl = msg->gbr_dl;
+./nas/emm/sap/emm_as.c:  as_msg->gbr_ul = msg->gbr_ul;
+./nas/emm/sap/emm_as.c:  as_msg->mbr_dl = msg->mbr_dl;
+./nas/emm/sap/emm_as.c:  as_msg->mbr_ul = msg->mbr_ul;
+./nas/emm/sap/emm_as.c:  EMM_msg                                *emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:      size = msg->nas_msg->slen;
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_as.c:      bytes = _emm_as_encrypt (&as_msg->nas_msg, &nas_msg.header, msg->nas_msg->data, size, emm_security_context);
+./nas/emm/sap/emm_as.c:  as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  if (msg->eps_id.guti == NULL) {
+./nas/emm/sap/emm_as.c:  as_msg->s_tmsi.mme_code = msg->eps_id.guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:  as_msg->s_tmsi.m_tmsi = msg->eps_id.guti->m_tmsi;
+./nas/emm/sap/emm_as.c:  as_msg->nas_msg = msg->nas_msg; 
+./nas/emm/sap/emm_as.c:  emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+./nas/emm/sap/emm_as.c:  switch (msg->nas_info) {
+./nas/emm/sap/emm_as.c:    emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:      OAILOG_TRACE (LOG_NAS_EMM, "EMMAS-SAP - emm_as_establish.nasMSG.length=%d\n", msg->nas_msg->slen);
+./nas/emm/sap/emm_as.c:    emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    OAILOG_WARNING (LOG_NAS_EMM, "EMMAS-SAP - Type of initial NAS " "message 0x%.2x is not valid\n", msg->nas_info);
+./nas/emm/sap/emm_as.c:  if (msg->eps_id.guti) {
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.mme_code = msg->eps_id.guti->gummei.mme_code;
+./nas/emm/sap/emm_as.c:    as_msg->s_tmsi.m_tmsi = msg->eps_id.guti->m_tmsi;
+./nas/emm/sap/emm_as.c:    as_msg->ue_id = msg->ue_id;
+./nas/emm/sap/emm_as.c:  emm_msg = _emm_as_set_header (&nas_msg, &msg->sctx);
+./nas/emm/sap/emm_as.c:    switch (msg->nas_info) {
+./nas/emm/sap/emm_as.c:      if (msg->eps_id.guti) {
+./nas/emm/sap/emm_as.c:      if (msg->eps_id.guti) {
+./nas/emm/sap/emm_as.c:      if (msg->eps_id.guti) {
+./nas/emm/sap/emm_as.c:      OAILOG_WARNING (LOG_NAS_EMM, "EMMAS-SAP - Type of initial NAS " "message 0x%.2x is not valid\n", msg->nas_info);
+./nas/emm/sap/emm_as.c:    ue_mm_context_t                        *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_sap.c:  emm_primitive_t                         primitive = msg->primitive;
+./nas/emm/sap/emm_sap.c:    msg->u.emm_reg.primitive = primitive;
+./nas/emm/sap/emm_sap.c:    rc = emm_reg_send (&msg->u.emm_reg);
+./nas/emm/sap/emm_sap.c:    msg->u.emm_esm.primitive = primitive;
+./nas/emm/sap/emm_sap.c:    rc = emm_esm_send (&msg->u.emm_esm);
+./nas/emm/sap/emm_sap.c:    msg->u.emm_as.primitive = primitive;
+./nas/emm/sap/emm_sap.c:    rc = emm_as_send (&msg->u.emm_as);
+./nas/emm/sap/emm_sap.c:    msg->u.emm_cn.primitive = primitive;
+./nas/emm/sap/emm_sap.c:    rc = emm_cn_send (&msg->u.emm_cn);
+./nas/emm/sap/emm_cn.c:  ue_mm_context_t *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_cn.c:      for (int i = 0; i < msg->nb_vectors; i++) {
+./nas/emm/sap/emm_cn.c:        auth_info_proc->vector[i] = msg->vector[i];
+./nas/emm/sap/emm_cn.c:        msg->vector[i] = NULL;
+./nas/emm/sap/emm_cn.c:      auth_info_proc->nb_vectors = msg->nb_vectors;
+./nas/emm/sap/emm_cn.c:      OAILOG_ERROR (LOG_NAS_EMM, "EMM-PROC  - " "Failed to find Auth_info procedure associated to UE id " MME_UE_S1AP_ID_FMT "...\n", msg->ue_id);
+./nas/emm/sap/emm_cn.c:  ue_mm_context_t *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_cn.c:      auth_info_proc->nas_cause = msg->cause;
+./nas/emm/sap/emm_cn.c:      OAILOG_ERROR (LOG_NAS_EMM, "EMM-PROC  - " "Failed to find Auth_info procedure associated to UE id " MME_UE_S1AP_ID_FMT "...\n", msg->ue_id);
+./nas/emm/sap/emm_cn.c:  rc = emm_proc_attach_reject (msg->ue_id, msg->emm_cause);
+./nas/emm/sap/emm_cn.c:    rc = esm_proc_default_eps_bearer_context_request (is_standalone, emm_ctx, msg_pP->ebi,        //0, //ESM_EBI_UNASSIGNED, //msg->ebi,
+./nas/emm/sap/emm_cn.c:  emm_ctx_p = emm_context_get (&_emm_data, msg->ue_id);
+./nas/emm/sap/emm_cn.c:    OAILOG_ERROR (LOG_NAS_EMM, "EMMCN-SAP  - " "Failed to find UE associated to id " MME_UE_S1AP_ID_FMT "...\n", msg->ue_id);
+./nas/emm/sap/emm_cn.c:  switch (msg->cause) {
+./nas/emm/sap/emm_cn.c:  rc = esm_send_pdn_connectivity_reject (msg->pti, &esm_msg.pdn_connectivity_reject, esm_cause);
+./nas/emm/sap/emm_cn.c:    rc = emm_proc_attach_reject (msg->ue_id, EMM_CAUSE_ESM_FAILURE);
+./nas/emm/sap/emm_cn.c:  ue_mm_context_t *ue_mm_context = mme_ue_context_exists_mme_ue_s1ap_id (&mme_app_desc.mme_ue_contexts, msg->ue_id);
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).ue_id =  msg->ue_id;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.cid         = msg->cid;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.ebi         = msg->ebi;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.linked_ebi  = msg->linked_ebi;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.tft         = msg->tft;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.qci         = msg->bearer_qos.qci;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.gbr_ul      = msg->bearer_qos.gbr.br_ul;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.gbr_dl      = msg->bearer_qos.gbr.br_dl;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.mbr_ul      = msg->bearer_qos.mbr.br_ul;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.mbr_dl      = msg->bearer_qos.mbr.br_dl;
+./nas/emm/sap/emm_cn.c:  ESM_DATA_IND(esm_sap_msg_p).data.eps_dedicated_bearer_context_activate.pco 	     = msg->pco;
+./nas/emm/sap/emm_cn.c:  msg->pco = NULL;
+./nas/emm/sap/emm_cn.c:  msg->tft = NULL;
+./nas/emm/sap/emm_cn.c:  emm_cn_primitive_t                      primitive = msg->primitive;
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_authentication_res (msg->u.auth_res);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_authentication_fail (msg->u.auth_fail);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_deregister_ue (msg->u.deregister.ue_id);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_pdn_config_res (msg->u.emm_cn_pdn_config_res);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_pdn_connectivity_res (msg->u.emm_cn_pdn_res);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_pdn_connectivity_fail (msg->u.emm_cn_pdn_fail);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_activate_dedicated_bearer_req (msg->u.activate_dedicated_bearer_req);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_implicit_detach_ue (msg->u.emm_cn_implicit_detach.ue_id);
+./nas/emm/sap/emm_cn.c:    rc = _emm_cn_smc_fail (msg->u.smc_fail);
+./nas/emm/sap/emm_esm.c:  emm_esm_primitive_t                     primitive = msg->primitive;
+./nas/emm/sap/emm_esm.c:    MSC_LOG_RX_MESSAGE (MSC_NAS_EMM_MME, MSC_NAS_ESM_MME, NULL, 0, "_EMMESM_UNITDATA_REQ ue id " MME_UE_S1AP_ID_FMT " ", msg->ue_id);
+./nas/emm/sap/emm_esm.c:    rc = lowerlayer_data_req (msg->ue_id, msg->u.data.msg);
+./nas/emm/sap/emm_esm.c:    MSC_LOG_RX_MESSAGE (MSC_NAS_EMM_MME, MSC_NAS_ESM_MME, NULL, 0, "_EMMESM_ACTIVATE_BEARER_REQ ue id " MME_UE_S1AP_ID_FMT " ", msg->ue_id);
+./nas/emm/sap/emm_esm.c:    rc = lowerlayer_activate_bearer_req (msg->ue_id, msg->u.activate_bearer.ebi,
+./nas/emm/sap/emm_esm.c:        msg->u.activate_bearer.mbr_dl,
+./nas/emm/sap/emm_esm.c:        msg->u.activate_bearer.mbr_ul,
+./nas/emm/sap/emm_esm.c:        msg->u.activate_bearer.gbr_dl,
+./nas/emm/sap/emm_esm.c:        msg->u.activate_bearer.gbr_ul,
+./nas/emm/sap/emm_esm.c:        msg->u.activate_bearer.msg);
+./nas/emm/sap/emm_esm.c:    MSC_LOG_RX_DISCARDED_MESSAGE (MSC_NAS_EMM_MME, MSC_NAS_EMM_MME, NULL, 0, "_EMMESM_UNKNOWN(primitive id %d) ue id " MME_UE_S1AP_ID_FMT " ", primitive, msg->ue_id);
+./nas/emm/sap/emm_reg.c:  emm_reg_primitive_t                     primitive = msg->primitive;
+./nas/emm/sap/emm_send.c:  OAILOG_WARNING (LOG_NAS_EMM, "EMMAS-SAP - Send EMM Status message (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_send.c:  emm_msg->emmcause = msg->emm_cause;
+./nas/emm/sap/emm_send.c:  emm_context_t *emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+./nas/emm/sap/emm_send.c:  DevAssert(msg->ue_id == ue_id);
+./nas/emm/sap/emm_send.c:  size += TRACKING_AREA_IDENTITY_LIST_MINIMUM_LENGTH * msg->tai_list.numberoflists;
+./nas/emm/sap/emm_send.c:  memcpy(&emm_msg->tailist, &msg->tai_list, sizeof(msg->tai_list));
+./nas/emm/sap/emm_send.c:  size += ESM_MESSAGE_CONTAINER_MINIMUM_LENGTH + blength(msg->nas_msg);
+./nas/emm/sap/emm_send.c:  emm_msg->esmmessagecontainer = bstrcpy(msg->nas_msg);
+./nas/emm/sap/emm_send.c:  if (msg->new_guti) {
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_group_id = msg->new_guti->gummei.mme_gid;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_code = msg->new_guti->gummei.mme_code;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.m_tmsi = msg->new_guti->m_tmsi;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit1 = msg->new_guti->gummei.plmn.mcc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit2 = msg->new_guti->gummei.plmn.mcc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit3 = msg->new_guti->gummei.plmn.mcc_digit3;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit1 = msg->new_guti->gummei.plmn.mnc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit2 = msg->new_guti->gummei.plmn.mnc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit3 = msg->new_guti->gummei.plmn.mnc_digit3;
+./nas/emm/sap/emm_send.c:  if (msg->t3402) {
+./nas/emm/sap/emm_send.c:  emm_context_t *emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+./nas/emm/sap/emm_send.c:  DevAssert(msg->ue_id == ue_id);
+./nas/emm/sap/emm_send.c:  size += TRACKING_AREA_IDENTITY_LIST_MINIMUM_LENGTH * msg->tai_list.numberoflists;
+./nas/emm/sap/emm_send.c:  memcpy(&emm_msg->tailist, &msg->tai_list, sizeof(msg->tai_list));
+./nas/emm/sap/emm_send.c:  size += ESM_MESSAGE_CONTAINER_MINIMUM_LENGTH + blength(msg->nas_msg);
+./nas/emm/sap/emm_send.c:  emm_msg->esmmessagecontainer = bstrcpy(msg->nas_msg);
+./nas/emm/sap/emm_send.c:  if (msg->new_guti) {
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_group_id = msg->new_guti->gummei.mme_gid;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_code = msg->new_guti->gummei.mme_code;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.m_tmsi = msg->new_guti->m_tmsi;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit1 = msg->new_guti->gummei.plmn.mcc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit2 = msg->new_guti->gummei.plmn.mcc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit3 = msg->new_guti->gummei.plmn.mcc_digit3;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit1 = msg->new_guti->gummei.plmn.mnc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit2 = msg->new_guti->gummei.plmn.mnc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit3 = msg->new_guti->gummei.plmn.mnc_digit3;
+./nas/emm/sap/emm_send.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Send Attach Reject message (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_send.c:  emm_msg->emmcause = msg->emm_cause;
+./nas/emm/sap/emm_send.c:  if (msg->nas_msg) {
+./nas/emm/sap/emm_send.c:    size += ESM_MESSAGE_CONTAINER_MINIMUM_LENGTH + blength(msg->nas_msg) + 1; // Adding 1 byte since ESM Container is optional IE in Attach Reject
+./nas/emm/sap/emm_send.c:    emm_msg->esmmessagecontainer = msg->nas_msg;
+./nas/emm/sap/emm_send.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Send Tracking Area Update Accept message (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_send.c:  emm_msg->epsupdateresult = msg->eps_update_result;
+./nas/emm/sap/emm_send.c:  if ((msg->t3412) && (*msg->t3412)) {
+./nas/emm/sap/emm_send.c:    if (*msg->t3412 <= 31) {
+./nas/emm/sap/emm_send.c:      emm_msg->t3412value.timervalue = *msg->t3412;
+./nas/emm/sap/emm_send.c:      emm_msg->t3412value.timervalue = *msg->t3412 / 6;
+./nas/emm/sap/emm_send.c:  if (msg->new_guti) {
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_group_id = msg->guti->gummei.mme_gid;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mme_code = msg->guti->gummei.mme_code;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.m_tmsi = msg->guti->m_tmsi;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit1 = msg->guti->gummei.plmn.mcc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit2 = msg->guti->gummei.plmn.mcc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mcc_digit3 = msg->guti->gummei.plmn.mcc_digit3;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit1 = msg->guti->gummei.plmn.mnc_digit1;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit2 = msg->guti->gummei.plmn.mnc_digit2;
+./nas/emm/sap/emm_send.c:    emm_msg->guti.guti.mnc_digit3 = msg->guti->gummei.plmn.mnc_digit3;
+./nas/emm/sap/emm_send.c:  if (msg->tai_list.numberoflists > 0) {
+./nas/emm/sap/emm_send.c:    size += TRACKING_AREA_IDENTITY_LIST_MINIMUM_LENGTH * msg->tai_list.numberoflists;
+./nas/emm/sap/emm_send.c:    memcpy(&emm_msg->tailist, &msg->tai_list, sizeof(msg->tai_list));
+./nas/emm/sap/emm_send.c:  if (msg->eps_bearer_context_status) {
+./nas/emm/sap/emm_send.c:    emm_msg->epsbearercontextstatus = *(msg->eps_bearer_context_status);
+./nas/emm/sap/emm_send.c:  if (msg->location_area_identification) {
+./nas/emm/sap/emm_send.c:  if (msg->mobile_identity) {
+./nas/emm/sap/emm_send.c:  if (msg->emm_cause) {
+./nas/emm/sap/emm_send.c:    emm_msg->emmcause = msg->emm_cause;
+./nas/emm/sap/emm_send.c:  if (msg->t3402) {
+./nas/emm/sap/emm_send.c:    if (*msg->t3402 <= 31) {
+./nas/emm/sap/emm_send.c:      emm_msg->t3402value.timervalue = *msg->t3402;
+./nas/emm/sap/emm_send.c:      emm_msg->t3402value.timervalue = *msg->t3402 / 6;
+./nas/emm/sap/emm_send.c:  if (msg->t3423) {
+./nas/emm/sap/emm_send.c:    if (*msg->t3423 <= 31) {
+./nas/emm/sap/emm_send.c:      emm_msg->t3423value.timervalue = *msg->t3423;
+./nas/emm/sap/emm_send.c:      emm_msg->t3423value.timervalue = *msg->t3423 / 6;
+./nas/emm/sap/emm_send.c:  /*if (msg->equivalent_plmns) {
+./nas/emm/sap/emm_send.c:    emm_msg->equivalentplmns.       = msg->;
+./nas/emm/sap/emm_send.c:  if (msg->emergency_number_list) {
+./nas/emm/sap/emm_send.c:    emm_msg->emergencynumberlist.       = msg->;
+./nas/emm/sap/emm_send.c:  if (msg->eps_network_feature_support) {
+./nas/emm/sap/emm_send.c:    emm_msg->epsnetworkfeaturesupport       = *msg->eps_network_feature_support;
+./nas/emm/sap/emm_send.c:  if (msg->additional_update_result) {
+./nas/emm/sap/emm_send.c:    emm_msg->additionalupdateresult.       = msg->;
+./nas/emm/sap/emm_send.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Send Tracking Area Update Reject message (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_send.c:  emm_msg->emmcause = msg->emm_cause;
+./nas/emm/sap/emm_send.c:  OAILOG_INFO (LOG_NAS_EMM, "EMMAS-SAP - Send Service Reject message (cause=%d)\n", msg->emm_cause);
+./nas/emm/sap/emm_send.c:  emm_msg->emmcause = msg->emm_cause;
+./nas/emm/sap/emm_send.c:  if (msg->ident_type == IDENTITY_TYPE_2_IMSI) {
+./nas/emm/sap/emm_send.c:  } else if (msg->ident_type == IDENTITY_TYPE_2_TMSI) {
+./nas/emm/sap/emm_send.c:  } else if (msg->ident_type == IDENTITY_TYPE_2_IMEI) {
+./nas/emm/sap/emm_send.c:  emm_msg->naskeysetidentifierasme.naskeysetidentifier = msg->ksi;
+./nas/emm/sap/emm_send.c:  emm_msg->authenticationparameterrand = blk2bstr((const void *)msg->rand, AUTH_RAND_SIZE);
+./nas/emm/sap/emm_send.c:  emm_msg->authenticationparameterautn = blk2bstr((const void *)msg->autn, AUTH_AUTN_SIZE);
+./nas/emm/sap/emm_send.c:  emm_msg->selectednassecurityalgorithms.typeofcipheringalgorithm = msg->selected_eea;
+./nas/emm/sap/emm_send.c:  emm_msg->selectednassecurityalgorithms.typeofintegrityalgorithm = msg->selected_eia;
+./nas/emm/sap/emm_send.c:  emm_msg->naskeysetidentifier.naskeysetidentifier = msg->ksi;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.eea = msg->eea;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.eia = msg->eia;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.umts_present = msg->umts_present;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.gprs_present = msg->gprs_present;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.uea = msg->uea;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.uia = msg->uia;
+./nas/emm/sap/emm_send.c:  emm_msg->replayeduesecuritycapabilities.gea = msg->gea;
+./nas/emm/sap/emm_send.c:  if (msg->imeisv_request) {
+./s6a/freediameter/freediameter-1.1.5.patch:-	CHECK_PARAMS( msg->msg_public.msg_flags & CMD_FLAG_REQUEST ); /* we associate with requests only */
+./s6a/freediameter/freediameter-1.1.5.patch:+// 	CHECK_PARAMS( msg->msg_public.msg_flags & CMD_FLAG_REQUEST ); /* we associate with requests only */
+./s6a/freediameter/freediameter-1.1.5.patch: 	CHECK_PARAMS( (anscb == NULL) || (msg->msg_cb.fct == NULL) ); /* We are not overwritting a cb */
+./s6a/freediameter/freediameter-1.1.5.patch:+    if ((msg->msg_public.msg_flags & CMD_FLAG_REQUEST) == 0) {
+./s6a/freediameter/freediameter-1.1.5.patch: 	msg->msg_cb.fct = anscb;

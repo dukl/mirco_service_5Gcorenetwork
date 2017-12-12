@@ -1,0 +1,793 @@
+Scanning dependencies of target GTPV2C
+Scanning dependencies of target MSC
+[  0%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cTrxn.c.o
+[  0%] Building C object CMakeFiles/MSC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/msc/msc.c.o
+Scanning dependencies of target CN_UTILS
+[  0%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
+[  0%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cTunnel.c.o
+[  1%] Linking C static library libMSC.a
+[  1%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsg.c.o
+[  1%] Built target MSC
+[  2%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
+Scanning dependencies of target BSTR
+[  2%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
+[  2%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o
+[  2%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsgIeParseInfo.c.o
+[  2%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
+[  2%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
+[  2%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsgParser.c.o
+[  2%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
+[  2%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
+[  3%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2c.c.o
+Scanning dependencies of target LIB_NAS_MME
+[  3%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
+[  3%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
+[  3%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_itti_messaging.c.o
+[  3%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
+[  3%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
+[  3%] Linking C static library libBSTR.a
+[  4%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_network.c.o
+[  5%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
+[  5%] Linking C static library libGTPV2C.a
+[  5%] Built target BSTR
+Scanning dependencies of target HASHTABLE
+[  5%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/hashtable.c.o
+[  5%] Built target GTPV2C
+[  5%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/hashtable_uint64.c.o
+[  5%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
+[  5%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_proc.c.o
+[  5%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o
+[  5%] Generating CMakeFiles/r10.5/s1ap_decoder.c, CMakeFiles/r10.5/s1ap_encoder.c, CMakeFiles/r10.5/s1ap_xer_print.c, CMakeFiles/r10.5/s1ap_ies_defs.h
+[  5%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/obj_hashtable.c.o
+[  5%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_procedures.c.o
+[  5%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/obj_hashtable_uint64.c.o
+[  5%] Linking C static library libCN_UTILS.a
+[  5%] Built target CN_UTILS
+Scanning dependencies of target 3GPP_TYPES
+[  5%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_cc_ies.c.o
+[  5%] Linking C static library libHASHTABLE.a
+[  5%] Built target HASHTABLE
+[  5%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_common_ies.c.o
+Scanning dependencies of target ITTI
+[  5%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/api/network/nas_message.c.o
+[  6%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/intertask_interface.c.o
+[93mDidn't find any information element for message: S1ap-PrivateMessageIEs[0m
+[  6%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_mm_ies.c.o
+[  6%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/api/mme/mme_api.c.o
+Scanning dependencies of target S1AP_EPC
+[  7%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_encoder.c.o
+[  7%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/backtrace.c.o
+[  7%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gmm_ies.c.o
+[  7%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/memory_pools.c.o
+[  7%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AttachAccept.c.o
+[  7%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gprs_common_ies.c.o
+[  7%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/signals.c.o
+[  7%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_decoder.c.o
+[  8%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AttachComplete.c.o
+[  8%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_sm_ies.c.o
+[  8%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/timer.c.o
+[  8%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AttachReject.c.o
+[  8%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_handlers.c.o
+[  8%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AttachRequest.c.o
+[  9%] Linking C static library lib3GPP_TYPES.a
+[  9%] Linking C static library libITTI.a
+[  9%] Built target 3GPP_TYPES
+[  9%] Built target ITTI
+[  9%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AuthenticationFailure.c.o
+Scanning dependencies of target SCTP_SERVER
+[  9%] Building C object CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_common.c.o
+[  9%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AuthenticationReject.c.o
+[  9%] Building C object CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_itti_messaging.c.o
+[  9%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AuthenticationRequest.c.o
+[  9%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_nas_procedures.c.o
+[  9%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/AuthenticationResponse.c.o
+[  9%] Building C object CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_primitives_server.c.o
+[ 10%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/CsServiceNotification.c.o
+[ 10%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/DetachAccept.c.o
+[ 10%] Linking C static library libSCTP_SERVER.a
+[ 10%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/DetachRequest.c.o
+[ 10%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme.c.o
+[ 10%] Built target SCTP_SERVER
+[ 10%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/DownlinkNasTransport.c.o
+Scanning dependencies of target S6A
+[ 11%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o
+[ 11%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/EmmInformation.c.o
+[ 11%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/emm_msg.c.o
+[ 11%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_itti_messaging.c.o
+[ 11%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o
+[ 11%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/EmmStatus.c.o
+[ 12%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_retransmission.c.o
+[ 13%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/ExtendedServiceRequest.c.o
+[ 13%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o
+[ 13%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/GutiReallocationCommand.c.o
+[ 13%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o
+[ 13%] Building C object CMakeFiles/S1AP_EPC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_mme_ta.c.o
+[ 13%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/GutiReallocationComplete.c.o
+Scanning dependencies of target S1AP_LIB
+[ 13%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/IdentityRequest.c.o
+[ 13%] Linking C static library libS1AP_EPC.a
+[ 13%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o
+[ 13%] Built target S1AP_EPC
+[ 13%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/IdentityResponse.c.o
+[ 13%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/s1ap_decoder.c.o
+Scanning dependencies of target UDP_SERVER
+[ 14%] Building C object CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
+[ 14%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/SecurityModeCommand.c.o
+[ 14%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o
+[ 14%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/SecurityModeComplete.c.o
+[ 14%] Linking C static library libUDP_SERVER.a
+[ 15%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/SecurityModeReject.c.o
+[ 15%] Built target UDP_SERVER
+[ 15%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/ServiceReject.c.o
+[ 15%] Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o
+Scanning dependencies of target S11_MME
+[ 15%] Building C object CMakeFiles/S11_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
+[ 15%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/ServiceRequest.c.o
+[ 15%] Building C object CMakeFiles/S11_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
+[ 15%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/TrackingAreaUpdateAccept.c.o
+[ 16%] Linking C static library libS6A.a
+[ 16%] Built target S6A
+[ 16%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/TrackingAreaUpdateComplete.c.o
+Scanning dependencies of target SECU_CN
+[ 16%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/kdf.c.o
+[ 16%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/TrackingAreaUpdateReject.c.o
+[ 16%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/rijndael.c.o
+[ 17%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/snow3g.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/TrackingAreaUpdateRequest.c.o
+[ 18%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/key_nas_deriver.c.o
+[ 18%] Building C object CMakeFiles/S11_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_mme_task.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/msg/UplinkNasTransport.c.o
+[ 18%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/nas_stream_eea1.c.o
+[ 18%] Building C object CMakeFiles/S11_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_mme_bearer_manager.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDedicatedEpsBearerContextAccept.c.o
+[ 18%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/nas_stream_eia1.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDedicatedEpsBearerContextReject.c.o
+[ 18%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/nas_stream_eea2.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDedicatedEpsBearerContextRequest.c.o
+[ 18%] Building C object CMakeFiles/S11_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_mme_session_manager.c.o
+[ 18%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/s1ap_encoder.c.o
+[ 18%] Building C object CMakeFiles/SECU_CN.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/secu/nas_stream_eia2.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDefaultEpsBearerContextAccept.c.o
+[ 18%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDefaultEpsBearerContextReject.c.o
+[ 18%] Linking C static library libS11_MME.a
+[ 18%] Linking C static library libSECU_CN.a
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ActivateDefaultEpsBearerContextRequest.c.o
+[ 20%] Built target S11_MME
+[ 20%] Built target SECU_CN
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/BearerResourceAllocationReject.c.o
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/BearerResourceAllocationRequest.c.o
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/BearerResourceModificationReject.c.o
+Scanning dependencies of target MME_APP
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/BearerResourceModificationRequest.c.o
+[ 20%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/DeactivateEpsBearerContextAccept.c.o
+[ 21%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_apn_selection.c.o
+[ 21%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/s1ap_xer_print.c.o
+[ 21%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/DeactivateEpsBearerContextRequest.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/EsmInformationRequest.c.o
+[ 22%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_authentication.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/EsmInformationResponse.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/esm_msg.c.o
+[ 22%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_bearer.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/EsmStatus.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ModifyEpsBearerContextAccept.c.o
+[ 22%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ModifyEpsBearerContextReject.c.o
+[ 23%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/ModifyEpsBearerContextRequest.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABReleaseItemBearerRelComp.c.o
+[ 24%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_bearer_context.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENB-ID.c.o
+[ 24%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/PdnConnectivityReject.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MME-Code.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EUTRAN-CGI.c.o
+[ 24%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/PdnConnectivityRequest.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PeriodicReportingMDT.c.o
+[ 24%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_capabilities.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupListBearerSUReq.c.o
+[ 24%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WarningMessageContents.c.o
+[ 24%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/PdnDisconnectReject.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/NativeInteger.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InitialContextSetupFailure.c.o
+[ 25%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_context.c.o
+[ 25%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/msg/PdnDisconnectRequest.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LoggedMDT.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CauseProtocol.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InitialUEMessage.c.o
+[ 25%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/AdditionalUpdateResult.c.o
+[ 25%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_detach.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NumberOfBroadcasts.c.o
+[ 25%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/AdditionalUpdateType.c.o
+[ 25%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RepetitionPeriod.c.o
+[ 26%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/ApnAggregateMaximumBitRate.c.o
+[ 26%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/Cli.c.o
+[ 27%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_edns_emulation.c.o
+[ 27%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/CsfbResponse.c.o
+[ 28%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenTAs-Item.c.o
+[ 28%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/DetachType.c.o
+[ 28%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_itti_messaging.c.o
+[ 28%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Paging.c.o
+[ 28%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EmmCause.c.o
+[ 28%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsAttachResult.c.o
+[ 28%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverType.c.o
+[ 28%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsAttachType.c.o
+[ 29%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsBearerContextStatus.c.o
+[ 29%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InitialContextSetupResponse.c.o
+[ 29%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsMobileIdentity.c.o
+[ 29%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_location.c.o
+[ 29%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsNetworkFeatureSupport.c.o
+[ 29%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CompletedCellinTAI.c.o
+[ 29%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-S1SetupResponse.c.o
+[ 29%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsQualityOfService.c.o
+[ 29%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsUpdateResult.c.o
+[ 30%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupListCtxtSURes.c.o
+[ 30%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c.o
+[ 30%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EpsUpdateType.c.o
+[ 30%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EsmCause.c.o
+[ 30%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PathSwitchRequestAcknowledge.c.o
+[ 30%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_pdn_context.c.o
+[ 31%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EsmInformationTransferFlag.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c: In function ‘mme_app_thread’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c:140:9: warning: implicit declaration of function ‘nas_proc_ul_transfer_ind’ [-Wimplicit-function-declaration]
+         nas_proc_ul_transfer_ind (NAS_UL_DATA_IND (received_message_p).ue_id,
+         ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c: In function ‘mme_app_init’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c:327:5: warning: implicit declaration of function ‘esm_useless’ [-Wimplicit-function-declaration]
+     esm_useless();
+     ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c:328:10: warning: implicit declaration of function ‘esm_init’ [-Wimplicit-function-declaration]
+       if(esm_init()==RETURNok)
+          ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c: In function ‘mme_app_exit’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_main.c:376:3: warning: implicit declaration of function ‘esm_exit’ [-Wimplicit-function-declaration]
+   esm_exit();
+   ^
+[ 31%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PriorityLevel.c.o
+[ 31%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/BIT_STRING.c.o
+[ 31%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/EsmMessageContainer.c.o
+[ 31%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CSG-Id.c.o
+[ 31%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_procedures.c.o
+[ 31%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WriteReplaceWarningResponse.c.o
+[ 31%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/GutiType.c.o
+[ 31%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ServedGUMMEIs.c.o
+[ 32%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-UTRAN-Trace-ID.c.o
+[ 32%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/KsiAndSequenceNumber.c.o
+[ 32%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CancelledCellinTAI-Item.c.o
+[ 32%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenLAs-Item.c.o
+[ 32%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DownlinkNonUEAssociatedLPPaTransport.c.o
+[ 32%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/LcsClientIdentity.c.o
+[ 33%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_sgw_selection.c.o
+[ 34%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/LcsIndicator.c.o
+[ 34%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-KillResponse.c.o
+[ 34%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_statistics.c.o
+[ 34%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/LinkedEpsBearerIdentity.c.o
+[ 34%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1AP-PDU.c.o
+[ 34%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/MessageType.c.o
+[ 34%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_transport.c.o
+[ 34%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SourceeNB-ToTargeteNB-TransparentContainer.c.o
+[ 34%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_app_ue_context.c.o
+[ 34%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/NasKeySetIdentifier.c.o
+[ 35%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABInformationList.c.o
+[ 35%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/NasMessageContainer.c.o
+[ 35%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/NasRequestType.c.o
+[ 35%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GUMMEI.c.o
+[ 35%] Building C object CMakeFiles/MME_APP.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/mme_app/mme_config.c.o
+[ 35%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENB-StatusTransfer-TransparentContainer.c.o
+[ 35%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InterfacesToTrace.c.o
+[ 35%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/NasSecurityAlgorithms.c.o
+[ 35%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/Nonce.c.o
+[ 35%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupRequest.c.o
+[ 36%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/PagingIdentity.c.o
+[ 36%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/PdnAddress.c.o
+[ 36%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RIMInformation.c.o
+[ 36%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/PdnType.c.o
+[ 36%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/RadioPriority.c.o
+[ 37%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellID-Cancelled-Item.c.o
+[ 37%] Linking C static library libMME_APP.a
+[ 37%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/SecurityHeaderType.c.o
+[ 37%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaID-Broadcast.c.o
+[ 37%] Built target MME_APP
+[ 37%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/ServiceType.c.o
+[ 37%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAIItem.c.o
+[ 37%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/ShortMac.c.o
+[ 37%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-BroadcastCompletedAreaList.c.o
+[ 37%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PrivateIE-ID.c.o
+[ 38%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/SsCode.c.o
+[ 38%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ReportAmountMDT.c.o
+[ 38%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/TrackingAreaIdentity.c.o
+[ 38%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaID-Cancelled-Item.c.o
+[ 38%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/TrackingAreaIdentityList.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EPLMNs.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DataCodingScheme.c.o
+[ 40%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/UeNetworkCapability.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-S-TMSI.c.o
+[ 40%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/UeRadioCapabilityInformationUpdateNeeded.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeModifiedListBearerModReq.c.o
+[ 40%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/ies/UeSecurityCapability.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABList.c.o
+[ 40%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/util/nas_timer.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PrivateMessage.c.o
+[ 40%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Time-UE-StayedInCell.c.o
+[ 41%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c.o
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-associatedLogicalS1-ConnectionItem.c.o
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAI-Cancelled.c.o
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Reset.c.o
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SourceRNC-ToTargetRNC-TransparentContainer.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c: In function ‘emm_proc_attach_complete’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:604:6: warning: unused variable ‘send_res’ [-Wunused-variable]
+  int send_res= itti_send_msg_to_task(TASK_ESM_SAP,INSTANCE_DEFAULT,esm_sap_msg_p); 
+      ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:572:43: warning: unused variable ‘emm_sap’ [-Wunused-variable]
+   emm_sap_t                               emm_sap = {0};
+                                           ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:571:43: warning: unused variable ‘rc’ [-Wunused-variable]
+   int                                     rc = RETURNerror;
+                                           ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:570:43: warning: variable ‘attach_proc’ set but not used [-Wunused-but-set-variable]
+   nas_emm_attach_proc_t                  *attach_proc = NULL;
+                                           ^
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000SectorID.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c: In function ‘_emm_attach’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:1198:6: warning: unused variable ‘send_res’ [-Wunused-variable]
+  int send_res= itti_send_msg_to_task(TASK_ESM_SAP,INSTANCE_DEFAULT,esm_sap_msg_p); 
+      ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c: In function ‘emm_proc_attach_complete’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:618:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c: In function ‘nas_emm_attach_reject’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Attach.c:761:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Direct-Forwarding-Path-Availability.c.o
+[ 42%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBConfigurationUpdateAcknowledge.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MSClassmark3.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-IE-Extensions.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PagingPriority.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-associatedLogicalS1-ConnectionListRes.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverRequest.c.o
+[ 43%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Authentication.c.o
+[ 43%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LocationReportingControl.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSwitchedDLList.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABAdmittedItem.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEIdentityIndexValue.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMERelaySupportIndicator.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PagingDRX.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cause.c.o
+[ 44%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SRVCCHOIndication.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextReleaseComplete.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NASSecurityParametersfromE-UTRAN.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TransportLayerAddress.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CompletedCellinEAI.c.o
+[ 45%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Detach.c.o
+[ 45%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_data_ctx.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constr_SET_OF.c.o
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABModifyResponse.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Detach.c: In function ‘_clear_emm_ctxt’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Detach.c:110:7: warning: unused variable ‘send_res’ [-Wunused-variable]
+   int send_res= itti_send_msg_to_task(TASK_ESM_SAP,INSTANCE_DEFAULT,esm_sap_msg_p); 
+       ^
+[ 45%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ServedMMECs.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_data_ctx.c: In function ‘emm_init_context’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_data_ctx.c:597:7: warning: implicit declaration of function ‘esm_insert’ [-Wimplicit-function-declaration]
+       esm_insert(emm_ctx->_guti,esm_t);
+       ^
+[ 45%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_main.c.o
+[ 46%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABModifyItemBearerModRes.c.o
+[ 46%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TraceActivation.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_main.c: In function ‘esm_init’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_main.c:351:10: warning: statement with no effect [-Wunused-value]
+     else RETURNerror;
+          ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/emm_main.c:352:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+[ 46%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ResetAll.c.o
+[ 46%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/EmmStatusHdl.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/Identification.c.o
+[ 47%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MessageIdentifier.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/LowerLayer.c.o
+[ 47%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PDCP-SN.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/SecurityModeControl.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/LowerLayer.c: In function ‘lowerlayer_data_ind’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/LowerLayer.c:311:7: warning: unused variable ‘send_res’ [-Wunused-variable]
+   int send_res= itti_send_msg_to_task(TASK_ESM_SAP,INSTANCE_DEFAULT,esm_sap_msg_p);
+       ^
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/ServiceRequestHdl.c.o
+[ 47%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextModificationFailure.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/TrackingAreaUpdate.c.o
+[ 47%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HFN.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_as.c.o
+[ 47%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c.o
+[ 48%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000OneXMSI.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/EmmCommonProcedureInitiated.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c: In function ‘_emm_cn_pdn_config_res’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c:215:3: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+   esm_get_inplace(emm_ctx->_guti,&esm_p);
+   ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c: In function ‘_emm_cn_activate_dedicated_bearer_req’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c:588:7: warning: unused variable ‘send_res’ [-Wunused-variable]
+   int send_res= itti_send_msg_to_task(TASK_ESM_SAP,INSTANCE_DEFAULT,esm_sap_msg_p);
+       ^
+[ 49%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TraceFailureIndication.c.o
+[ 49%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LastVisitedUTRANCellInformation.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/EmmDeregistered.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/EmmDeregisteredInitiated.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_esm.c.o
+[ 49%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RNC-ID.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_fsm.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_recv.c.o
+[ 49%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NASNonDeliveryIndication.c.o
+[ 49%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_reg.c.o
+[ 49%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ReportIntervalMDT.c.o
+[ 50%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/EmmRegistered.c.o
+[ 50%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_sap.c.o
+[ 51%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UplinkUEAssociatedLPPaTransport.c.o
+[ 51%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_send.c.o
+[ 51%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-BroadcastCancelledAreaList.c.o
+[ 51%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/DedicatedEpsBearerContextActivation.c.o
+[ 51%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EUTRANRoundTripDelayEstimationInfo.c.o
+[ 51%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/DefaultEpsBearerContextActivation.c.o
+[ 51%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAC.c.o
+[ 51%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/EpsBearerContextDeactivation.c.o
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_data_context.c.o
+[ 52%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-S1SetupRequest.c.o
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_data_context.c: In function ‘esm_nas_stop_T3489’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_data_context.c:139:5: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+     esm_get_inplace(guti,&esm_p);
+     ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_data_context.c:141:5: warning: implicit declaration of function ‘esm_remove’ [-Wimplicit-function-declaration]
+     esm_remove(guti);
+     ^
+[ 52%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000RATType.c.o
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr_context.c.o
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_information.c.o
+[ 52%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ReportArea.c.o
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ip.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr_context.c: In function ‘esm_ebr_context_create’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr_context.c:126:3: warning: statement with no effect [-Wunused-value]
+   esm_ctx ;
+   ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr_context.c:127:3: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+   esm_get_inplace(emm_context->_guti,&esm_ctx);
+   ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_information.c: In function ‘esm_proc_esm_information_response’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_information.c:128:3: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+   esm_get_inplace(ue_context->_guti,&esm_p);
+   ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_information.c:156:3: warning: implicit declaration of function ‘esm_nas_stop_T3489’ [-Wimplicit-function-declaration]
+   esm_nas_stop_T3489(ue_context->_guti);
+   ^
+[ 52%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_main.c.o
+[ 53%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBX2ExtTLAs.c.o
+[ 53%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/esm_pt.c.o
+[ 54%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/EsmStatusHdl.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAI-Broadcast-Item.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DeactivateTrace.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/per_opentype.c.o
+[ 54%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnConnectivity.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENB-UE-S1AP-ID.c.o
+[ 54%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnDisconnect.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBConfigurationUpdate.c.o
+[ 54%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupItemHOReq.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnConnectivity.c: In function ‘_pdn_connectivity_create’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnConnectivity.c:372:9: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+         esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
+         ^
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constraints.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnDisconnect.c: In function ‘esm_proc_pdn_disconnect_request’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/PdnDisconnect.c:145:3: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+   esm_get_inplace(emm_context->_guti,&esm_p);
+   ^
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Pre-emptionCapability.c.o
+[ 55%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_recv.c.o
+[ 55%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_send.c.o
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LAC.c.o
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ServedGroupIDs.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_recv.c: In function ‘esm_recv_pdn_connectivity_request’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_recv.c:206:4: warning: implicit declaration of function ‘esm_get_inplace’ [-Wimplicit-function-declaration]
+    esm_get_inplace(emm_context->_guti,&esm_p);
+    ^
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/asn_codecs_prim.c.o
+[ 55%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PS-ServiceNotAvailable.c.o
+[ 55%] Building C object CMakeFiles/LIB_NAS_MME.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_sap.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverCancelAcknowledge.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargeteNB-ID.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Target-ToSource-TransparentContainer.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupListBearerSURes.c.o
+In file included from /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_sap.c:50:0:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_sap.c: In function ‘esm_sap_message_process’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_sap.c:267:40: warning: return makes pointer from integer without a cast [-Wint-conversion]
+       OAILOG_FUNC_RETURN (LOG_NAS_EMM, rc);
+                                        ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.h:314:161: note: in definition of macro ‘OAILOG_FUNC_RETURN’
+ #        define OAILOG_FUNC_RETURN(pRoTo, rEtUrNcOdE)                   do { log_func_return(pRoTo, __FILE__, __LINE__, __FUNCTION__, (long)rEtUrNcOdE); return rEtUrNcOdE;} while(0) /*!< \brief informational */
+                                                                                                                                                                 ^
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_sap.c:177:43: warning: unused variable ‘emm_sap’ [-Wunused-variable]
+   emm_sap_t                               emm_sap = {0};
+                                           ^
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InitialContextSetupRequest.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-S1AP-ID-pair.c.o
+[ 56%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Bearers-SubjectToStatusTransfer-Item.c.o
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABReleaseCommand.c.o
+[ 57%] Linking C static library libLIB_NAS_MME.a
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RAB-ID.c.o
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TraceStart.c.o
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEPagingID.c.o
+[ 57%] Built target LIB_NAS_MME
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/per_encoder.c.o
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-S1AP-IDs.c.o
+[ 57%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LastVisitedGERANCellInformation.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeModifiedItemBearerModReq.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SupportedTAs.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constr_SEQUENCE.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSwitchedULItem.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAIListforWarning.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-OverloadAction.c.o
+[ 58%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PrivacyIndicator.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RelayNode-Indicator.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MME-UE-S1AP-ID.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBX2ExtTLA.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SourceBSS-ToTargetBSS-TransparentContainer.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SecurityKey.c.o
+[ 60%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CNDomain.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SourceeNB-ID.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MDTMode.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000OneXMEID.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EventType.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CompletedCellinTAI-Item.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-OverloadStop.c.o
+[ 61%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellTrafficTrace.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAI-Broadcast.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverCommand.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GUMMEIList.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABFailedToSetupItemHOReqAck.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UERadioCapability.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ExtendedRepetitionPeriod.c.o
+[ 62%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABDataForwardingItem.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MeasurementsToActivate.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LastVisitedCell-Item.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBConfigurationUpdateFailure.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBname.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Bearers-SubjectToStatusTransfer-List.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LoggingDuration.c.o
+[ 63%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ErrorIndication.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellIdListforMDT.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBDirectInformationTransfer.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-OverloadResponse.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextModificationRequest.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABModifyRequest.c.o
+[ 64%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LastVisitedEUTRANCellInformation.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenLACs.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-StratumLevel.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SONInformationRequest.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAIList.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/xer_encoder.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABDataForwardingList.c.o
+[ 65%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ExtendedRNC-ID.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MME-Group-ID.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-IntegrityProtectionAlgorithms.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargetBSS-ToSourceBSS-TransparentContainer.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ProtocolExtensionID.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LPPa-PDU.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-M-TMSI.c.o
+[ 66%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/per_decoder.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UplinkNonUEAssociatedLPPaTransport.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupResponse.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBStatusTransfer.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RIMTransfer.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABReleaseListBearerRelComp.c.o
+[ 67%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ResetType.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverRequired.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000OneXSRVCCInfo.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TimeToWait.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MDT-Configuration.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SupportedTAs-Item.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverRequestAcknowledge.c.o
+[ 68%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Source-ToTarget-TransparentContainer.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SynchronizationStatus.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/converter-sample.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CriticalityDiagnostics-IE-Item.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-AllocationAndRetentionPriority.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenLAs.c.o
+[ 69%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RequestType.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverNotify.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-BitRate.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CauseNas.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellID-Broadcast-Item.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PathSwitchRequestFailure.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GERAN-Cell-ID.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EncryptionAlgorithms.c.o
+[ 70%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Correlation-ID.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellBasedMDT.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenInterRATs.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAListforMDT.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constr_TYPE.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LocationReportingFailureIndication.c.o
+[ 71%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TABasedMDT.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/INTEGER.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TriggeringMessage.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NASSecurityParameterstoE-UTRAN.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/OCTET_STRING.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CauseTransport.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LAI.c.o
+[ 72%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UplinkNASTransport.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-QCI.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ReceiveStatusofULPDCPSDUs.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenTACs.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ProcedureCode.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSwitchedDLItem.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaID-Cancelled.c.o
+[ 73%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SONInformationReply.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SuccessfulOutcome.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-BPLMNs.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WarningAreaList.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellID-Broadcast.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ManagementBasedMDTAllowed.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TimeSynchronizationInfo.c.o
+[ 74%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupItemCtxtSURes.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEAggregateMaximumBitrate.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MeasurementThresholdA2.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaIDList.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ReportingTriggerMDT.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/NativeEnumerated.c.o
+[ 75%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-S1SetupFailure.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Inter-SystemInformationTransferType.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DownlinkUEAssociatedLPPaTransport.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargetRNC-ID.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CriticalityDiagnostics.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAI-Cancelled-Item.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEname.c.o
+[ 76%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-OverloadStart.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Criticality.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TBCD-STRING.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CompletedCellinEAI-Item.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TAI.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CI.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UnsuccessfulOutcome.c.o
+[ 77%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Global-ENB-ID.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CSFallbackIndicator.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEConfigurationUpdateAcknowledge.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEConfigurationUpdateFailure.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TypeOfError.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-IE.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABModifyListBearerModRes.c.o
+[ 78%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverPreparationFailure.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBX2TLAs.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SubscriberProfileIDforRFP.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TraceDepth.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-IMSI.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NumberofBroadcastRequest.c.o
+[ 80%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/asn_SEQUENCE_OF.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextReleaseCommand.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CauseMisc.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000HOStatus.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABItem.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-associatedLogicalS1-ConnectionListResAck.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PathSwitchRequest.c.o
+[ 81%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Routing-ID.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ECGIList.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/ber_decoder.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GBR-QosInformation.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RRC-Container.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000OneXPilot.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000OneXRAND.c.o
+[ 82%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DownlinkNASTransport.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-InitiatingMessage.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellIdentity.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupListCtxtSUReq.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABFailedToSetupListHOReqAck.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/der_encoder.c.o
+[ 83%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-COUNTvalue.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RAC.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Threshold-RSRP.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/per_support.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/NULL.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupItemCtxtSUReq.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UECapabilityInfoIndication.c.o
+[ 84%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CauseRadioNetwork.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverCancel.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-OldBSS-ToNewBSS-Information.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CancelledCellinEAI.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SRVCCOperationPossible.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/asn_SET_OF.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/OBJECT_IDENTIFIER.c.o
+[ 85%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/BOOLEAN.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEStatusTransfer.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargeteNB-ToSourceeNB-TransparentContainer.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/ber_tlv_length.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargetID.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SONInformation.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RelativeMMECapacity.c.o
+[ 86%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MSClassmark2.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverRestrictionList.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEDirectInformationTransfer.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WarningSecurityInfo.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TrafficLoadReductionIndication.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Pre-emptionVulnerability.c.o
+[ 87%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupListHOReq.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABLevelQoSParameters.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABAdmittedList.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/ber_tlv_tag.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextModificationResponse.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RIMRoutingAddress.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CancelledCellinEAI-Item.c.o
+[ 88%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MDT-Activation.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UEContextReleaseRequest.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBConfigurationTransfer.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-KillRequest.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CriticalityDiagnostics-IE-List.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-PLMNidentity.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABInformationListItem.c.o
+[ 89%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SerialNumber.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSwitchedULList.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ENBX2GTPTLAs.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-X2TNLConfigurationInfo.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABReleaseIndication.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LocationReport.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellType.c.o
+[ 90%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-HandoverFailure.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEConfigurationUpdate.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DownlinkS1cdma2000tunneling.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaID.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Data-Forwarding-Not-Possible.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SecurityContext.c.o
+[ 91%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ProtocolIE-ID.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constr_SEQUENCE_OF.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000HORequiredIndication.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/xer_decoder.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cdma2000PDU.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Threshold-RSRQ.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-SONConfigurationTransfer.c.o
+[ 92%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellID-Cancelled.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ImmediateMDT.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ConcurrentWarningMessageIndicator.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-LoggingInterval.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UplinkS1cdma2000tunneling.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Presence.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UESecurityCapabilities.c.o
+[ 93%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-DL-Forwarding.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/ANY.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ForbiddenTAs.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ServedGUMMEIsItem.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABToBeSetupItemBearerSUReq.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WriteReplaceWarningRequest.c.o
+[ 94%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-WarningType.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ResetAcknowledge.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/constr_CHOICE.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABSetupItemBearerSURes.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-E-RABReleaseResponse.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CSG-IdList.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-RRC-Establishment-Cause.c.o
+[ 95%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CellAccessMode.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CSG-IdList-Item.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ServedPLMNs.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-NAS-PDU.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GWContextReleaseIndication.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-TargetRNC-ToSourceRNC-TransparentContainer.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-Cell-Size.c.o
+[ 96%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/xer_support.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-L3-Information.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-EmergencyAreaID-Broadcast-Item.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-MMEConfigurationTransfer.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CancelledCellinTAI.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/PrintableString.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CSGMembershipStatus.c.o
+[ 97%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-ThresholdEventA2.c.o
+[ 98%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-UE-HistoryInformation.c.o
+[ 98%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-AreaScopeOfMDT.c.o
+[ 98%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CGI.c.o
+[ 98%] Building C object CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GTP-TEID.c.o
+[ 98%] Building C object CMakeFiles/S1AP_LIB.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_common.c.o
+[ 98%] Linking C static library libS1AP_LIB.a
+[ 98%] Built target S1AP_LIB
+Scanning dependencies of target mme
+[ 98%] Building C object CMakeFiles/mme.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_mme/oai_mme_log.c.o
+[ 98%] Building C object CMakeFiles/mme.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/common_types.c.o
+[ 98%] Building C object CMakeFiles/mme.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_mme/oai_mme.c.o
+[ 98%] Building C object CMakeFiles/mme.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti_free_defined_msg.c.o
+[ 98%] Building C object CMakeFiles/mme.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_mme_task.c.o
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_mme_task.c: In function ‘nas_intertask_interface’:
+/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/nas/nas_mme_task.c:59:18: warning: unused variable ‘emm_context’ [-Wunused-variable]
+   emm_context_t *emm_context; 
+                  ^
+[100%] Linking C executable mme
+[100%] Built target mme

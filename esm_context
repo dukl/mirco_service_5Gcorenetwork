@@ -1,0 +1,7 @@
+src/nas/esm/esm_data_context.c:7
+src/nas/esm/esm_data.h:9
+src/nas/esm/esm_ebr_context.c:1
+src/nas/emm/emm_data.h:1
+src/nas/emm/emmData.h:1
+src/nas/emm/emm_data_ctx.c:1
+src/mme_app/mme_app_ue_context.h:1

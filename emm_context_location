@@ -1,0 +1,1008 @@
+src/nas/esm/esm_information.c:75:static int _esm_information (emm_context_t * ue_context, ebi_t ebi, esm_ebr_timer_data_t * const data);
+src/nas/esm/esm_information.c:84:int esm_proc_esm_information_request (emm_context_t * const ue_context, const pti_t pti)
+src/nas/esm/esm_information.c:88:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(ue_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/esm_information.c:122:int esm_proc_esm_information_response (emm_context_t * ue_context, pti_t pti, const_bstring const apn, const protocol_configuration_options_t * const pco, esm_cause_t * const esm_cause)
+src/nas/esm/esm_information.c:252:  emm_context_t * ue_context,
+src/nas/esm/esm_information.c:259:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(ue_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/esm_data_context.c:121:    emm_context_t        *emm_context   = PARENT_STRUCT(esm_ctx, struct emm_context_s, esm_ctx);
+src/nas/esm/esm_data_context.c:122:    ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_data_context.c:147:  emm_context_t        *emm_context   = PARENT_STRUCT(esm_context, struct emm_context_s, esm_ctx);
+src/nas/esm/esm_data_context.c:148:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/PdnDisconnect.c:74:extern int _pdn_connectivity_delete (emm_context_t * emm_context, pdn_cid_t pid);
+src/nas/esm/PdnDisconnect.c:89:static int _pdn_disconnect_get_pid (emm_context_t * emm_context, proc_tid_t pti);
+src/nas/esm/PdnDisconnect.c:129:  emm_context_t * emm_context,
+src/nas/esm/PdnDisconnect.c:136:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnDisconnect.c:143:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+src/nas/esm/PdnDisconnect.c:148:    pid = _pdn_disconnect_get_pid (emm_context, pti);
+src/nas/esm/PdnDisconnect.c:195:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnDisconnect.c:245:  emm_context_t * emm_context,
+src/nas/esm/PdnDisconnect.c:253:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnDisconnect.c:261:  emm_sap.u.emm_esm.ctx = emm_context;
+src/nas/esm/PdnDisconnect.c:312:  if (emm_context) {
+src/nas/esm/PdnDisconnect.c:313:    ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_data.h:79:  struct emm_context_s  *ctx;
+src/nas/esm/EsmStatusHdl.c:191:  emm_context_t * const emm_context,
+src/nas/esm/EsmStatusHdl.c:199:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/esm_proc.h:68:struct emm_context_s;
+src/nas/esm/esm_proc.h:73:typedef int (*esm_proc_procedure_t) (const bool, struct emm_context_s * const , const ebi_t, bstring*, const bool);
+src/nas/esm/esm_proc.h:114:int esm_proc_pdn_connectivity_request(emm_context_t * emm_context, const proc_tid_t pti,
+src/nas/esm/esm_proc.h:122:int esm_proc_pdn_connectivity_reject(bool is_standalone, emm_context_t * emm_context,
+src/nas/esm/esm_proc.h:124:int esm_proc_pdn_connectivity_failure(emm_context_t * emm_context, pdn_cid_t pid);
+src/nas/esm/esm_proc.h:132:int esm_proc_pdn_disconnect_request(emm_context_t * emm_context, const proc_tid_t pti, esm_cause_t *esm_cause);
+src/nas/esm/esm_proc.h:134:int esm_proc_pdn_disconnect_accept(emm_context_t * emm_context, pdn_cid_t pid, esm_cause_t *esm_cause);
+src/nas/esm/esm_proc.h:135:int esm_proc_pdn_disconnect_reject(const bool is_standalone, emm_context_t * emm_context,
+src/nas/esm/esm_proc.h:145:int esm_proc_esm_information_request (emm_context_t * const ue_context, const pti_t pti);
+src/nas/esm/esm_proc.h:147:int esm_proc_esm_information_response (emm_context_t * ue_context, pti_t pti, const_bstring const apn, const protocol_configuration_options_t * const pco, esm_cause_t * const esm_cause);
+src/nas/esm/esm_proc.h:154:int esm_proc_default_eps_bearer_context(emm_context_t * emm_context, const proc_tid_t pti,
+src/nas/esm/esm_proc.h:156:int esm_proc_default_eps_bearer_context_request(bool is_standalone, emm_context_t * const emm_context, const ebi_t ebi, STOLEN_REF bstring *msg, const bool ue_triggered);
+src/nas/esm/esm_proc.h:157:int esm_proc_default_eps_bearer_context_failure (emm_context_t * emm_context, pdn_cid_t * const pid);
+src/nas/esm/esm_proc.h:159:int esm_proc_default_eps_bearer_context_accept(emm_context_t * emm_context, ebi_t ebi, esm_cause_t *esm_cause);
+src/nas/esm/esm_proc.h:168:int esm_proc_dedicated_eps_bearer_context(emm_context_t * emm_context, const proc_tid_t pti, pdn_cid_t pid,
+src/nas/esm/esm_proc.h:178:int esm_proc_dedicated_eps_bearer_context_request(const bool is_standalone, emm_context_t * const emm_context, const ebi_t ebi, STOLEN_REF bstring *msg, const bool ue_triggered);
+src/nas/esm/esm_proc.h:181:int esm_proc_dedicated_eps_bearer_context_reject(emm_context_t * emm_context, ebi_t ebi, esm_cause_t *esm_cause);
+src/nas/esm/esm_proc.h:189:int esm_proc_eps_bearer_context_deactivate(emm_context_t * const ue_context,const bool is_local,const ebi_t ebi,pdn_cid_t *pid,int * const bidx, esm_cause_t * const esm_cause);
+src/nas/esm/esm_proc.h:191:pdn_cid_t esm_proc_eps_bearer_context_deactivate_accept(emm_context_t * emm_context, ebi_t ebi, esm_cause_t *esm_cause);
+src/nas/esm/esm_ebr.h:66:int esm_ebr_assign(emm_context_t * emm_context, ebi_t ebi);
+src/nas/esm/esm_ebr.h:67:int esm_ebr_release(emm_context_t * emm_context, ebi_t ebi);
+src/nas/esm/esm_ebr.h:69:int esm_ebr_start_timer(emm_context_t * emm_context, ebi_t ebi, CLONE_REF const_bstring msg,
+src/nas/esm/esm_ebr.h:71:int esm_ebr_stop_timer(emm_context_t * emm_context, ebi_t ebi);
+src/nas/esm/esm_ebr.h:73:ebi_t esm_ebr_get_pending_ebi(emm_context_t * emm_context, esm_ebr_state status);
+src/nas/esm/esm_ebr.h:75:int esm_ebr_set_status(emm_context_t * emm_context, ebi_t ebi, esm_ebr_state status,
+src/nas/esm/esm_ebr.h:77:esm_ebr_state esm_ebr_get_status(emm_context_t * emm_context, ebi_t ebi);
+src/nas/esm/esm_ebr.h:79:bool esm_ebr_is_not_in_use(emm_context_t * emm_context, ebi_t ebi);
+src/nas/esm/esm_ebr_context.c:124:  esm_ctx = &emm_context->esm_ctx;
+src/nas/esm/esm_ebr_context.c:125:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr_context.c:266:  emm_context_t * emm_context,
+src/nas/esm/esm_ebr_context.c:275:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr_context.c:377:          (void)esm_ebr_set_status (emm_context, ue_mm_context->bearer_contexts[idx]->ebi, ESM_EBR_INACTIVE, true);
+src/nas/esm/esm_ebr_context.c:381:          (void)esm_ebr_release (emm_context, ue_mm_context->bearer_contexts[idx]->ebi);
+src/nas/esm/DefaultEpsBearerContextActivation.c:97:  emm_context_t * emm_context,
+src/nas/esm/DefaultEpsBearerContextActivation.c:132:  emm_context_t * emm_context,
+src/nas/esm/DefaultEpsBearerContextActivation.c:146:  *ebi = esm_ebr_assign (emm_context, ESM_EBI_UNASSIGNED);
+src/nas/esm/DefaultEpsBearerContextActivation.c:211:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DefaultEpsBearerContextActivation.c:267:  emm_context_t * emm_context,
+src/nas/esm/DefaultEpsBearerContextActivation.c:273:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DefaultEpsBearerContextActivation.c:286:    rc = esm_ebr_set_status (emm_context, ebi, ESM_EBR_ACTIVE, false);
+src/nas/esm/DefaultEpsBearerContextActivation.c:324:  emm_context_t * emm_context,
+src/nas/esm/DefaultEpsBearerContextActivation.c:337:  rc = esm_ebr_stop_timer (emm_context, ebi);
+src/nas/esm/DefaultEpsBearerContextActivation.c:346:    rc = esm_proc_eps_bearer_context_deactivate (emm_context, true, ebi, &pid, &bid, NULL);
+src/nas/esm/DefaultEpsBearerContextActivation.c:383:int esm_proc_default_eps_bearer_context_failure (emm_context_t * emm_context, pdn_cid_t * const pid)
+src/nas/esm/DefaultEpsBearerContextActivation.c:387:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DefaultEpsBearerContextActivation.c:391:  if (emm_context) {
+src/nas/esm/DefaultEpsBearerContextActivation.c:527:  emm_context_t * emm_context,
+src/nas/esm/DefaultEpsBearerContextActivation.c:534:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DefaultEpsBearerContextActivation.c:545:  emm_sap.u.emm_esm.ctx = emm_context;
+src/nas/esm/DefaultEpsBearerContextActivation.c:554:    rc = esm_ebr_start_timer (emm_context, ebi, *msg, mme_config.nas_config.t3485_sec, _default_eps_bearer_activate_t3485_handler);
+src/nas/esm/PdnConnectivity.c:97:  emm_context_t * emm_context,
+src/nas/esm/PdnConnectivity.c:159:  emm_context_t              * emm_context,
+src/nas/esm/PdnConnectivity.c:173:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnConnectivity.c:192:  rc = _pdn_connectivity_create (emm_context, pti, pdn_cid, context_identifier, apn, pdn_type, pdn_addr, pco, is_emergency);
+src/nas/esm/PdnConnectivity.c:232:  emm_context_t * emm_context,
+src/nas/esm/PdnConnectivity.c:239:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnConnectivity.c:251:    emm_sap.u.emm_esm.ctx = emm_context;
+src/nas/esm/PdnConnectivity.c:288:int esm_proc_pdn_connectivity_failure (emm_context_t * emm_context, pdn_cid_t pdn_cid)
+src/nas/esm/PdnConnectivity.c:292:  mme_ue_s1ap_id_t                               ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/PdnConnectivity.c:298:  pti = _pdn_connectivity_delete (emm_context, pdn_cid);
+src/nas/esm/PdnConnectivity.c:341:  emm_context_t * emm_context,
+src/nas/esm/PdnConnectivity.c:352:  ue_mm_context_t                              *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/PdnConnectivity.c:483:proc_tid_t _pdn_connectivity_delete (emm_context_t * emm_context, pdn_cid_t pdn_cid)
+src/nas/esm/PdnConnectivity.c:487:  if (!emm_context) {
+src/nas/esm/PdnConnectivity.c:511:    ue_mm_context->emm_context.esm_ctx.n_pdns -= 1;
+src/nas/esm/EpsBearerContextDeactivation.c:144:  emm_context_t * const ue_context,
+src/nas/esm/EpsBearerContextDeactivation.c:154:  ue_mm_context_t                        *ue_mm_context = PARENT_STRUCT(ue_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/EpsBearerContextDeactivation.c:244:  emm_context_t * const ue_context,
+src/nas/esm/EpsBearerContextDeactivation.c:251:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(ue_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/EpsBearerContextDeactivation.c:312:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(ue_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/EpsBearerContextDeactivation.c:453:  emm_context_t * ue_context,
+src/nas/esm/esm_ebr_context.h:66:ebi_t esm_ebr_context_release(emm_context_t * emm_context, ebi_t ebi, pdn_cid_t *pid, int *bid);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:136:  emm_context_t * emm_context,
+src/nas/esm/DedicatedEpsBearerContextActivation.c:151:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DedicatedEpsBearerContextActivation.c:158:    *ebi = esm_ebr_assign (emm_context, ESM_EBI_UNASSIGNED);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:165:    *default_ebi = esm_ebr_context_create (emm_context, pti, pid, *ebi, IS_DEFAULT_BEARER_NO, qci, gbr_dl, gbr_ul, mbr_dl, mbr_ul, tft, pco);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:213:  emm_context_t * emm_context,
+src/nas/esm/DedicatedEpsBearerContextActivation.c:228:  rc = _dedicated_eps_bearer_activate (emm_context, ebi, msg);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:234:    rc = esm_ebr_set_status (emm_context, ebi, ESM_EBR_ACTIVE_PENDING, ue_triggered);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:271:  emm_context_t * emm_context,
+src/nas/esm/DedicatedEpsBearerContextActivation.c:277:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DedicatedEpsBearerContextActivation.c:284:  rc = esm_ebr_stop_timer (emm_context, ebi);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:333:  emm_context_t * emm_context,
+src/nas/esm/DedicatedEpsBearerContextActivation.c:338:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DedicatedEpsBearerContextActivation.c:346:  rc = esm_ebr_stop_timer (emm_context, ebi);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:355:    rc = esm_proc_eps_bearer_context_deactivate (emm_context, true, ebi, &pid, &bid, NULL);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:487:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/DedicatedEpsBearerContextActivation.c:489:  bearer_context_t* bearer_context = mme_app_get_bearer_context(PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context), ebi);
+src/nas/esm/DedicatedEpsBearerContextActivation.c:499:  emm_sap.u.emm_esm.ctx   = emm_context;
+src/nas/esm/DedicatedEpsBearerContextActivation.c:517:    rc = esm_ebr_start_timer (emm_context, ebi, msg_dup, mme_config.nas_config.t3485_sec, _dedicated_eps_bearer_activate_t3485_handler);
+src/nas/esm/esm_ebr.c:94:static int                              _esm_ebr_get_available_entry (emm_context_t * emm_context);
+src/nas/esm/esm_ebr.c:167:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:187:    i = _esm_ebr_get_available_entry (emm_context);
+src/nas/esm/esm_ebr.c:238:int esm_ebr_release (emm_context_t * emm_context, ebi_t ebi)
+src/nas/esm/esm_ebr.c:247:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:318:int esm_ebr_start_timer (emm_context_t * emm_context, ebi_t ebi,
+src/nas/esm/esm_ebr.c:333:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:367:      esm_ebr_timer_data->ctx = emm_context;
+src/nas/esm/esm_ebr.c:418:int esm_ebr_stop_timer (emm_context_t * emm_context, ebi_t ebi)
+src/nas/esm/esm_ebr.c:429:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:483:ebi_t esm_ebr_get_pending_ebi (emm_context_t * emm_context, esm_ebr_state status)
+src/nas/esm/esm_ebr.c:489:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:537:  emm_context_t * emm_context,
+src/nas/esm/esm_ebr.c:548:  if (emm_context == NULL) {
+src/nas/esm/esm_ebr.c:556:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:615:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/esm_ebr.c:676:  emm_context_t * emm_context,
+src/nas/esm/esm_ebr.c:679:  ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/esm/sap/esm_sap.c:73:extern int _pdn_connectivity_delete (emm_context_t * ctx, int pid);
+src/nas/esm/sap/esm_sap.c:82:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_sap.c:244:			  //ue_mm_context->emm_context.is_attached = true;
+src/nas/esm/sap/esm_sap.c:346:			  NAS_EMMAS_ESTABLISH_REJ(emmas_rej_p).emm_context=msg->ctx; 
+src/nas/esm/sap/esm_sap.c:555:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_sap.c:655:      esm_cause = esm_recv_activate_default_eps_bearer_context_accept (emm_context, pti, ebi, &esm_msg.activate_default_eps_bearer_context_accept);
+src/nas/esm/sap/esm_sap.c:675:      esm_cause = esm_recv_activate_default_eps_bearer_context_reject (emm_context, pti, ebi, &esm_msg.activate_default_eps_bearer_context_reject);
+src/nas/esm/sap/esm_sap.c:695:      esm_cause = esm_recv_deactivate_eps_bearer_context_accept (emm_context, pti, ebi, &esm_msg.deactivate_eps_bearer_context_accept);
+src/nas/esm/sap/esm_sap.c:715:      esm_cause = esm_recv_activate_dedicated_eps_bearer_context_accept (emm_context, pti, ebi, &esm_msg.activate_dedicated_eps_bearer_context_accept);
+src/nas/esm/sap/esm_sap.c:735:      esm_cause = esm_recv_activate_dedicated_eps_bearer_context_reject (emm_context, pti, ebi, &esm_msg.activate_dedicated_eps_bearer_context_reject);
+src/nas/esm/sap/esm_sap.c:761:        esm_cause = esm_recv_pdn_connectivity_request (emm_context, pti, ebi, &esm_msg.pdn_connectivity_request, &ebi);
+src/nas/esm/sap/esm_sap.c:864:      esm_cause = esm_recv_pdn_disconnect_request (emm_context, pti, ebi, &esm_msg.pdn_disconnect_request, &ebi);
+src/nas/esm/sap/esm_sap.c:964:    rc = (*esm_procedure) (is_standalone, emm_context, ebi, &rsp, triggered_by_ue);
+src/nas/esm/sap/esm_recv.c:125:  rc = esm_proc_status_ind (emm_context, pti, ebi, &esm_cause);
+src/nas/esm/sap/esm_recv.c:164:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:172:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:278:      esm_proc_esm_information_request(emm_context, pti);
+src/nas/esm/sap/esm_recv.c:287:  int pid = esm_proc_pdn_connectivity_request (emm_context, pti, request_type,
+src/nas/esm/sap/esm_recv.c:336:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:344:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:377:  int pid = esm_proc_pdn_disconnect_request (emm_context, pti, &esm_cause);
+src/nas/esm/sap/esm_recv.c:389:    int rc = esm_proc_eps_bearer_context_deactivate (emm_context, false, *linked_ebi, &pid, &bid, &esm_cause);
+src/nas/esm/sap/esm_recv.c:411:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:444:  int pid = esm_proc_esm_information_response (emm_context, pti, msg->accesspointname, &msg->protocolconfigurationoptions, &esm_cause);
+src/nas/esm/sap/esm_recv.c:449:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+src/nas/esm/sap/esm_recv.c:481:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:488:  mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:524:  int rc = esm_proc_default_eps_bearer_context_accept (emm_context, ebi, &esm_cause);
+src/nas/esm/sap/esm_recv.c:557:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:564:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:583:  else if (esm_ebr_is_reserved (ebi) || esm_ebr_is_not_in_use (emm_context, ebi)) {
+src/nas/esm/sap/esm_recv.c:633:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:659:  else if (esm_ebr_is_reserved (ebi) || esm_ebr_is_not_in_use (emm_context, ebi)) {
+src/nas/esm/sap/esm_recv.c:676:  int rc = esm_proc_dedicated_eps_bearer_context_accept (emm_context, ebi, &esm_cause);
+src/nas/esm/sap/esm_recv.c:716:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:735:  else if (esm_ebr_is_reserved (ebi) || esm_ebr_is_not_in_use (emm_context, ebi)) {
+src/nas/esm/sap/esm_recv.c:752:  int rc = esm_proc_dedicated_eps_bearer_context_reject (emm_context, ebi, &esm_cause);
+src/nas/esm/sap/esm_recv.c:784:  emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.c:791:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/esm/sap/esm_recv.c:827:  int pid = esm_proc_eps_bearer_context_deactivate_accept (emm_context, ebi, &esm_cause);
+src/nas/esm/sap/esm_recv.c:833:    int rc = esm_proc_pdn_disconnect_accept (emm_context, pid, &esm_cause);
+src/nas/esm/sap/esm_recv.h:84:esm_cause_t esm_recv_status(emm_context_t * emm_context, proc_tid_t pti, ebi_t ebi,
+src/nas/esm/sap/esm_recv.h:96:esm_cause_t esm_recv_pdn_connectivity_request(emm_context_t * emm_context, proc_tid_t pti, ebi_t ebi,
+src/nas/esm/sap/esm_recv.h:99:esm_cause_t esm_recv_pdn_disconnect_request(emm_context_t * emm_context, proc_tid_t pti, ebi_t ebi,
+src/nas/esm/sap/esm_recv.h:113:esm_cause_t esm_recv_activate_default_eps_bearer_context_reject(emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.h:116:esm_cause_t esm_recv_activate_dedicated_eps_bearer_context_accept(emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.h:119:esm_cause_t esm_recv_activate_dedicated_eps_bearer_context_reject(emm_context_t * emm_context,
+src/nas/esm/sap/esm_recv.h:122:esm_cause_t esm_recv_deactivate_eps_bearer_context_accept(emm_context_t * emm_context, proc_tid_t pti,
+src/nas/esm/sap/esm_sapDef.h:168:struct emm_context_s;
+src/nas/esm/sap/esm_sapDef.h:176:  struct emm_context_s  *ctx;       /* UE MM context                   */
+src/nas/emm/LowerLayer.c:114:    emm_sap.u.emm_reg.ctx = &ue_mm_context->emm_context;
+src/nas/emm/LowerLayer.c:348:    sctx = &ue_mm_context->emm_context._security;
+src/nas/emm/Detach.c:92:  if (!emm_context) {
+src/nas/emm/Detach.c:95:  mme_ue_s1ap_id_t  ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Detach.c:97:  nas_delete_all_emm_procedures(emm_context);
+src/nas/emm/Detach.c:112:  if (emm_context->esm_msg) {
+src/nas/emm/Detach.c:113:    bdestroy(emm_context->esm_msg);
+src/nas/emm/Detach.c:117:  if (emm_fsm_get_state (emm_context) != EMM_DEREGISTERED) {
+src/nas/emm/Detach.c:118:    emm_fsm_set_state (ue_id, emm_context, EMM_DEREGISTERED);
+src/nas/emm/Detach.c:121:  emm_ctx_clear_old_guti(emm_context);
+src/nas/emm/Detach.c:122:  emm_ctx_clear_guti(emm_context);
+src/nas/emm/Detach.c:123:  emm_ctx_clear_imsi(emm_context);
+src/nas/emm/Detach.c:124:  emm_ctx_clear_imei(emm_context);
+src/nas/emm/Detach.c:125:  emm_ctx_clear_auth_vectors(emm_context);
+src/nas/emm/Detach.c:126:  emm_ctx_clear_security(emm_context);
+src/nas/emm/Detach.c:127:  emm_ctx_clear_non_current_security(emm_context);
+src/nas/emm/Detach.c:257:  emm_context_t *emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/TrackingAreaUpdate.c:91:static int _emm_tracking_area_update_abort (struct emm_context_s *emm_context, struct nas_base_proc_s * base_proc);
+src/nas/emm/TrackingAreaUpdate.c:117:    emm_context = &ue_mm_context->emm_context;
+src/nas/emm/TrackingAreaUpdate.c:127:        emm_context = &ue_mm_context->emm_context;
+src/nas/emm/TrackingAreaUpdate.c:166:    OAILOG_DEBUG (LOG_NAS_EMM, "UE context exists: %s\n", emm_context ? "yes" : "no");
+src/nas/emm/TrackingAreaUpdate.c:199:    nas_emm_tau_proc_t    *tau_proc = get_nas_specific_procedure_tau(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:273:  emm_context_t                       *emm_context = (emm_context_t *) (args);
+src/nas/emm/TrackingAreaUpdate.c:275:  if (!(emm_context)) {
+src/nas/emm/TrackingAreaUpdate.c:279:  nas_emm_tau_proc_t    *tau_proc = get_nas_specific_procedure_tau(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:328:static int _emm_tracking_area_update_security (emm_context_t * emm_context)
+src/nas/emm/TrackingAreaUpdate.c:345:  emm_context_t                          *emm_context = NULL;
+src/nas/emm/TrackingAreaUpdate.c:365:    emm_context = &ue_mm_context->emm_context;
+src/nas/emm/TrackingAreaUpdate.c:368:  if (emm_context) {
+src/nas/emm/TrackingAreaUpdate.c:369:     emm_as_set_security_data (&emm_sap.u.emm_as.u.establish.sctx, &emm_context->_security, false, false);
+src/nas/emm/TrackingAreaUpdate.c:376:  if (emm_context) {
+src/nas/emm/TrackingAreaUpdate.c:377:    if(emm_context->is_dynamic) {
+src/nas/emm/TrackingAreaUpdate.c:378:      _clear_emm_ctxt(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:386:/** \fn void _emm_tracking_area_update_accept (emm_context_t * emm_context,tau_data_t * data);
+src/nas/emm/TrackingAreaUpdate.c:388:     @param [in]emm_context UE EMM context data
+src/nas/emm/TrackingAreaUpdate.c:399:  emm_context_t                          *emm_context = NULL;
+src/nas/emm/TrackingAreaUpdate.c:418:      emm_sap.u.emm_as.u.establish.eps_id.guti = &emm_context->_guti;
+src/nas/emm/TrackingAreaUpdate.c:446:      emm_as_set_security_data (&emm_sap.u.emm_as.u.establish.sctx, &emm_context->_security, false, true);
+src/nas/emm/TrackingAreaUpdate.c:449:      emm_sap.u.emm_as.u.establish.encryption = emm_context->_security.selected_algorithms.encryption;
+src/nas/emm/TrackingAreaUpdate.c:468:      nas_delete_tau_procedure(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:491:      emm_as_set_security_data (&emm_as->sctx, &emm_context->_security, false, true);
+src/nas/emm/TrackingAreaUpdate.c:498:      nas_delete_tau_procedure(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:513:  if (emm_context) {
+src/nas/emm/TrackingAreaUpdate.c:514:    nas_emm_tau_proc_t    *tau_proc = get_nas_specific_procedure_tau(emm_context);
+src/nas/emm/TrackingAreaUpdate.c:517:      mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/TrackingAreaUpdate.c:533:      emm_sap.u.emm_reg.ctx = emm_context;
+src/nas/emm/ServiceRequestHdl.c:122:  emm_context_t                          *emm_ctx = emm_context_get (&_emm_data, ue_id);
+src/nas/emm/ServiceRequestHdl.c:155:  emm_context_unlock(emm_ctx);
+src/nas/emm/emm_data.h:123:typedef struct emm_context_s {
+src/nas/emm/emm_data.h:268:  // TODO LG REMOVE hash_table_ts_t             *ctx_coll_ue_id; // key is emm ue id, data is struct emm_context_s
+src/nas/emm/emm_data.h:282:void emm_ctx_set_attribute_present(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:283:void emm_ctx_clear_attribute_present(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:285:void emm_ctx_set_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:286:void emm_ctx_clear_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:288:void emm_ctx_clear_guti(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:289:void emm_ctx_set_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:292:void emm_ctx_clear_old_guti(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:293:void emm_ctx_set_old_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:294:void emm_ctx_set_valid_old_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:296:void emm_ctx_clear_imsi(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:297:void emm_ctx_set_imsi(emm_context_t * const ctxt, imsi_t *imsi, const imsi64_t imsi64) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:298:void emm_ctx_set_valid_imsi(emm_context_t * const ctxt, imsi_t *imsi, const imsi64_t imsi64) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:312:void emm_ctx_clear_auth_vectors(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:313:void emm_ctx_clear_auth_vector(emm_context_t * const ctxt, ksi_t eksi) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:314:void emm_ctx_clear_security(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:315:void emm_ctx_set_security_type(emm_context_t * const ctxt, emm_sc_type_t sc_type) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:316:void emm_ctx_set_security_eksi(emm_context_t * const ctxt, ksi_t eksi) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:317:void emm_ctx_clear_security_vector_index(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:318:void emm_ctx_set_security_vector_index(emm_context_t * const ctxt, int vector_index) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emm_data.h:321:void emm_ctx_clear_non_current_security_vector_index(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:322:void emm_ctx_set_non_current_security_vector_index(emm_context_t * const ctxt, int vector_index)__attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:324:void emm_ctx_clear_ue_nw_cap(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:325:void emm_ctx_set_ue_nw_cap(emm_context_t * const ctxt, const ue_network_capability_t * const ue_nw_cap_ie) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:326:void emm_ctx_set_valid_ue_nw_cap(emm_context_t * const ctxt, const ue_network_capability_t * const ue_nw_cap_ie) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:328:void emm_ctx_clear_ms_nw_cap(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:329:void emm_ctx_set_ms_nw_cap(emm_context_t * const ctxt, const ms_network_capability_t * const ms_nw_cap_ie);
+src/nas/emm/emm_data.h:332:void emm_ctx_clear_drx_parameter(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:333:void emm_ctx_set_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:334:void emm_ctx_set_valid_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:336:struct emm_context_s * emm_context_get (emm_data_t * emm_data, const mme_ue_s1ap_id_t ue_id);
+src/nas/emm/emm_data.h:337:struct emm_context_s *emm_context_get_by_imsi (emm_data_t * emm_data, imsi64_t imsi64);
+src/nas/emm/emm_data.h:338:struct emm_context_s *emm_context_get_by_guti (emm_data_t * emm_data, guti_t * guti);
+src/nas/emm/emm_data.h:339:int                   emm_context_unlock (struct emm_context_s *emm_context_p);
+src/nas/emm/emm_data.h:342:int emm_context_upsert_imsi (emm_data_t * emm_data, struct emm_context_s *elm) __attribute__((nonnull));
+src/nas/emm/emm_data.h:352:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)  __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:353:void emm_context_free(struct emm_context_s * const emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:354:void emm_context_free_content(struct emm_context_s * const emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:355:void emm_context_free_content_except_key_fields(struct emm_context_s * const emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emm_data.h:356:void emm_context_dump (const struct emm_context_s * const elm_pP, const uint8_t indent_spaces, bstring bstr_dump) __attribute__ ((nonnull)) ;
+src/nas/emm/SecurityModeControl.c:164:  struct emm_context_s *emm_ctx,
+src/nas/emm/SecurityModeControl.c:195:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/SecurityModeControl.c:371:  emm_context_t                          *emm_ctx = NULL;
+src/nas/emm/SecurityModeControl.c:381:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/SecurityModeControl.c:581:  emm_context_t                       *emm_ctx = (emm_context_t *) (args);
+src/nas/emm/SecurityModeControl.c:648:  struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/SecurityModeControl.c:678:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/SecurityModeControl.c:714:    mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/SecurityModeControl.c:718:    emm_sap.u.emm_reg.ctx   = emm_context;
+src/nas/emm/SecurityModeControl.c:731:static int _security_non_delivered_ho (emm_context_t * emm_context, struct nas_emm_proc_s *nas_emm_proc)
+src/nas/emm/SecurityModeControl.c:759:static int _security_abort (emm_context_t * emm_context, struct nas_base_proc_s * base_proc)
+src/nas/emm/SecurityModeControl.c:774:    if (emm_context) {
+src/nas/emm/Attach.c:122:static int _emm_start_attach_proc_authentication (emm_context_t *emm_context, nas_emm_attach_proc_t* attach_proc);
+src/nas/emm/Attach.c:123:static int _emm_start_attach_proc_security (emm_context_t *emm_context, nas_emm_attach_proc_t* attach_proc);
+src/nas/emm/Attach.c:125:static int _emm_attach_security (emm_context_t *emm_context);
+src/nas/emm/Attach.c:126:static int _emm_attach (emm_context_t *emm_context);
+src/nas/emm/Attach.c:128:static int _emm_attach_success_identification_cb (emm_context_t *emm_context);
+src/nas/emm/Attach.c:129:static int _emm_attach_failure_identification_cb (emm_context_t *emm_context);
+src/nas/emm/Attach.c:131:static int _emm_attach_failure_authentication_cb (emm_context_t *emm_context);
+src/nas/emm/Attach.c:132:static int _emm_attach_success_security_cb (emm_context_t *emm_context);
+src/nas/emm/Attach.c:133:static int _emm_attach_failure_security_cb (emm_context_t *emm_context);
+src/nas/emm/Attach.c:138:static int _emm_attach_release (emm_context_t *emm_context);
+src/nas/emm/Attach.c:139:static int _emm_attach_abort (struct emm_context_s* emm_context, struct nas_base_proc_s * base_proc);
+src/nas/emm/Attach.c:141:static int _emm_send_attach_accept (emm_context_t * emm_context);
+src/nas/emm/Attach.c:149:static int _emm_attach_update (emm_context_t * const emm_context, emm_attach_request_ies_t * const ies);
+src/nas/emm/Attach.c:151:static int _emm_attach_accept_retx (emm_context_t * emm_context);
+src/nas/emm/Attach.c:215:  ue_ctx.emm_context.is_dynamic = false;
+src/nas/emm/Attach.c:237:    no_attach_proc.emm_cause   = ue_ctx.emm_context.emm_cause;
+src/nas/emm/Attach.c:239:    rc = _emm_attach_reject (&ue_ctx.emm_context, (struct nas_base_proc_s *)&no_attach_proc);
+src/nas/emm/Attach.c:273:        fsm_state = emm_fsm_get_state (&imsi_ue_mm_ctx->emm_context);
+src/nas/emm/Attach.c:274:        if (is_nas_common_procedure_smc_running(&imsi_ue_mm_ctx->emm_context)) {
+src/nas/emm/Attach.c:276:          nas_emm_smc_proc_t * smc_proc = get_nas_common_procedure_smc(&imsi_ue_mm_ctx->emm_context);
+src/nas/emm/Attach.c:293:        nas_emm_attach_proc_t *attach_proc = get_nas_specific_procedure_attach (&imsi_ue_mm_ctx->emm_context);
+src/nas/emm/Attach.c:294:        if (is_nas_common_procedure_identification_running(&imsi_ue_mm_ctx->emm_context)) {
+src/nas/emm/Attach.c:295:          nas_emm_ident_proc_t  *ident_proc = get_nas_common_procedure_identification (&imsi_ue_mm_ctx->emm_context);
+src/nas/emm/Attach.c:326:          if (imsi_ue_mm_ctx->emm_context.is_has_been_attached) {
+src/nas/emm/Attach.c:338:          imsi_ue_mm_ctx->emm_context.num_attach_request++;
+src/nas/emm/Attach.c:351:            emm_sap.u.emm_reg.ctx   = &imsi_ue_mm_ctx->emm_context;
+src/nas/emm/Attach.c:364:            imsi_ue_mm_ctx->emm_context.num_attach_request++;
+src/nas/emm/Attach.c:372:            _emm_attach_accept_retx(&imsi_ue_mm_ctx->emm_context);
+src/nas/emm/Attach.c:395:            emm_sap.u.emm_reg.ctx   = &imsi_ue_mm_ctx->emm_context;
+src/nas/emm/Attach.c:434://    new_emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Attach.c:437://    no_attach_proc.emm_cause   = ue_ctx.emm_context.emm_cause;
+src/nas/emm/Attach.c:452://    esm_sap.ctx = &new_ue_mm_context->emm_context;
+src/nas/emm/Attach.c:463://    emm_sap.u.emm_reg.ctx = &new_ue_mm_context->emm_context;
+src/nas/emm/Attach.c:466://    _clear_emm_ctxt(&new_ue_mm_context->emm_context);
+src/nas/emm/Attach.c:475:    new_emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Attach.c:485:  if (!is_nas_specific_procedure_attach_running(&ue_mm_context->emm_context)) {
+src/nas/emm/Attach.c:488:  rc = _emm_attach_run_procedure (&ue_mm_context->emm_context); 
+src/nas/emm/Attach.c:521:    if (is_nas_specific_procedure_attach_running (&ue_mm_context->emm_context)) {
+src/nas/emm/Attach.c:522:      nas_emm_attach_proc_t     *attach_proc = (nas_emm_attach_proc_t*)ue_mm_context->emm_context.emm_procedures->emm_specific_proc;
+src/nas/emm/Attach.c:528:      emm_sap.u.emm_reg.ctx = &ue_mm_context->emm_context;
+src/nas/emm/Attach.c:582:    if (is_nas_specific_procedure_attach_running (&ue_mm_context->emm_context)) {
+src/nas/emm/Attach.c:583:      attach_proc = (nas_emm_attach_proc_t*)ue_mm_context->emm_context.emm_procedures->emm_specific_proc;
+src/nas/emm/Attach.c:591:      // TODO LG REMOVE emm_context_add_guti(&_emm_data, &ue_mm_context->emm_context);
+src/nas/emm/Attach.c:592:      emm_ctx_clear_old_guti(&ue_mm_context->emm_context);
+src/nas/emm/Attach.c:629:  nas_emm_attach_proc_t *attach_proc = nas_new_attach_procedure(&ue_mm_context->emm_context);
+src/nas/emm/Attach.c:669:  emm_context_t                          *emm_context = (emm_context_t *) (args);
+src/nas/emm/Attach.c:671:  if (is_nas_specific_procedure_attach_running (emm_context)) {
+src/nas/emm/Attach.c:672:    nas_emm_attach_proc_t *attach_proc = get_nas_specific_procedure_attach (emm_context);
+src/nas/emm/Attach.c:687:      _emm_attach_accept_retx (emm_context);
+src/nas/emm/Attach.c:696:      emm_sap.u.emm_reg.ctx   = emm_context;
+src/nas/emm/Attach.c:713:  if (emm_context) {
+src/nas/emm/Attach.c:714:    mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Attach.c:746:	emm_context_t * emm_context;
+src/nas/emm/Attach.c:747:	emm_context=msg->emm_context;
+src/nas/emm/Attach.c:749:        attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:762:int _emm_attach_reject (emm_context_t *emm_context, struct nas_base_proc_s * nas_base_proc)
+src/nas/emm/Attach.c:796:  if (emm_context) {
+src/nas/emm/Attach.c:797:    emm_as_set_security_data (&emm_sap.u.emm_as.u.establish.sctx, &emm_context->_security, false, false);
+src/nas/emm/Attach.c:826:  nas_emm_attach_proc_t *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:829:    mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Attach.c:855:static int _emm_attach_run_procedure(emm_context_t *emm_context)
+src/nas/emm/Attach.c:859:  nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:864:    emm_ctx_set_valid_lvr_tai(emm_context, attach_proc->ies->last_visited_registered_tai);
+src/nas/emm/Attach.c:865:    emm_ctx_set_valid_ue_nw_cap(emm_context, &attach_proc->ies->ue_network_capability);
+src/nas/emm/Attach.c:867:      emm_ctx_set_valid_ms_nw_cap(emm_context, attach_proc->ies->ms_network_capability);
+src/nas/emm/Attach.c:869:    emm_context->originating_tai = *attach_proc->ies->originating_tai;
+src/nas/emm/Attach.c:872:    emm_ctx_clear_security(emm_context);
+src/nas/emm/Attach.c:878:        emm_ctx_set_valid_imsi(emm_context, attach_proc->ies->imsi, imsi64);
+src/nas/emm/Attach.c:879:        emm_context_upsert_imsi(&_emm_data, emm_context);
+src/nas/emm/Attach.c:881:        rc = _emm_start_attach_proc_authentication (emm_context, attach_proc);
+src/nas/emm/Attach.c:884:        rc = emm_proc_identification (emm_context, (nas_emm_proc_t *)attach_proc, IDENTITY_TYPE_2_IMSI, _emm_attach_success_identification_cb, _emm_attach_failure_identification_cb);
+src/nas/emm/Attach.c:887:      rc = emm_proc_identification (emm_context, (nas_emm_proc_t *)attach_proc, IDENTITY_TYPE_2_IMSI, _emm_attach_success_identification_cb, _emm_attach_failure_identification_cb);
+src/nas/emm/Attach.c:897:static int _emm_attach_success_identification_cb (emm_context_t *emm_context)
+src/nas/emm/Attach.c:912:static int _emm_attach_failure_identification_cb (emm_context_t *emm_context)
+src/nas/emm/Attach.c:921:static int _emm_start_attach_proc_authentication (emm_context_t *emm_context, nas_emm_attach_proc_t* attach_proc)
+src/nas/emm/Attach.c:926:  if ((emm_context) && (attach_proc)) {
+src/nas/emm/Attach.c:927:    rc = emm_proc_authentication (emm_context, &attach_proc->emm_spec_proc, _emm_attach_success_authentication_cb, _emm_attach_failure_authentication_cb);
+src/nas/emm/Attach.c:933:static int _emm_attach_success_authentication_cb (emm_context_t *emm_context)
+src/nas/emm/Attach.c:938:  nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:942:    rc = _emm_start_attach_proc_security (emm_context, attach_proc);
+src/nas/emm/Attach.c:948:static int _emm_attach_failure_authentication_cb (emm_context_t *emm_context)
+src/nas/emm/Attach.c:952:  nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:955:    attach_proc->emm_cause = emm_context->emm_cause;
+src/nas/emm/Attach.c:958:    rc = _emm_attach_reject (emm_context, &attach_proc->emm_spec_proc.emm_proc.base_proc);
+src/nas/emm/Attach.c:963:    emm_sap.u.emm_reg.ctx                  = emm_context;
+src/nas/emm/Attach.c:974:static int _emm_start_attach_proc_security (emm_context_t *emm_context, nas_emm_attach_proc_t* attach_proc)
+src/nas/emm/Attach.c:979:  if ((emm_context) && (attach_proc)) {
+src/nas/emm/Attach.c:981:    mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Attach.c:985:    emm_ctx_clear_security(emm_context);
+src/nas/emm/Attach.c:986:    rc = emm_proc_security_mode_control (emm_context, &attach_proc->emm_spec_proc, attach_proc->ksi, _emm_attach_success_security_cb, _emm_attach_failure_security_cb);
+src/nas/emm/Attach.c:999:      emm_sap.u.emm_reg.ctx                  = emm_context;
+src/nas/emm/Attach.c:1116:    emm_ctx_clear_security(emm_context);
+src/nas/emm/Attach.c:1135:      emm_sap.u.emm_reg.ctx                  = emm_context;
+src/nas/emm/Attach.c:1174:static int _emm_attach (emm_context_t *emm_context)
+src/nas/emm/Attach.c:1178:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Attach.c:1183:  nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:1197:	ESM_DATA_IND(esm_sap_msg_p).ctx =  emm_context;
+src/nas/emm/Attach.c:1216://        rc = _emm_attach_reject (emm_context, &attach_proc->emm_spec_proc.emm_proc.base_proc);
+src/nas/emm/Attach.c:1227:      rc = _emm_send_attach_accept(emm_context);
+src/nas/emm/Attach.c:1247:int emm_cn_wrapper_attach_accept (emm_context_t * emm_context)
+src/nas/emm/Attach.c:1249:  return _emm_send_attach_accept (emm_context);
+src/nas/emm/Attach.c:1267:static int _emm_send_attach_accept (emm_context_t * emm_context)
+src/nas/emm/Attach.c:1273:  if (emm_context) {
+src/nas/emm/Attach.c:1275:    nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:1276:    ue_mm_context_t                        *ue_mm_context_p = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/emm/Attach.c:1281:      _emm_attach_update(emm_context, attach_proc->ies);
+src/nas/emm/Attach.c:1297:      emm_ctx_set_attribute_valid(emm_context, EMM_CTXT_MEMBER_UE_NETWORK_CAPABILITY_IE);
+src/nas/emm/Attach.c:1298:      emm_ctx_set_attribute_valid(emm_context, EMM_CTXT_MEMBER_MS_NETWORK_CAPABILITY_IE);
+src/nas/emm/Attach.c:1317:        rc = mme_api_new_guti (&emm_context->_imsi, &old_guti, &guti, &emm_context->originating_tai, &emm_context->_tai_list);
+src/nas/emm/Attach.c:1319:          emm_ctx_set_guti(emm_context, &guti);
+src/nas/emm/Attach.c:1324:          memcpy(&emm_sap.u.emm_as.u.establish.tai_list, &emm_context->_tai_list, sizeof(tai_list_t));
+src/nas/emm/Attach.c:1334:    emm_sap.u.emm_as.u.establish.eps_id.guti = &emm_context->_guti;
+src/nas/emm/Attach.c:1336:    if (!IS_EMM_CTXT_VALID_GUTI(emm_context) &&
+src/nas/emm/Attach.c:1337:         IS_EMM_CTXT_PRESENT_GUTI(emm_context) &&
+src/nas/emm/Attach.c:1338:         IS_EMM_CTXT_PRESENT_OLD_GUTI(emm_context)) {
+src/nas/emm/Attach.c:1345:      emm_sap.u.emm_as.u.establish.new_guti    = &emm_context->_guti;
+src/nas/emm/Attach.c:1346:    } else if (!IS_EMM_CTXT_VALID_GUTI(emm_context) &&
+src/nas/emm/Attach.c:1347:        IS_EMM_CTXT_PRESENT_GUTI(emm_context)) {
+src/nas/emm/Attach.c:1352:      emm_sap.u.emm_as.u.establish.new_guti    = &emm_context->_guti;
+src/nas/emm/Attach.c:1371:    emm_as_set_security_data (&emm_sap.u.emm_as.u.establish.sctx, &emm_context->_security, false, true);
+src/nas/emm/Attach.c:1372:    emm_sap.u.emm_as.u.establish.encryption = emm_context->_security.selected_algorithms.encryption;
+src/nas/emm/Attach.c:1373:    emm_sap.u.emm_as.u.establish.integrity = emm_context->_security.selected_algorithms.integrity;
+src/nas/emm/Attach.c:1375:        ue_id, emm_sap.u.emm_as.u.establish.encryption, emm_context->_security.selected_algorithms.encryption);
+src/nas/emm/Attach.c:1377:        ue_id, emm_sap.u.emm_as.u.establish.integrity, emm_context->_security.selected_algorithms.integrity);
+src/nas/emm/Attach.c:1421:static int _emm_attach_accept_retx (emm_context_t * emm_context)
+src/nas/emm/Attach.c:1428:  if (!emm_context) {
+src/nas/emm/Attach.c:1433:  ue_mm_context_t                        *ue_mm_context_p = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
+src/nas/emm/Attach.c:1435:  nas_emm_attach_proc_t                  *attach_proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/emm/Attach.c:1438:    if (!IS_EMM_CTXT_PRESENT_GUTI(emm_context)) {
+src/nas/emm/Attach.c:1451:    emm_sap.u.emm_as.u.data.eps_id.guti = &emm_context->_guti;
+src/nas/emm/Attach.c:1453:    emm_sap.u.emm_as.u.data.new_guti    = &emm_context->_guti;
+src/nas/emm/Attach.c:1458:    emm_as_set_security_data (&emm_sap.u.emm_as.u.data.sctx, &emm_context->_security, false, true);
+src/nas/emm/Attach.c:1459:    emm_sap.u.emm_as.u.data.encryption = emm_context->_security.selected_algorithms.encryption;
+src/nas/emm/Attach.c:1746:static int _emm_attach_update (emm_context_t * const emm_context, emm_attach_request_ies_t * const ies)
+src/nas/emm/Attach.c:1755:  emm_context->is_emergency = (ies->type == EMM_ATTACH_TYPE_EMERGENCY);
+src/nas/emm/Attach.c:1759:  if (emm_context->ksi != ies->ksi) {
+src/nas/emm/Attach.c:1761:    emm_context->ksi = ies->ksi;
+src/nas/emm/Attach.c:1766:  emm_ctx_set_valid_ue_nw_cap(emm_context, &ies->ue_network_capability);
+src/nas/emm/Attach.c:1769:    emm_ctx_set_valid_ms_nw_cap(emm_context, ies->ms_network_capability);
+src/nas/emm/Attach.c:1772:    emm_ctx_clear_ms_nw_cap(emm_context);
+src/nas/emm/Attach.c:1775:  emm_context->originating_tai = *ies->originating_tai;
+src/nas/emm/Attach.c:1776:  emm_context->is_guti_based_attach = false;
+src/nas/emm/Attach.c:1782:   emm_context->is_guti_based_attach = true;
+src/nas/emm/Attach.c:1789:    if (new_imsi64 != emm_context->_imsi64) {
+src/nas/emm/Attach.c:1798:    emm_ctx_set_valid_imei(emm_context, ies->imei);
+src/nas/emm/emmData.h:284:} emm_context_t;
+src/nas/emm/emmData.h:311:bool emm_ctx_is_common_procedure_running(emm_context_t * const ctxt, const int proc_id) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:314:void emm_ctx_mark_specific_procedure_running(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:315:void emm_ctx_unmark_specific_procedure_running(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:316:bool emm_ctx_is_specific_procedure_running(emm_context_t * const ctxt, const int proc_id) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:319:void emm_ctx_set_attribute_present(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:322:void emm_ctx_set_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:323:void emm_ctx_clear_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:325:void emm_ctx_clear_guti(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:326:void emm_ctx_set_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:327:void emm_ctx_set_valid_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:329:void emm_ctx_clear_old_guti(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:331:void emm_ctx_set_valid_old_guti(emm_context_t * const ctxt, guti_t *guti) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:333:void emm_ctx_clear_imsi(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:334:void emm_ctx_set_imsi(emm_context_t * const ctxt, imsi_t *imsi, const imsi64_t imsi64) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:335:void emm_ctx_set_valid_imsi(emm_context_t * const ctxt, imsi_t *imsi, const imsi64_t imsi64) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:337:void emm_ctx_clear_imei(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:338:void emm_ctx_set_imei(emm_context_t * const ctxt, imei_t *imei) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:339:void emm_ctx_set_valid_imei(emm_context_t * const ctxt, imei_t *imei) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:341:void emm_ctx_clear_imeisv(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:342:void emm_ctx_set_imeisv(emm_context_t * const ctxt, imeisv_t *imeisv) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:343:void emm_ctx_set_valid_imeisv(emm_context_t * const ctxt, imeisv_t *imeisv) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:345:void emm_ctx_clear_lvr_tai(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:346:void emm_ctx_set_lvr_tai(emm_context_t * const ctxt, tai_t *lvr_tai) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:347:void emm_ctx_set_valid_lvr_tai(emm_context_t * const ctxt, tai_t *lvr_tai) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:349:void emm_ctx_clear_auth_vectors(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:351:void emm_ctx_clear_security(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:352:void emm_ctx_set_security_type(emm_context_t * const ctxt, emm_sc_type_t sc_type) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:353:void emm_ctx_set_security_eksi(emm_context_t * const ctxt, ksi_t eksi) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:354:void emm_ctx_clear_security_vector_index(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:355:void emm_ctx_set_security_vector_index(emm_context_t * const ctxt, int vector_index) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:357:void emm_ctx_clear_non_current_security(emm_context_t * const ctxt) __attribute__ ((nonnull)) __attribute__ ((flatten));
+src/nas/emm/emmData.h:358:void emm_ctx_clear_non_current_security_vector_index(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:359:void emm_ctx_set_non_current_security_vector_index(emm_context_t * const ctxt, int vector_index)__attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:361:void emm_ctx_clear_ue_nw_cap(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:362:void emm_ctx_set_ue_nw_cap(emm_context_t * const ctxt, const ue_network_capability_t * const ue_nw_cap_ie) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:363:void emm_ctx_set_valid_ue_nw_cap(emm_context_t * const ctxt, const ue_network_capability_t * const ue_nw_cap_ie) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:365:void emm_ctx_clear_ms_nw_cap(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:366:void emm_ctx_set_ms_nw_cap(emm_context_t * const ctxt, const ms_network_capability_t * const ms_nw_cap_ie);
+src/nas/emm/emmData.h:367:void emm_ctx_set_valid_ms_nw_cap(emm_context_t * const ctxt, const ms_network_capability_t * const ms_nw_cap_ie);
+src/nas/emm/emmData.h:369:void emm_ctx_clear_current_drx_parameter(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:371:void emm_ctx_set_valid_current_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:373:void emm_ctx_clear_pending_current_drx_parameter(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:374:void emm_ctx_set_pending_current_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:375:void emm_ctx_set_valid_pending_current_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:377:void emm_ctx_clear_eps_bearer_context_status(emm_context_t * const ctxt) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:378:void emm_ctx_set_eps_bearer_context_status(emm_context_t * const ctxt, eps_bearer_context_status_t *status) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:379:void emm_ctx_set_valid_eps_bearer_context_status(emm_context_t * const ctxt, eps_bearer_context_status_t *status) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:383:int  emm_context_add_guti (emm_data_t * emm_data, struct emm_context_s *elm) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:384:int  emm_context_add_old_guti (emm_data_t * emm_data, struct emm_context_s *elm) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:385:int  emm_context_add_imsi (emm_data_t * emm_data, struct emm_context_s *elm) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:387:void emm_context_silently_reset_procedures (struct emm_context_s *emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:388:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)  __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:389:void emm_context_stop_all_timers (struct emm_context_s *emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:391:void emm_context_free_content(struct emm_context_s * const emm_ctx) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:392:void emm_context_dump (const struct emm_context_s * const elm_pP, const uint8_t indent_spaces, bstring bstr_dump) __attribute__ ((nonnull)) ;
+src/nas/emm/emmData.h:394:struct emm_context_s *emm_data_context_get(
+src/nas/emm/emmData.h:397:struct emm_context_s *emm_data_context_get_by_imsi (
+src/nas/emm/EmmStatusHdl.c:141:  struct emm_context_s              *ctx = NULL;
+src/nas/emm/EmmStatusHdl.c:154:    ctx = &ue_mm_context->emm_context;
+src/nas/emm/emm_proc.h:184:int _emm_attach_reject (emm_context_t *emm_context, struct nas_base_proc_s * nas_base_proc);
+src/nas/emm/emm_proc.h:221:struct emm_context_s;
+src/nas/emm/emm_proc.h:225:  struct emm_context_s     * const emm_context,
+src/nas/emm/emm_proc.h:244:  struct emm_context_s *emm_context,
+src/nas/emm/emm_proc.h:254:  struct emm_context_s *emm_context,
+src/nas/emm/emm_proc.h:265:int emm_attach_security(struct emm_context_s *emm_context);
+src/nas/emm/emm_proc.h:274:  struct emm_context_s *emm_context,
+src/nas/emm/emm_proc.h:283:_clear_emm_ctxt(emm_context_t *emm_ctx);
+src/nas/emm/Identification.c:87:static int _identification_ll_failure (struct emm_context_s *emm_context, struct nas_emm_proc_s * emm_proc);
+src/nas/emm/Identification.c:88:static int _identification_non_delivered_ho (struct emm_context_s *emm_context, struct nas_emm_proc_s * emm_proc);
+src/nas/emm/Identification.c:89:static int _identification_abort (struct emm_context_s *emm_context, struct nas_base_proc_s* base_proc);
+src/nas/emm/Identification.c:135:  struct emm_context_s     * const emm_context,
+src/nas/emm/Identification.c:144:  if ((emm_context) && ((EMM_DEREGISTERED == emm_context->_emm_fsm_state) || (EMM_REGISTERED == emm_context->_emm_fsm_state))){
+src/nas/emm/Identification.c:147:    mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Identification.c:149:    OAILOG_INFO (LOG_NAS_EMM, "EMM-PROC  - Initiate identification type = %s (%d), ctx = %p\n", _emm_identity_type_str[type], type, emm_context);
+src/nas/emm/Identification.c:151:    nas_emm_ident_proc_t * ident_proc = nas_new_identification_procedure(emm_context);
+src/nas/emm/Identification.c:163:      ident_proc->emm_com_proc.emm_proc.previous_emm_fsm_state  = emm_fsm_get_state(emm_context);
+src/nas/emm/Identification.c:184:      emm_sap.u.emm_reg.ctx   = emm_context;
+src/nas/emm/Identification.c:226:  emm_context_t                          *emm_ctx = NULL;
+src/nas/emm/Identification.c:233:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Identification.c:322:  emm_context_t                       *emm_ctx = (emm_context_t *) (args);
+src/nas/emm/Identification.c:393:  struct emm_context_s              *emm_ctx = NULL;
+src/nas/emm/Identification.c:397:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Identification.c:435:static int _identification_ll_failure (struct emm_context_s *emm_context, struct nas_emm_proc_s * emm_proc)
+src/nas/emm/Identification.c:439:  if ((emm_context) && (emm_proc)) {
+src/nas/emm/Identification.c:441:    nas_delete_all_emm_procedures(emm_context);
+src/nas/emm/Identification.c:448:static int _identification_non_delivered_ho (struct emm_context_s *emm_context, struct nas_emm_proc_s * emm_proc)
+src/nas/emm/Identification.c:452:  if ((emm_context) && (emm_proc)) {
+src/nas/emm/Identification.c:471:static int _identification_abort (struct emm_context_s *emm_context, struct nas_base_proc_s* base_proc)
+src/nas/emm/Identification.c:476:  if ((emm_context) && (base_proc)) {
+src/nas/emm/Authentication.c:111:static int _authentication_check_imsi_5_4_2_5__1_fail (struct emm_context_s *emm_context);
+src/nas/emm/Authentication.c:113:static int _authentication_reject (struct emm_context_s *emm_context, struct nas_base_proc_s * base_proc);
+src/nas/emm/Authentication.c:159:  struct emm_context_s *emm_context,
+src/nas/emm/Authentication.c:171:  if ((emm_context) && ((EMM_DEREGISTERED == emm_context->_emm_fsm_state) || (EMM_REGISTERED == emm_context->_emm_fsm_state))){
+src/nas/emm/Authentication.c:172:    mme_ue_s1ap_id_t  ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Authentication.c:175:    nas_emm_auth_proc_t * auth_proc = get_nas_common_procedure_authentication(emm_context);
+src/nas/emm/Authentication.c:177:      auth_proc = nas_new_authentication_procedure(emm_context);
+src/nas/emm/Authentication.c:226:      emm_sap.u.emm_reg.ctx   = emm_context;
+src/nas/emm/Authentication.c:237:  struct emm_context_s *emm_context,
+src/nas/emm/Authentication.c:245:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Authentication.c:246:  nas_emm_auth_proc_t * auth_proc = get_nas_common_procedure_authentication(emm_context);
+src/nas/emm/Authentication.c:248:    auth_proc = nas_new_authentication_procedure(emm_context);
+src/nas/emm/Authentication.c:264:    auth_proc->emm_com_proc.emm_proc.previous_emm_fsm_state  = emm_fsm_get_state(emm_context);
+src/nas/emm/Authentication.c:275:    if (!IS_EMM_CTXT_VALID_AUTH_VECTORS(emm_context)) {
+src/nas/emm/Authentication.c:277:      nas_auth_info_proc_t * auth_info_proc = get_nas_cn_procedure_auth_info(emm_context);
+src/nas/emm/Authentication.c:279:        auth_info_proc = nas_new_cn_auth_info_procedure(emm_context);
+src/nas/emm/Authentication.c:287:      if (emm_context->_security.eksi < KSI_NO_KEY_AVAILABLE) {
+src/nas/emm/Authentication.c:289:        eksi = (emm_context->_security.eksi + 1) % (EKSI_MAX_VALUE + 1);
+src/nas/emm/Authentication.c:292:        if (IS_EMM_CTXT_VALID_AUTH_VECTOR(emm_context, (eksi % MAX_EPS_AUTH_VECTORS))) {
+src/nas/emm/Authentication.c:297:      if (!IS_EMM_CTXT_VALID_AUTH_VECTOR(emm_context, (eksi % MAX_EPS_AUTH_VECTORS))) {
+src/nas/emm/Authentication.c:316:static int _start_authentication_information_procedure(struct emm_context_s *emm_context, nas_emm_auth_proc_t * const auth_proc, const_bstring auts)
+src/nas/emm/Authentication.c:319:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Authentication.c:321:  nas_auth_info_proc_t * auth_info_proc = get_nas_cn_procedure_auth_info(emm_context);
+src/nas/emm/Authentication.c:323:    auth_info_proc = nas_new_cn_auth_info_procedure(emm_context);
+src/nas/emm/Authentication.c:336:  visited_plmn.mcc_digit1 = emm_context->originating_tai.mcc_digit1;
+src/nas/emm/Authentication.c:337:  visited_plmn.mcc_digit2 = emm_context->originating_tai.mcc_digit2;
+src/nas/emm/Authentication.c:338:  visited_plmn.mcc_digit3 = emm_context->originating_tai.mcc_digit3;
+src/nas/emm/Authentication.c:339:  visited_plmn.mnc_digit1 = emm_context->originating_tai.mnc_digit1;
+src/nas/emm/Authentication.c:341:  visited_plmn.mnc_digit3 = emm_context->originating_tai.mnc_digit3;
+src/nas/emm/Authentication.c:346:  nas_start_Ts6a_auth_info (auth_info_proc->ue_id, &auth_info_proc->timer_s6a, auth_info_proc->cn_proc.base_proc.time_out, emm_context);
+src/nas/emm/Authentication.c:348:  nas_itti_auth_info_req (ue_id, &emm_context->_imsi, is_initial_req, &visited_plmn, MAX_EPS_AUTH_VECTORS, auts);
+src/nas/emm/Authentication.c:354:static int _start_authentication_information_procedure_synch(struct emm_context_s *emm_context, nas_emm_auth_proc_t * const auth_proc, const_bstring auts)
+src/nas/emm/Authentication.c:358:  nas_auth_info_proc_t * auth_info_proc = get_nas_cn_procedure_auth_info(emm_context);
+src/nas/emm/Authentication.c:362:    auth_info_proc = nas_new_cn_auth_info_procedure(emm_context);
+src/nas/emm/Authentication.c:364:    _start_authentication_information_procedure(emm_context, auth_proc, auts);
+src/nas/emm/Authentication.c:372:static int _auth_info_proc_success_cb (struct emm_context_s *emm_ctx)
+src/nas/emm/Authentication.c:376:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Authentication.c:483:static int _auth_info_proc_failure_cb (struct emm_context_s *emm_ctx)
+src/nas/emm/Authentication.c:487:  mme_ue_s1ap_id_t                        ue_id = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/Authentication.c:535:  emm_context_t   *emm_ctx = NULL;
+src/nas/emm/Authentication.c:546:  emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Authentication.c:751:  emm_context_t *emm_ctx = NULL;
+src/nas/emm/Authentication.c:826:  emm_context_t                       *emm_ctx = (emm_context_t *) (args);
+src/nas/emm/Authentication.c:882:static int _authentication_check_imsi_5_4_2_5__1 (struct emm_context_s *emm_context)
+src/nas/emm/Authentication.c:886:   if (!(emm_context)) {
+src/nas/emm/Authentication.c:894:    if (IS_EMM_CTXT_VALID_IMSI(emm_context)) { // VALID means received in IDENTITY RESPONSE
+src/nas/emm/Authentication.c:896:      if (memcmp(auth_proc->unchecked_imsi, &emm_context->_imsi, sizeof(imsi_t))) {
+src/nas/emm/Authentication.c:899:        emm_ctx_clear_auth_vectors(emm_context);
+src/nas/emm/Authentication.c:915:        rc = emm_proc_authentication (emm_context, emm_specific_proc, success_cb, failure_cb);
+src/nas/emm/Authentication.c:923:    emm_sap.u.emm_reg.ctx       = emm_context;
+src/nas/emm/Authentication.c:934:static int _authentication_check_imsi_5_4_2_5__1_fail (struct emm_context_s *emm_context)
+src/nas/emm/Authentication.c:937:  if (!(emm_context)) {
+src/nas/emm/Authentication.c:941:  nas_emm_auth_proc_t * auth_proc = get_nas_common_procedure_authentication(emm_context);
+src/nas/emm/Authentication.c:948:    emm_sap.u.emm_reg.ctx       = emm_context;
+src/nas/emm/Authentication.c:977:  struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/Authentication.c:998:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/Authentication.c:1118:static int _authentication_non_delivered_ho (struct emm_context_s *emm_context, struct nas_emm_proc_s * emm_proc)
+src/nas/emm/Authentication.c:1122:  if ((emm_proc) && (emm_context)) {
+src/nas/emm/Authentication.c:1145:static int _authentication_abort (emm_context_t *emm_ctx, struct nas_base_proc_s * base_proc)
+src/nas/emm/Authentication.c:1152:    ue_mm_context_t *ue_mm_context = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context);
+src/nas/emm/sap/emm_recv.c:87:  emm_context_t * emm_ctx);
+src/nas/emm/sap/emm_recv.c:643:  emm_context_t * emm_ctx = NULL;
+src/nas/emm/sap/emm_recv.c:653:  emm_ctx = emm_context_get (&_emm_data,ue_id);
+src/nas/emm/sap/emm_recv.c:665:  emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_cn.c:78:extern int emm_cn_wrapper_attach_accept (emm_context_t * emm_context);
+src/nas/emm/sap/emm_cn.c:115:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_cn.c:137:  emm_context_t                          *emm_ctx = NULL;
+src/nas/emm/sap/emm_cn.c:146:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_cn.c:191:  struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_cn.c:331:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_cn.c:473:  struct emm_context_s                   *emm_ctx_p = NULL;
+src/nas/emm/sap/emm_cn.c:476:  emm_ctx_p = emm_context_get (&_emm_data, msg->ue_id);
+src/nas/emm/sap/emm_cn.c:524:  emm_context_unlock(emm_ctx_p);
+src/nas/emm/sap/emm_cn.c:542:  ESM_DATA_IND(esm_sap_msg_p).ctx =  &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:322:  emm_context_t     *emm_ctx =  NULL;
+src/nas/emm/sap/emm_as.c:325:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:594:  struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1143:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1147:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:1237:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1241:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:1395:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1492:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1497:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:1568:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1572:      emm_ctx = &ue_mm_context->emm_context;
+src/nas/emm/sap/emm_as.c:1647:  struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_as.c:1649:  emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+src/nas/emm/sap/emm_as.c:1697:    emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_as.c:1799:    struct emm_context_s                   *emm_ctx = NULL;
+src/nas/emm/sap/emm_fsm.h:79:struct emm_context_s;
+src/nas/emm/sap/emm_fsm.h:82:int emm_fsm_set_state(const mme_ue_s1ap_id_t ueid, struct emm_context_s * const emm_context, const emm_fsm_state_t status);
+src/nas/emm/sap/emm_fsm.h:83:emm_fsm_state_t emm_fsm_get_state(const struct emm_context_s * const emm_context);
+src/nas/emm/sap/emm_fsm.h:84:const char *emm_fsm_get_state_str (const struct emm_context_s * const emm_context);
+src/nas/emm/sap/emm_send.c:189:  emm_context_t *emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+src/nas/emm/sap/emm_send.c:191:  mme_ue_s1ap_id_t ue_id = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/sap/emm_send.c:233:    emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_send.c:313:  emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_send.c:343:  emm_context_t *emm_ctx = emm_context_get (&_emm_data, msg->ue_id);
+src/nas/emm/sap/emm_send.c:345:  mme_ue_s1ap_id_t ue_id = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/emm/sap/emm_send.c:387:    emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_send.c:452:  emm_context_unlock(emm_ctx);
+src/nas/emm/sap/emm_fsm.c:182:  struct emm_context_s * const emm_context,
+src/nas/emm/sap/emm_fsm.c:188:  DevAssert (emm_context);
+src/nas/emm/sap/emm_fsm.c:191:      OAILOG_INFO (LOG_NAS_EMM, "UE " MME_UE_S1AP_ID_FMT" EMM-FSM   - Status changed: %s ===> %s\n", ue_id, _emm_fsm_status_str[emm_context->_emm_fsm_state], _emm_fsm_status_str[state]);
+src/nas/emm/sap/emm_fsm.c:194:      if (EMM_REGISTERED == emm_context->_emm_fsm_state) {
+src/nas/emm/sap/emm_fsm.c:196:      } else if (EMM_DEREGISTERED == emm_context->_emm_fsm_state) {
+src/nas/emm/sap/emm_fsm.c:232:emm_fsm_get_state (const struct emm_context_s * const emm_context)
+src/nas/emm/sap/emm_fsm.c:234:  if (emm_context ) {
+src/nas/emm/sap/emm_fsm.c:235:    AssertFatal((emm_context->_emm_fsm_state < EMM_STATE_MAX) && (emm_context->_emm_fsm_state > EMM_STATE_MIN),
+src/nas/emm/sap/emm_fsm.c:237:        PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id,
+src/nas/emm/sap/emm_fsm.c:238:        emm_context->_emm_fsm_state);
+src/nas/emm/sap/emm_fsm.c:239:    return emm_context->_emm_fsm_state;
+src/nas/emm/sap/emm_fsm.c:246:emm_fsm_get_state_str (const struct emm_context_s * const emm_context)
+src/nas/emm/sap/emm_fsm.c:248:  if (emm_context ) {
+src/nas/emm/sap/emm_fsm.c:249:    emm_fsm_state_t state  = emm_fsm_get_state (emm_context);
+src/nas/emm/sap/emm_fsm.c:277:  emm_context_t                     *emm_ctx = (emm_context_t *) evt->ctx;
+src/nas/emm/sap/emm_regDef.h:173:  struct emm_context_s  *ctx;
+src/nas/emm/emm_data_ctx.c:57:mme_ue_s1ap_id_t emm_ctx_get_new_ue_id(const emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:64:inline void emm_ctx_set_attribute_present(emm_context_t * const ctxt, const int attribute_bit_pos)
+src/nas/emm/emm_data_ctx.c:69:inline void emm_ctx_clear_attribute_present(emm_context_t * const ctxt, const int attribute_bit_pos)
+src/nas/emm/emm_data_ctx.c:75:inline void emm_ctx_set_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos)
+src/nas/emm/emm_data_ctx.c:81:inline void emm_ctx_clear_attribute_valid(emm_context_t * const ctxt, const int attribute_bit_pos)
+src/nas/emm/emm_data_ctx.c:88:inline void emm_ctx_clear_guti(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:92:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " GUTI cleared\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:96:inline void emm_ctx_set_guti(emm_context_t * const ctxt, guti_t *guti)
+src/nas/emm/emm_data_ctx.c:113:inline void emm_ctx_clear_old_guti(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:117:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " old GUTI cleared\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:121:inline void emm_ctx_set_old_guti(emm_context_t * const ctxt, guti_t *guti)
+src/nas/emm/emm_data_ctx.c:125:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set old GUTI " GUTI_FMT " (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, GUTI_ARG(&ctxt->_old_guti));
+src/nas/emm/emm_data_ctx.c:129:inline void emm_ctx_set_valid_old_guti(emm_context_t * const ctxt, guti_t *guti)
+src/nas/emm/emm_data_ctx.c:133:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set old GUTI " GUTI_FMT " (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, GUTI_ARG(&ctxt->_old_guti));
+src/nas/emm/emm_data_ctx.c:138:inline void emm_ctx_clear_imsi(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:143:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared IMSI\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:147:inline void emm_ctx_set_imsi(emm_context_t * const ctxt, imsi_t *imsi, const imsi64_t imsi64)
+src/nas/emm/emm_data_ctx.c:155:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set IMSI %s (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, imsi_str);
+src/nas/emm/emm_data_ctx.c:168:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set IMSI %s (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, imsi_str);
+src/nas/emm/emm_data_ctx.c:175:inline void emm_ctx_clear_imei(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:179:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " IMEI cleared\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:183:inline void emm_ctx_set_imei(emm_context_t * const ctxt, imei_t *imei)
+src/nas/emm/emm_data_ctx.c:195:inline void emm_ctx_set_valid_imei(emm_context_t * const ctxt, imei_t *imei)
+src/nas/emm/emm_data_ctx.c:212:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared IMEI_SV \n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:216:inline void emm_ctx_set_imeisv(emm_context_t * const ctxt, imeisv_t *imeisv)
+src/nas/emm/emm_data_ctx.c:224:inline void emm_ctx_set_valid_imeisv(emm_context_t * const ctxt, imeisv_t *imeisv)
+src/nas/emm/emm_data_ctx.c:228:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set IMEI_SV (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:233:inline void emm_ctx_clear_lvr_tai(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:237:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared last visited registered TAI\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:241:inline void emm_ctx_set_lvr_tai(emm_context_t * const ctxt, tai_t *lvr_tai)
+src/nas/emm/emm_data_ctx.c:246:  //    "ue_id="MME_UE_S1AP_ID_FMT" set last visited registered TAI "TAI_FMT" (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, TAI_ARG(&ctxt->_lvr_tai));
+src/nas/emm/emm_data_ctx.c:248:  //OAILOG_DEBUG (LOG_NAS_EMM, "ue_id="MME_UE_S1AP_ID_FMT" set last visited registered TAI "TAI_FMT" (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, TAI_ARG(&ctxt->_lvr_tai));
+src/nas/emm/emm_data_ctx.c:252:inline void emm_ctx_set_valid_lvr_tai(emm_context_t * const ctxt, tai_t *lvr_tai)
+src/nas/emm/emm_data_ctx.c:257:    //OAILOG_DEBUG (LOG_NAS_EMM, "ue_id="MME_UE_S1AP_ID_FMT" set last visited registered TAI "TAI_FMT" (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, TAI_ARG(&ctxt->_lvr_tai));
+src/nas/emm/emm_data_ctx.c:263:inline void emm_ctx_clear_auth_vectors(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:271:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared auth vectors \n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:275:inline void emm_ctx_clear_auth_vector(emm_context_t * const ctxt, ksi_t eksi)
+src/nas/emm/emm_data_ctx.c:287:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared auth vector %u \n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, eksi);
+src/nas/emm/emm_data_ctx.c:291:    OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared auth vectors\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:296:inline void emm_ctx_clear_security(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:313:  OAILOG_TRACE (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set security context security type %d\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, sc_type);
+src/nas/emm/emm_data_ctx.c:317:inline void emm_ctx_set_security_eksi(emm_context_t * const ctxt, ksi_t eksi)
+src/nas/emm/emm_data_ctx.c:324:inline void emm_ctx_clear_security_vector_index(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:327:  OAILOG_TRACE (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " clear security context vector index\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:333:  OAILOG_TRACE (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set security context vector index %d\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id, vector_index);
+src/nas/emm/emm_data_ctx.c:339:inline void emm_ctx_clear_non_current_security(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:349:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared non current security context \n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:354:inline void emm_ctx_clear_ue_nw_cap(emm_context_t * const ctxt)
+src/nas/emm/emm_data_ctx.c:358:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared UE network capability IE\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:362:inline void emm_ctx_set_ue_nw_cap(emm_context_t * const ctxt, const ue_network_capability_t * const ue_nw_cap_ie)
+src/nas/emm/emm_data_ctx.c:366:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set UE network capability IE (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:374:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set UE network capability IE (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:384:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared MS network capability IE\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:388:inline void emm_ctx_set_ms_nw_cap(emm_context_t * const ctxt, const ms_network_capability_t * const ms_nw_cap_ie)
+src/nas/emm/emm_data_ctx.c:392:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set MS network capability IE (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:396:inline void emm_ctx_set_valid_ms_nw_cap(emm_context_t * const ctxt, const ms_network_capability_t * const ms_nw_cap_ie)
+src/nas/emm/emm_data_ctx.c:413:inline void emm_ctx_set_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx)
+src/nas/emm/emm_data_ctx.c:417:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set current DRX parameter (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:421:inline void emm_ctx_set_valid_drx_parameter(emm_context_t * const ctxt, drx_parameter_t *drx)
+src/nas/emm/emm_data_ctx.c:425:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set current DRX parameter (valid)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:434:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " cleared EPS bearer context status\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:438:inline void emm_ctx_set_eps_bearer_context_status(emm_context_t * const ctxt, eps_bearer_context_status_t *status)
+src/nas/emm/emm_data_ctx.c:442:  OAILOG_DEBUG (LOG_NAS_EMM, "ue_id=" MME_UE_S1AP_ID_FMT " set EPS bearer context status (present)\n", (PARENT_STRUCT(ctxt, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:446:inline void emm_ctx_set_valid_eps_bearer_context_status(emm_context_t * const ctxt, eps_bearer_context_status_t *status)
+src/nas/emm/emm_data_ctx.c:456:struct emm_context_s              *
+src/nas/emm/emm_data_ctx.c:457:emm_context_get (
+src/nas/emm/emm_data_ctx.c:461:  struct emm_context_s              *emm_context_p = NULL;
+src/nas/emm/emm_data_ctx.c:467:      emm_context_p = &ue_mm_context->emm_context;
+src/nas/emm/emm_data_ctx.c:469:    OAILOG_INFO (LOG_NAS_EMM, "EMM-CTX - get UE id " MME_UE_S1AP_ID_FMT " context %p\n", ue_id, emm_context_p);
+src/nas/emm/emm_data_ctx.c:471:  return emm_context_p;
+src/nas/emm/emm_data_ctx.c:475:struct emm_context_s              *
+src/nas/emm/emm_data_ctx.c:476:emm_context_get_by_imsi (
+src/nas/emm/emm_data_ctx.c:484:    emm_context_p = &ue_mm_context->emm_context;
+src/nas/emm/emm_data_ctx.c:488:  if (emm_context_p) {
+src/nas/emm/emm_data_ctx.c:489:    OAILOG_DEBUG (LOG_NAS_EMM, "EMM-CTX - get UE id " MME_UE_S1AP_ID_FMT " context %p by imsi " IMSI_64_FMT "\n", ue_mm_context->mme_ue_s1ap_id, emm_context_p, imsi64);
+src/nas/emm/emm_data_ctx.c:492:  return emm_context_p;
+src/nas/emm/emm_data_ctx.c:497:struct emm_context_s              *
+src/nas/emm/emm_data_ctx.c:498:emm_context_get_by_guti (
+src/nas/emm/emm_data_ctx.c:513:  return emm_context_p;
+src/nas/emm/emm_data_ctx.c:517:int emm_context_unlock (struct emm_context_s *emm_context_p)
+src/nas/emm/emm_data_ctx.c:519:  if (emm_context_p) {
+src/nas/emm/emm_data_ctx.c:528:  emm_data_t * emm_data, struct emm_context_s *elm)
+src/nas/emm/emm_data_ctx.c:531:  OAILOG_DEBUG (LOG_NAS_EMM, "EMM-CTX - Remove in context %p UE id " MME_UE_S1AP_ID_FMT "\n", elm, (PARENT_STRUCT(elm, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id);
+src/nas/emm/emm_data_ctx.c:549:emm_context_upsert_imsi (
+src/nas/emm/emm_data_ctx.c:551:    struct emm_context_s *elm)
+src/nas/emm/emm_data_ctx.c:554:  mme_ue_s1ap_id_t                        ue_id = (PARENT_STRUCT(elm, struct ue_mm_context_s, emm_context))->mme_ue_s1ap_id;
+src/nas/emm/emm_data_ctx.c:572:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)
+src/nas/emm/emm_data_ctx.c:576:  struct ue_mm_context_s * ue_mm_context = PARENT_STRUCT(emm_ctx, struct ue_mm_context_s, emm_context);
+src/nas/emm/emm_data_ctx.c:691:  const struct emm_context_s * const emm_context,
+src/nas/emm/emm_data_ctx.c:695:  if (emm_context ) {
+src/nas/emm/emm_data_ctx.c:714:    if (IS_EMM_CTXT_PRESENT_IMEISV(emm_context)) {
+src/nas/emm/emm_data_ctx.c:716:        emm_context->_imeisv.u.num.tac1, emm_context->_imeisv.u.num.tac2, emm_context->_imeisv.u.num.tac3, emm_context->_imeisv.u.num.tac4,
+src/nas/emm/emm_data_ctx.c:717:        emm_context->_imeisv.u.num.tac5, emm_context->_imeisv.u.num.tac6, emm_context->_imeisv.u.num.tac7, emm_context->_imeisv.u.num.tac8,
+src/nas/emm/emm_data_ctx.c:718:        emm_context->_imeisv.u.num.snr1, emm_context->_imeisv.u.num.snr2, emm_context->_imeisv.u.num.snr3, emm_context->_imeisv.u.num.snr4,
+src/nas/emm/emm_data_ctx.c:719:        emm_context->_imeisv.u.num.snr5, emm_context->_imeisv.u.num.snr6, emm_context->_imeisv.u.num.svn1, emm_context->_imeisv.u.num.svn2);
+src/nas/emm/emm_data_ctx.c:723:    if (IS_EMM_CTXT_PRESENT_GUTI(emm_context)) {
+src/nas/emm/emm_data_ctx.c:726:        emm_context->_guti.m_tmsi, emm_context->_guti.gummei.mme_code,
+src/nas/emm/emm_data_ctx.c:727:        emm_context->_guti.gummei.mme_gid,
+src/nas/emm/emm_data_ctx.c:728:        emm_context->_guti.gummei.plmn.mcc_digit1,
+src/nas/emm/emm_data_ctx.c:729:        emm_context->_guti.gummei.plmn.mcc_digit2,
+src/nas/emm/emm_data_ctx.c:731:        emm_context->_guti.gummei.plmn.mnc_digit1,
+src/nas/emm/emm_data_ctx.c:732:        emm_context->_guti.gummei.plmn.mnc_digit2,
+src/nas/emm/emm_data_ctx.c:734:      //bformata (bstr_dump, "%*s     - guti:             "GUTI_FMT"      (The GUTI assigned to the UE)\n", indent_spaces, " ", GUTI_ARG(&emm_context->_guti));
+src/nas/emm/emm_data_ctx.c:738:    if (IS_EMM_CTXT_PRESENT_OLD_GUTI(emm_context)) {
+src/nas/emm/emm_data_ctx.c:741:        emm_context->_old_guti.m_tmsi, emm_context->_old_guti.gummei.mme_code,
+src/nas/emm/emm_data_ctx.c:742:        emm_context->_old_guti.gummei.mme_gid,
+src/nas/emm/emm_data_ctx.c:743:        emm_context->_old_guti.gummei.plmn.mcc_digit1,
+src/nas/emm/emm_data_ctx.c:744:        emm_context->_old_guti.gummei.plmn.mcc_digit2,
+src/nas/emm/emm_data_ctx.c:745:        emm_context->_old_guti.gummei.plmn.mcc_digit3,
+src/nas/emm/emm_data_ctx.c:746:        emm_context->_old_guti.gummei.plmn.mnc_digit1,
+src/nas/emm/emm_data_ctx.c:747:        emm_context->_old_guti.gummei.plmn.mnc_digit2,
+src/nas/emm/emm_data_ctx.c:749:      //bformata (bstr_dump, "%*s     - old_guti:         "GUTI_FMT"      (The old GUTI)\n", indent_spaces, " ", GUTI_ARG(&emm_context->_old_guti));
+src/nas/emm/emm_data_ctx.c:754:      switch (emm_context->_tai_list.partial_tai_list[k].typeoflist) {
+src/nas/emm/emm_data_ctx.c:757:          tai.mcc_digit1 = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.mcc_digit1;
+src/nas/emm/emm_data_ctx.c:758:          tai.mcc_digit2 = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.mcc_digit2;
+src/nas/emm/emm_data_ctx.c:759:          tai.mcc_digit3 = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.mcc_digit3;
+src/nas/emm/emm_data_ctx.c:761:          tai.mnc_digit2 = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.mnc_digit2;
+src/nas/emm/emm_data_ctx.c:762:          tai.mnc_digit3 = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.mnc_digit3;
+src/nas/emm/emm_data_ctx.c:764:            tai.tac        = emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_non_consecutive_tacs.tac[p];
+src/nas/emm/emm_data_ctx.c:773:          TAI_ARG(&emm_context->_tai_list.partial_tai_list[k].u.tai_one_plmn_consecutive_tacs), emm_context->_tai_list.partial_tai_list[k].numberofelements);
+src/nas/emm/emm_data_ctx.c:778:            TAI_ARG(&emm_context->_tai_list.partial_tai_list[k].u.tai_many_plmn[p]));
+src/nas/emm/emm_data_ctx.c:784:    bformata (bstr_dump, "%*s     - eksi:             %u      (Security key set identifier)\n", indent_spaces, " ", emm_context->_security.eksi);
+src/nas/emm/emm_data_ctx.c:788:                               KASME_DISPLAY_1 (emm_context->_vector[vector_index].kasme),
+src/nas/emm/emm_data_ctx.c:789:                               KASME_DISPLAY_2 (emm_context->_vector[vector_index].kasme));
+src/nas/emm/emm_data_ctx.c:791:      bformata (bstr_dump, "%*s         - autn:  " AUTN_FORMAT "\n", indent_spaces, " ", AUTN_DISPLAY (emm_context->_vector[vector_index].autn));
+src/nas/emm/emm_data_ctx.c:815://        if (SECURITY_CTX_TYPE_FULL_NATIVE <= emm_context->_security.sc_type) {
+src/nas/emm/emm_data_ctx.c:846:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA1) ? '1':'_',
+src/nas/emm/emm_data_ctx.c:847:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA2) ? '2':'_',
+src/nas/emm/emm_data_ctx.c:848:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA3) ? '3':'_',
+src/nas/emm/emm_data_ctx.c:849:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA4) ? '4':'_',
+src/nas/emm/emm_data_ctx.c:851:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA6) ? '6':'_',
+src/nas/emm/emm_data_ctx.c:852:              (emm_context->_ue_network_capability.eea & UE_NETWORK_CAPABILITY_EEA7) ? '7':'_',
+src/nas/emm/emm_data_ctx.c:854:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA1) ? '1':'_',
+src/nas/emm/emm_data_ctx.c:855:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA2) ? '2':'_',
+src/nas/emm/emm_data_ctx.c:856:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA3) ? '3':'_',
+src/nas/emm/emm_data_ctx.c:857:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA4) ? '4':'_',
+src/nas/emm/emm_data_ctx.c:858:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA5) ? '5':'_',
+src/nas/emm/emm_data_ctx.c:859:              (emm_context->_ue_network_capability.eia & UE_NETWORK_CAPABILITY_EIA6) ? '6':'_',
+src/nas/emm/emm_data_ctx.c:861:          if (emm_context->_ue_network_capability.umts_present) {
+src/nas/emm/emm_data_ctx.c:864:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA1) ? '1':'_',
+src/nas/emm/emm_data_ctx.c:865:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA2) ? '2':'_',
+src/nas/emm/emm_data_ctx.c:866:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA3) ? '3':'_',
+src/nas/emm/emm_data_ctx.c:867:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA4) ? '4':'_',
+src/nas/emm/emm_data_ctx.c:868:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA5) ? '5':'_',
+src/nas/emm/emm_data_ctx.c:869:                (emm_context->_ue_network_capability.uea & UE_NETWORK_CAPABILITY_UEA6) ? '6':'_',
+src/nas/emm/emm_data_ctx.c:871:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA1) ? '1':'_',
+src/nas/emm/emm_data_ctx.c:872:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA2) ? '2':'_',
+src/nas/emm/emm_data_ctx.c:873:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA3) ? '3':'_',
+src/nas/emm/emm_data_ctx.c:874:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA4) ? '4':'_',
+src/nas/emm/emm_data_ctx.c:875:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA5) ? '5':'_',
+src/nas/emm/emm_data_ctx.c:876:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA6) ? '6':'_',
+src/nas/emm/emm_data_ctx.c:877:                (emm_context->_ue_network_capability.uia & UE_NETWORK_CAPABILITY_UIA7) ? '7':'_');
+src/nas/emm/emm_data_ctx.c:897:    bformata (bstr_dump, "%*s     - EMM state:     %s\n", indent_spaces, " ", emm_fsm_get_state_str(emm_context));
+src/nas/emm/emm_data_ctx.c:899:    if (emm_context->esm_msg) {
+src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+src/nas/nas_mme_task.c:59:  emm_context_t *emm_context; 
+src/nas/api/mme/mme_api.c:343:        ue_mm_context->emm_context._imsi64,
+src/nas/nas_proc.c:372:  emm_context_t                          *ctxt    = NULL;
+src/nas/nas_proc.c:382:    ctxt = &ue_mm_context->emm_context;
+src/nas/nas_procedures.h:32:struct emm_context_s;
+src/nas/nas_procedures.h:36:typedef int (*success_cb_t)(struct emm_context_s*);
+src/nas/nas_procedures.h:37:typedef int (*failure_cb_t)(struct emm_context_s*);
+src/nas/nas_procedures.h:38:typedef int (*proc_abort_t)(struct emm_context_s*, struct nas_base_proc_s*);
+src/nas/nas_procedures.h:41:typedef int (*pdu_in_rej_t)(struct emm_context_s*, void *arg);  // REJECT.
+src/nas/nas_procedures.h:42:typedef int (*pdu_out_rej_t)(struct emm_context_s*, struct nas_base_proc_s *);  // REJECT.
+src/nas/nas_procedures.h:45:typedef int (*sdu_out_delivered_t)(struct emm_context_s*, struct nas_emm_proc_s*);
+src/nas/nas_procedures.h:46:typedef int (*sdu_out_not_delivered_t)(struct emm_context_s*, struct nas_emm_proc_s*);
+src/nas/nas_procedures.h:47:typedef int (*sdu_out_not_delivered_ho_t)(struct emm_context_s*, struct nas_emm_proc_s*);
+src/nas/nas_procedures.h:369:bool is_nas_common_procedure_guti_realloc_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:371:bool is_nas_common_procedure_smc_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:372:bool is_nas_common_procedure_identification_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:374:nas_emm_guti_proc_t  *get_nas_common_procedure_guti_realloc(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:375:nas_emm_ident_proc_t  *get_nas_common_procedure_identification(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:376:nas_emm_smc_proc_t   *get_nas_common_procedure_smc(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:377:nas_emm_auth_proc_t *get_nas_common_procedure_authentication(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:379:nas_auth_info_proc_t *get_nas_cn_procedure_auth_info(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:381:nas_sr_proc_t *get_nas_con_mngt_procedure_service_request(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:383:bool is_nas_specific_procedure_attach_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:384:bool is_nas_specific_procedure_detach_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:385:bool is_nas_specific_procedure_tau_running(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:387:nas_emm_attach_proc_t *get_nas_specific_procedure_attach(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:388:nas_emm_detach_proc_t *get_nas_specific_procedure_detach(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:389:nas_emm_tau_proc_t    *get_nas_specific_procedure_tau(const struct emm_context_s * const ctxt);
+src/nas/nas_procedures.h:397:void nas_delete_all_emm_procedures(struct emm_context_s * const emm_context);
+src/nas/nas_procedures.h:398:void nas_delete_common_procedure(struct emm_context_s * const emm_context, nas_emm_common_proc_t **  proc);
+src/nas/nas_procedures.h:399:void nas_delete_attach_procedure(struct emm_context_s * const emm_context);
+src/nas/nas_procedures.h:411:nas_auth_info_proc_t *nas_new_cn_auth_info_procedure(struct emm_context_s * const emm_context);
+src/nas/nas_procedures.h:415:nas_emm_proc_t * nas_emm_find_procedure_by_msg_digest(struct emm_context_s * const emm_context, const char * const digest, const size_t digest_bytes, const size_t msg_size);
+src/nas/nas_itti_messaging.c:353:    emm_ctx = &ue_mm_context->emm_context;
+src/nas/nas_itti_messaging.c:424:  emm_context_t  *emm_ctx = (emm_context_t *) (args);
+src/nas/nas_procedures.c:71:static  nas_cn_proc_t *get_nas_cn_procedure(const struct emm_context_s * const ctxt, cn_proc_type_t proc_type);
+src/nas/nas_procedures.c:73:static void nas_emm_procedure_gc(struct emm_context_s * const emm_context);
+src/nas/nas_procedures.c:75:static void nas_delete_auth_info_procedure(struct emm_context_s *emm_context, nas_auth_info_proc_t ** auth_info_proc);
+src/nas/nas_procedures.c:76:static void nas_delete_child_procedures(struct emm_context_s * const emm_context, nas_base_proc_t * const parent_proc);
+src/nas/nas_procedures.c:77:static void nas_delete_cn_procedures(struct emm_context_s *emm_context);
+src/nas/nas_procedures.c:78:static void nas_delete_common_procedures(struct emm_context_s *emm_context);
+src/nas/nas_procedures.c:79:static nas_emm_proc_t * nas_emm_find_procedure_by_puid(struct emm_context_s * const emm_context, uint64_t puid);
+src/nas/nas_procedures.c:84:static  nas_emm_common_proc_t *get_nas_common_procedure(const struct emm_context_s * const ctxt, emm_common_proc_type_t proc_type)
+src/nas/nas_procedures.c:127:inline bool is_nas_common_procedure_authentication_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:134:inline bool is_nas_common_procedure_smc_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:141:inline bool is_nas_common_procedure_identification_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:148:nas_emm_guti_proc_t *get_nas_common_procedure_guti_realloc(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:154:nas_emm_auth_proc_t *get_nas_common_procedure_authentication(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:166:nas_emm_smc_proc_t *get_nas_common_procedure_smc(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:172:nas_emm_ident_proc_t *get_nas_common_procedure_identification(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:178:inline bool is_nas_specific_procedure_attach_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:186:inline bool is_nas_specific_procedure_detach_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:194:inline bool is_nas_specific_procedure_tau_running(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:218:nas_emm_tau_proc_t *get_nas_specific_procedure_tau(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:226:nas_sr_proc_t *get_nas_con_mngt_procedure_service_request(const struct emm_context_s * const ctxt)
+src/nas/nas_procedures.c:269:static void nas_emm_procedure_gc(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:271:  if ( LIST_EMPTY(&emm_context->emm_procedures->emm_common_procs) &&
+src/nas/nas_procedures.c:272:       LIST_EMPTY(&emm_context->emm_procedures->cn_procs) &&
+src/nas/nas_procedures.c:273:       (!emm_context->emm_procedures->emm_con_mngt_proc) &&
+src/nas/nas_procedures.c:274:       (!emm_context->emm_procedures->emm_specific_proc) ) {
+src/nas/nas_procedures.c:275:    free_wrapper((void**)&emm_context->emm_procedures);
+src/nas/nas_procedures.c:279:static void nas_delete_child_procedures(struct emm_context_s * const emm_context, nas_base_proc_t * const parent_proc)
+src/nas/nas_procedures.c:282:  if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:283:    nas_emm_common_procedure_t *p1 = LIST_FIRST(&emm_context->emm_procedures->emm_common_procs);
+src/nas/nas_procedures.c:288:        nas_delete_common_procedure(emm_context, &p1->proc);
+src/nas/nas_procedures.c:295:    if (emm_context->emm_procedures->emm_con_mngt_proc) {
+src/nas/nas_procedures.c:296:      if (((nas_base_proc_t *)(emm_context->emm_procedures->emm_con_mngt_proc))->parent == parent_proc) {
+src/nas/nas_procedures.c:297:        nas_delete_con_mngt_procedure(&emm_context->emm_procedures->emm_con_mngt_proc);
+src/nas/nas_procedures.c:312:void nas_delete_common_procedure(struct emm_context_s *emm_context, nas_emm_common_proc_t **  proc)
+src/nas/nas_procedures.c:345:    if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:346:      nas_emm_common_procedure_t *p1 = LIST_FIRST(&emm_context->emm_procedures->emm_common_procs);
+src/nas/nas_procedures.c:374:  if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:375:    nas_emm_common_procedure_t *p1 = LIST_FIRST(&emm_context->emm_procedures->emm_common_procs);
+src/nas/nas_procedures.c:414:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:422:  nas_emm_attach_proc_t     *proc = get_nas_specific_procedure_attach(emm_context);
+src/nas/nas_procedures.c:425:    mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/nas_procedures.c:436:    nas_delete_child_procedures(emm_context, (nas_base_proc_t *)proc);
+src/nas/nas_procedures.c:438:    free_wrapper((void**)&emm_context->emm_procedures->emm_specific_proc);
+src/nas/nas_procedures.c:439:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:443:void nas_delete_tau_procedure(struct emm_context_s *emm_context)
+src/nas/nas_procedures.c:445:  nas_emm_tau_proc_t     *proc = get_nas_specific_procedure_tau(emm_context);
+src/nas/nas_procedures.c:448:    mme_ue_s1ap_id_t      ue_id = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/nas_procedures.c:459:    nas_delete_child_procedures(emm_context, (nas_base_proc_t *)proc);
+src/nas/nas_procedures.c:461:    free_wrapper((void**)&emm_context->emm_procedures->emm_specific_proc);
+src/nas/nas_procedures.c:462:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:466:void nas_delete_detach_procedure(struct emm_context_s *emm_context)
+src/nas/nas_procedures.c:468:  nas_emm_detach_proc_t     *proc = get_nas_specific_procedure_detach(emm_context);
+src/nas/nas_procedures.c:476:    nas_delete_child_procedures(emm_context, (nas_base_proc_t *)proc);
+src/nas/nas_procedures.c:478:    free_wrapper((void**)&emm_context->emm_procedures->emm_specific_proc);
+src/nas/nas_procedures.c:479:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:485:static void nas_delete_auth_info_procedure(struct emm_context_s *emm_context, nas_auth_info_proc_t ** auth_info_proc)
+src/nas/nas_procedures.c:488:   OAILOG_TRACE (LOG_NAS_EMM, "UE " MME_UE_S1AP_ID_FMT " Delete AUTH INFO procedure\n", PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id);
+src/nas/nas_procedures.c:493:    nas_stop_Ts6a_auth_info(PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id, &(*auth_info_proc)->timer_s6a, unused);
+src/nas/nas_procedures.c:499:void nas_delete_cn_procedure(struct emm_context_s *emm_context, nas_cn_proc_t * cn_proc)
+src/nas/nas_procedures.c:517:        OAILOG_TRACE (LOG_NAS_EMM, "UE " MME_UE_S1AP_ID_FMT " Delete CN procedure %p\n", PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id, p1->proc);
+src/nas/nas_procedures.c:524:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:529:static void nas_delete_cn_procedures(struct emm_context_s *emm_context)
+src/nas/nas_procedures.c:531:  if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:532:    nas_cn_procedure_t *p1 = LIST_FIRST(&emm_context->emm_procedures->cn_procs);
+src/nas/nas_procedures.c:538:          nas_delete_auth_info_procedure(emm_context, (nas_auth_info_proc_t**)&p1->proc);
+src/nas/nas_procedures.c:548:    nas_emm_procedure_gc(emm_context);
+src/nas/nas_procedures.c:554:void nas_delete_all_emm_procedures(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:557:  if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:559:    nas_delete_cn_procedures(emm_context);
+src/nas/nas_procedures.c:561:    //TODO nas_delete_con_mngt_procedure(emm_context);
+src/nas/nas_procedures.c:562:    nas_delete_attach_procedure(emm_context);
+src/nas/nas_procedures.c:563:    nas_delete_detach_procedure(emm_context);
+src/nas/nas_procedures.c:564:    nas_delete_tau_procedure(emm_context);
+src/nas/nas_procedures.c:567:    if (emm_context->emm_procedures) {
+src/nas/nas_procedures.c:568:      free_wrapper((void**)&emm_context->emm_procedures);
+src/nas/nas_procedures.c:575:static emm_procedures_t *_nas_new_emm_procedures(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:577:  emm_procedures_t *emm_procedures = calloc(1, sizeof(*emm_context->emm_procedures));
+src/nas/nas_procedures.c:583:nas_emm_attach_proc_t* nas_new_attach_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:585:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:586:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:587:  } else if (emm_context->emm_procedures->emm_specific_proc) {
+src/nas/nas_procedures.c:589:        "UE " MME_UE_S1AP_ID_FMT " Attach procedure creation requested but another specific procedure found\n", PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id);
+src/nas/nas_procedures.c:592:  emm_context->emm_procedures->emm_specific_proc = calloc(1, sizeof(nas_emm_attach_proc_t));
+src/nas/nas_procedures.c:593:  emm_context->emm_procedures->emm_specific_proc->emm_proc.base_proc.nas_puid = __sync_fetch_and_add (&nas_puid, 1);
+src/nas/nas_procedures.c:594:  emm_context->emm_procedures->emm_specific_proc->emm_proc.base_proc.type = NAS_PROC_TYPE_EMM;
+src/nas/nas_procedures.c:595:  emm_context->emm_procedures->emm_specific_proc->emm_proc.type  = NAS_EMM_PROC_TYPE_CONN_MNGT;
+src/nas/nas_procedures.c:596:  emm_context->emm_procedures->emm_specific_proc->type  = EMM_SPEC_PROC_TYPE_ATTACH;
+src/nas/nas_procedures.c:598:  nas_emm_attach_proc_t * proc = (nas_emm_attach_proc_t*)emm_context->emm_procedures->emm_specific_proc;
+src/nas/nas_procedures.c:611:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:612:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:613:  } else if (emm_context->emm_procedures->emm_specific_proc) {
+src/nas/nas_procedures.c:615:        "UE " MME_UE_S1AP_ID_FMT " Attach procedure creation requested but another specific procedure found\n", PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id);
+src/nas/nas_procedures.c:618:  emm_context->emm_procedures->emm_specific_proc = calloc(1, sizeof(nas_emm_tau_proc_t));
+src/nas/nas_procedures.c:619:  emm_context->emm_procedures->emm_specific_proc->emm_proc.base_proc.nas_puid = __sync_fetch_and_add (&nas_puid, 1);
+src/nas/nas_procedures.c:621:  emm_context->emm_procedures->emm_specific_proc->emm_proc.type  = NAS_EMM_PROC_TYPE_CONN_MNGT;
+src/nas/nas_procedures.c:622:  emm_context->emm_procedures->emm_specific_proc->type  = EMM_SPEC_PROC_TYPE_TAU;
+src/nas/nas_procedures.c:624:  nas_emm_tau_proc_t * proc = (nas_emm_tau_proc_t*)emm_context->emm_procedures->emm_specific_proc;
+src/nas/nas_procedures.c:626:  proc->ue_id           = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context)->mme_ue_s1ap_id;
+src/nas/nas_procedures.c:634:nas_sr_proc_t* nas_new_service_request_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:636:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:637:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:638:  } else if (emm_context->emm_procedures->emm_con_mngt_proc) {
+src/nas/nas_procedures.c:643:  emm_context->emm_procedures->emm_con_mngt_proc = calloc(1, sizeof(nas_sr_proc_t));
+src/nas/nas_procedures.c:644:  emm_context->emm_procedures->emm_con_mngt_proc->emm_proc.base_proc.nas_puid = __sync_fetch_and_add (&nas_puid, 1);
+src/nas/nas_procedures.c:645:  emm_context->emm_procedures->emm_con_mngt_proc->emm_proc.base_proc.type = NAS_PROC_TYPE_EMM;
+src/nas/nas_procedures.c:646:  emm_context->emm_procedures->emm_con_mngt_proc->emm_proc.type  = NAS_EMM_PROC_TYPE_CONN_MNGT;
+src/nas/nas_procedures.c:647:  emm_context->emm_procedures->emm_con_mngt_proc->type  = EMM_CON_MNGT_PROC_SERVICE_REQUEST;
+src/nas/nas_procedures.c:649:  nas_sr_proc_t * proc = (nas_sr_proc_t*)emm_context->emm_procedures->emm_con_mngt_proc;
+src/nas/nas_procedures.c:655:nas_emm_ident_proc_t *nas_new_identification_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:657:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:658:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:674:    LIST_INSERT_HEAD(&emm_context->emm_procedures->emm_common_procs, wrapper, entries);
+src/nas/nas_procedures.c:684:nas_emm_auth_proc_t *nas_new_authentication_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:686:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:687:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:713:nas_emm_smc_proc_t *nas_new_smc_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:715:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:716:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:732:    LIST_INSERT_HEAD(&emm_context->emm_procedures->emm_common_procs, wrapper, entries);
+src/nas/nas_procedures.c:742:nas_auth_info_proc_t *nas_new_cn_auth_info_procedure(struct emm_context_s * const emm_context)
+src/nas/nas_procedures.c:744:  if (!(emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:745:    emm_context->emm_procedures = _nas_new_emm_procedures(emm_context);
+src/nas/nas_procedures.c:758:    LIST_INSERT_HEAD(&emm_context->emm_procedures->cn_procs, wrapper, entries);
+src/nas/nas_procedures.c:784:static nas_emm_proc_t * nas_emm_find_procedure_by_puid(struct emm_context_s * const emm_context, uint64_t puid)
+src/nas/nas_procedures.c:786:  if ((emm_context) && (emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:788:    nas_emm_common_procedure_t *p1 = LIST_FIRST(&emm_context->emm_procedures->emm_common_procs);
+src/nas/nas_procedures.c:797:    if (emm_context->emm_procedures->emm_specific_proc) {
+src/nas/nas_procedures.c:798:      if (emm_context->emm_procedures->emm_specific_proc->emm_proc.base_proc.nas_puid == puid) {
+src/nas/nas_procedures.c:823:      int index = ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign_next_location;
+src/nas/nas_procedures.c:824:      ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign[index].nas_msg_length = blength(nas_msg);
+src/nas/nas_procedures.c:825:      ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign[index].puid = puid;
+src/nas/nas_procedures.c:826:      ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign[index].digest_length = NAS_MSG_DIGEST_SIZE;
+src/nas/nas_procedures.c:829:          (char * const)ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign[index].digest,
+src/nas/nas_procedures.c:832:      ue_mm_context->emm_context.emm_procedures->nas_proc_mess_sign_next_location = (index + 1) % MAX_NAS_PROC_MESS_SIGN;
+src/nas/nas_procedures.c:841:nas_emm_proc_t * nas_emm_find_procedure_by_msg_digest(struct emm_context_s * const emm_context,
+src/nas/nas_procedures.c:847:  if ((emm_context) && (emm_context->emm_procedures)) {
+src/nas/nas_procedures.c:849:      if (emm_context->emm_procedures->nas_proc_mess_sign[i].nas_msg_length == msg_size) {
+src/nas/nas_procedures.c:852:          if (!memcmp(digest, emm_context->emm_procedures->nas_proc_mess_sign[i].digest, min)) {
+src/nas/nas_procedures.c:853:            emm_proc = nas_emm_find_procedure_by_puid(emm_context, emm_context->emm_procedures->nas_proc_mess_sign[i].puid);
+src/nas/nas_procedures.c:857:          emm_proc = nas_emm_find_procedure_by_puid(emm_context, emm_context->emm_procedures->nas_proc_mess_sign[i].puid);
+src/mme_app/mme_app_main.c:167:            received_message_p->ittiMsg.s11_modify_bearer_response.teid, ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_bearer.c:222:  emm_context_t                          *ue_nas_ctx = NULL;
+src/mme_app/mme_app_bearer.c:241:      ue_nas_ctx = emm_context_get_by_guti (&_emm_data, &guti);
+src/mme_app/mme_app_bearer.c:244:        ue_context_p =  PARENT_STRUCT(ue_nas_ctx, struct ue_mm_context_s, emm_context);
+src/mme_app/mme_app_bearer.c:427:    delete_sess_resp_pP->teid, ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_bearer.c:487:      create_sess_resp_pP->teid, ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_bearer.c:765:        ue_context_p->mme_ue_s1ap_id, cid, ue_context_p->emm_context._imsi64, create_bearer_request_pP->bearer_contexts.num_bearer_context);
+src/mme_app/mme_app_ue_context.h:258:  pthread_mutex_t recmutex;  // mutex on the ue_mm_context_t + emm_context_s + esm_context_t
+src/mme_app/mme_app_location.c:74:  visited_plmn.mcc_digit1 = ue_mm_context->emm_context.originating_tai.mcc_digit1;
+src/mme_app/mme_app_location.c:75:  visited_plmn.mcc_digit2 = ue_mm_context->emm_context.originating_tai.mcc_digit2;
+src/mme_app/mme_app_location.c:76:  visited_plmn.mcc_digit3 = ue_mm_context->emm_context.originating_tai.mcc_digit3;
+src/mme_app/mme_app_location.c:77:  visited_plmn.mnc_digit1 = ue_mm_context->emm_context.originating_tai.mnc_digit1;
+src/mme_app/mme_app_location.c:78:  visited_plmn.mnc_digit2 = ue_mm_context->emm_context.originating_tai.mnc_digit2;
+src/mme_app/mme_app_location.c:79:  visited_plmn.mnc_digit3 = ue_mm_context->emm_context.originating_tai.mnc_digit3;
+src/mme_app/mme_app_apn_selection.c:67:            ue_context->emm_context._imsi64);
+src/mme_app/mme_app_apn_selection.c:79:              ue_context->emm_context._imsi64);
+src/mme_app/mme_app_context.c:139:  emm_init_context(&new_p->emm_context, true);
+src/mme_app/mme_app_context.c:377:             ue_context_p->enb_s1ap_id_key, ue_context_p->mme_ue_s1ap_id, ue_context_p->emm_context._imsi64, GUTI_ARG(&ue_context_p->emm_context._guti));
+src/mme_app/mme_app_context.c:412:  h_rc = hashtable_uint64_ts_remove (mme_ue_context_p->imsi_ue_context_htbl, (const hash_key_t)ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_context.c:423:  ue_context_p->emm_context._imsi64 = imsi;
+src/mme_app/mme_app_context.c:442:    if ((guti_p->gummei.mme_code != ue_context_p->emm_context._guti.gummei.mme_code)
+src/mme_app/mme_app_context.c:443:      || (guti_p->gummei.mme_gid != ue_context_p->emm_context._guti.gummei.mme_gid)
+src/mme_app/mme_app_context.c:444:      || (guti_p->m_tmsi != ue_context_p->emm_context._guti.m_tmsi)
+src/mme_app/mme_app_context.c:445:      || (guti_p->gummei.plmn.mcc_digit1 != ue_context_p->emm_context._guti.gummei.plmn.mcc_digit1)
+src/mme_app/mme_app_context.c:446:      || (guti_p->gummei.plmn.mcc_digit2 != ue_context_p->emm_context._guti.gummei.plmn.mcc_digit2)
+src/mme_app/mme_app_context.c:447:      || (guti_p->gummei.plmn.mcc_digit3 != ue_context_p->emm_context._guti.gummei.plmn.mcc_digit3)
+src/mme_app/mme_app_context.c:451:      h_rc = obj_hashtable_uint64_ts_remove (mme_ue_context_p->guti_ue_context_htbl, &ue_context_p->emm_context._guti, sizeof (*guti_p));
+src/mme_app/mme_app_context.c:462:      ue_context_p->emm_context._guti = *guti_p;
+src/mme_app/mme_app_context.c:543:    if (ue_context_p->emm_context._imsi64) {
+src/mme_app/mme_app_context.c:545:                                  (const hash_key_t)ue_context_p->emm_context._imsi64,
+src/mme_app/mme_app_context.c:574:                                     (const void *const)&ue_context_p->emm_context._guti,
+src/mme_app/mme_app_context.c:575:                                     sizeof (ue_context_p->emm_context._guti),
+src/mme_app/mme_app_context.c:613:    if (ue_context_p->emm_context._imsi64) {
+src/mme_app/mme_app_context.c:614:      hash_rc = hashtable_uint64_ts_remove (mme_ue_context_p->imsi_ue_context_htbl, (const hash_key_t)ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_context.c:617:            ue_context_p->enb_ue_s1ap_id, ue_context_p->mme_ue_s1ap_id, ue_context_p->emm_context._imsi64);
+src/mme_app/mme_app_context.c:634:    if ((ue_context_p->emm_context._guti.gummei.mme_code) || (ue_context_p->emm_context._guti.gummei.mme_gid) || (ue_context_p->emm_context._guti.m_tmsi) ||
+src/mme_app/mme_app_context.c:636:      hash_rc = obj_hashtable_uint64_ts_remove (mme_ue_context_p->guti_ue_context_htbl, (const void *const)&ue_context_p->emm_context._guti, sizeof (ue_context_p->emm_context._guti));
+src/mme_app/mme_app_itti_messaging.c:117:  OAILOG_DEBUG (LOG_MME_APP, "Handling imsi " IMSI_64_FMT "\n", ue_mm_context->emm_context._imsi64);
+src/mme_app/mme_app_itti_messaging.c:243:    mme_app_select_sgw(&ue_mm_context->emm_context.originating_tai, &session_request_p->peer_ip);
+src/common/mme_app_messages_types.h:55://	  struct emm_context_s  *ctx;
+src/common/mme_app_messages_types.h:71:	emm_context_t *emm_context;	

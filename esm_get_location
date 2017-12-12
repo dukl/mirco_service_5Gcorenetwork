@@ -1,0 +1,38 @@
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/PdnConnectivity.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/esm_ebr_context.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/PdnDisconnect.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/esm_data_context.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/esm_information.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/esm/sap/esm_recv.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/emm/emm_main.c.o matches
+Binary file build/mme/build/CMakeFiles/LIB_NAS_MME.dir/home/oai/mirco_service_5Gcorenetwork/src/nas/emm/sap/emm_cn.c.o matches
+Binary file build/mme/build/mme matches
+Binary file build/mme/build/libLIB_NAS_MME.a matches
+tags:25226:esm_get	src/nas/emm/emm_main.c	/^struct esm_context_s* esm_get(struct guti_s guti)$/;"	f
+tags:25227:esm_get	src/nas/emm/esm_hashtable.c	/^struct esm_context_s* esm_get(struct guti_s guti)$/;"	f
+tags:25228:esm_get_inplace	src/nas/emm/emm_main.c	/^void esm_get_inplace(struct guti_s guti,struct esm_context_s *esm_p)$/;"	f
+src/nas/esm/esm_information.c:128:  esm_get_inplace(ue_context->_guti,&esm_p);
+src/nas/esm/esm_information.c:133:  /*nas_stop_T3489(esm_get(ue_context->_guti));*/
+src/nas/esm/esm_information.c:228:        esm_get_inplace(esm_ebr_timer_data->ctx->_guti,&esm_p);
+src/nas/esm/esm_information.c:291:  esm_get_inplace(ue_context->_guti,&esm_p);
+src/nas/esm/esm_data_context.c:139:    esm_get_inplace(guti,&esm_p);
+src/nas/esm/PdnDisconnect.c:145:  esm_get_inplace(emm_context->_guti,&esm_p);
+src/nas/esm/esm_ebr_context.c:127:  esm_get_inplace(emm_context->_guti,&esm_ctx);
+src/nas/esm/PdnConnectivity.c:372:        esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
+src/nas/esm/PdnConnectivity.c:517:    esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
+src/nas/esm/sap/esm_recv.c:206:   esm_get_inplace(emm_context->_guti,&esm_p);
+src/nas/esm/sap/esm_recv.c:457:    esm_get_inplace(emm_context->_guti,&esm_p);
+src/nas/emm/esm_hashtable.c:53:struct esm_context_s* esm_get(struct guti_s guti)
+src/nas/emm/emm_main.c:254:/*struct esm_context_s* esm_get(struct guti_s guti)*/
+src/nas/emm/emm_main.c:255:struct esm_context_s* esm_get(struct guti_s guti)
+src/nas/emm/emm_main.c:259:        printf("\nesm_get start\n");
+src/nas/emm/emm_main.c:269:        printf("\nesm_get end:%p\n",esm_context_t);
+src/nas/emm/emm_main.c:275:struct esm_context_s* esm_get_inplace(struct guti_s guti,struct esm_context_s **esm_p)
+src/nas/emm/emm_main.c:291:        printf("esm_get_inplce函数内部得到的结果\n");
+src/nas/emm/emm_main.c:316:        struct esm_context_s * p=esm_get(guti_t);
+src/nas/emm/emm_main.h:151:struct esm_context_s* esm_get(struct guti_s);
+src/nas/emm/emm_main.h:152:struct esm_context_s* esm_get_inplace(struct guti_s guti,struct esm_context_s **esm_p);
+src/nas/emm/esm_hashtable.h:6:struct esm_context_s* esm_get(struct guti_s);
+src/nas/emm/sap/emm_cn.c:215:  esm_get_inplace(emm_ctx->_guti,&esm_p);
+src/nas/emm/emm_data_ctx.c:601:          /*esm_get_inplace(emm_ctx->_guti,&esm_p);*/
+src/nas/emm/emm_data_ctx.c:604:              /*printf("\nesm_get_inplace函数外部尝试取出:\n");*/

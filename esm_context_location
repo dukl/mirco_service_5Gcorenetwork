@@ -1,0 +1,14 @@
+src/nas/esm/esm_data_context.c:117:void nas_stop_T3489(esm_context_t * const esm_ctx)
+src/nas/esm/esm_data_context.c:137:void free_esm_context_content(esm_context_t * esm_ctx)
+src/nas/esm/esm_data_context.c:145:void esm_init_context(struct esm_context_s *esm_context)
+src/nas/esm/esm_data_context.c:147:  emm_context_t        *emm_context   = PARENT_STRUCT(esm_context, struct emm_context_s, esm_ctx);
+src/nas/esm/esm_data_context.c:151:  esm_context->T3489.id        = NAS_TIMER_INACTIVE_ID;
+src/nas/esm/esm_data_context.c:152:  esm_context->T3489.sec       = mme_config.nas_config.t3489_sec;
+src/nas/esm/esm_data.h:173:typedef struct esm_context_s {
+src/nas/esm/esm_data.h:212:struct esm_context_s *esm_data_context_get(
+src/nas/esm/esm_data.h:215:struct esm_context_s *esm_data_context_remove(
+src/nas/esm/esm_data.h:216:  esm_data_t *esm_data, struct esm_context_s *elm);
+src/nas/esm/esm_data.h:218:void esm_data_context_add(esm_data_t *esm_data, struct esm_context_s *elm);
+src/nas/emm/emmData.h:236:  struct esm_context_s     esm_ctx;
+src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+src/mme_app/mme_app_ue_context.h:258:  pthread_mutex_t recmutex;  // mutex on the ue_mm_context_t + emm_context_s + esm_context_t

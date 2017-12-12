@@ -1,0 +1,24 @@
+./emm_context_location:src/nas/esm/PdnDisconnect.c:143:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+./emm_context_location:src/nas/esm/esm_ebr_context.c:124:  esm_ctx = &emm_context->esm_ctx;
+./emm_context_location:src/nas/esm/sap/esm_recv.c:449:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+./emm_context_location:src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+./esm_ctx_location:./emm_context_location:src/nas/esm/PdnDisconnect.c:143:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+./esm_ctx_location:./emm_context_location:src/nas/esm/esm_ebr_context.c:124:  esm_ctx = &emm_context->esm_ctx;
+./esm_ctx_location:./emm_context_location:src/nas/esm/sap/esm_recv.c:449:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+./esm_ctx_location:./emm_context_location:src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+./esm_ctx_location:./src/nas/esm/PdnDisconnect.c:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+./esm_ctx_location:./src/nas/esm/esm_ebr_context.c:  esm_ctx = &emm_context->esm_ctx;
+./esm_ctx_location:./src/nas/esm/sap/esm_recv.c:  if (!emm_context->esm_ctx.esm_proc_data) {
+./esm_ctx_location:./src/nas/esm/sap/esm_recv.c:    emm_context->esm_ctx.esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*emm_context->esm_ctx.esm_proc_data));
+./esm_ctx_location:./src/nas/esm/sap/esm_recv.c:  struct esm_proc_data_s * esm_data = emm_context->esm_ctx.esm_proc_data;
+./esm_ctx_location:./src/nas/esm/sap/esm_recv.c:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+./esm_ctx_location:./src/nas/emm/emm_data_ctx.c:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+./esm_ctx_location:./esm_context_location:src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+./src/nas/esm/PdnDisconnect.c:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+./src/nas/esm/esm_ebr_context.c:  esm_ctx = &emm_context->esm_ctx;
+./src/nas/esm/sap/esm_recv.c:  if (!emm_context->esm_ctx.esm_proc_data) {
+./src/nas/esm/sap/esm_recv.c:    emm_context->esm_ctx.esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*emm_context->esm_ctx.esm_proc_data));
+./src/nas/esm/sap/esm_recv.c:  struct esm_proc_data_s * esm_data = emm_context->esm_ctx.esm_proc_data;
+./src/nas/esm/sap/esm_recv.c:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+./src/nas/emm/emm_data_ctx.c:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
+./esm_context_location:src/nas/emm/emm_data_ctx.c:929:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);

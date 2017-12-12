@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMSC.a  CMakeFiles/MSC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/msc/msc.c.o
+/usr/bin/ranlib libMSC.a

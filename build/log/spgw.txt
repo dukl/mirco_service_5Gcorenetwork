@@ -1,0 +1,97 @@
+Scanning dependencies of target MSC
+[  0%] Building C object CMakeFiles/MSC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/msc/msc.c.o
+Scanning dependencies of target GTPV1U
+Scanning dependencies of target CN_UTILS
+[  0%] Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o
+[  0%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
+Scanning dependencies of target SGW
+[  9%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o
+[ 18%] Linking C static library libMSC.a
+[ 18%] Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o
+[ 18%] Built target MSC
+[ 27%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
+[ 36%] Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
+Scanning dependencies of target GTPV2C
+[ 36%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cTrxn.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o
+[ 36%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o
+[ 36%] Linking C static library libGTPV1U.a
+[ 36%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cTunnel.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
+[ 36%] Built target GTPV1U
+Scanning dependencies of target BSTR
+[ 36%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
+[ 36%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsg.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
+[ 36%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
+[ 36%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsgIeParseInfo.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
+[ 36%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
+[ 36%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o
+[ 36%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
+[ 36%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2cMsgParser.c.o
+[ 36%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o
+[ 45%] Building C object CMakeFiles/GTPV2C.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv2-c/nwgtpv2c-0.11/src/NwGtpv2c.c.o
+[ 54%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
+[ 54%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o
+[ 54%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
+[ 54%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
+[ 63%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o
+[ 63%] Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
+[ 63%] Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o
+[ 63%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o
+[ 63%] Linking C static library libBSTR.a
+[ 63%] Linking C static library libGTPV2C.a
+[ 63%] Built target BSTR
+Scanning dependencies of target HASHTABLE
+[ 63%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/hashtable.c.o
+[ 63%] Built target GTPV2C
+Scanning dependencies of target 3GPP_TYPES
+[ 63%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o
+[ 63%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_cc_ies.c.o
+[ 63%] Linking C static library libCN_UTILS.a
+[ 63%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_common_ies.c.o
+[ 63%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/hashtable_uint64.c.o
+[ 63%] Built target CN_UTILS
+Scanning dependencies of target ITTI
+[ 63%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o
+[ 72%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/intertask_interface.c.o
+[ 72%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/obj_hashtable.c.o
+[ 72%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_mm_ies.c.o
+[ 72%] Building C object CMakeFiles/HASHTABLE.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/hashtable/obj_hashtable_uint64.c.o
+[ 72%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o
+[ 72%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/backtrace.c.o
+[ 72%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gmm_ies.c.o
+[ 72%] Linking C static library libHASHTABLE.a
+[ 72%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/memory_pools.c.o
+[ 72%] Built target HASHTABLE
+[ 72%] Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o
+Scanning dependencies of target UDP_SERVER
+[ 72%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gprs_common_ies.c.o
+[ 81%] Building C object CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
+[ 81%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/signals.c.o
+[ 81%] Building C object CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_sm_ies.c.o
+[ 81%] Linking C static library libSGW.a
+[ 81%] Building C object CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/timer.c.o
+[ 81%] Linking C static library libUDP_SERVER.a
+[ 90%] Linking C static library lib3GPP_TYPES.a
+[ 90%] Linking C static library libITTI.a
+[ 90%] Built target SGW
+[ 90%] Built target UDP_SERVER
+[ 90%] Built target 3GPP_TYPES
+[ 90%] Built target ITTI
+Scanning dependencies of target S11_SGW
+[100%] Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
+[100%] Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
+[100%] Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o
+[100%] Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o
+[100%] Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o
+[100%] Linking C static library libS11_SGW.a
+[100%] Built target S11_SGW
+Scanning dependencies of target spgw
+[100%] Building C object CMakeFiles/spgw.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_sgw/oai_sgw.c.o
+[100%] Building C object CMakeFiles/spgw.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/common_types.c.o
+[100%] Building C object CMakeFiles/spgw.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti_free_defined_msg.c.o
+[100%] Linking C executable spgw
+[100%] Built target spgw

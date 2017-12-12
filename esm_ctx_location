@@ -1,0 +1,67 @@
+./src/nas/esm/esm_information.c:  nas_stop_T3489(&ue_context->esm_ctx);
+./src/nas/esm/esm_information.c:    if (ue_context->esm_ctx.esm_proc_data->apn) {
+./src/nas/esm/esm_information.c:      bdestroy_wrapper(&ue_context->esm_ctx.esm_proc_data->apn);
+./src/nas/esm/esm_information.c:    ue_context->esm_ctx.esm_proc_data->apn = bstrcpy(apn);
+./src/nas/esm/esm_information.c:    if (ue_context->esm_ctx.esm_proc_data->pco.num_protocol_or_container_id) {
+./src/nas/esm/esm_information.c:      clear_protocol_configuration_options(&ue_context->esm_ctx.esm_proc_data->pco);
+./src/nas/esm/esm_information.c:    copy_protocol_configuration_options(&ue_context->esm_ctx.esm_proc_data->pco, pco);
+./src/nas/esm/esm_information.c:      esm_ebr_timer_data->ctx->esm_ctx.T3489.id = NAS_TIMER_INACTIVE_ID;
+./src/nas/esm/esm_information.c:    nas_stop_T3489(&ue_context->esm_ctx);
+./src/nas/esm/esm_information.c:    ue_context->esm_ctx.T3489.id = nas_timer_start (ue_context->esm_ctx.T3489.sec, 0 /*usec*/,_esm_information_t3489_handler, data);
+./src/nas/esm/esm_information.c:        ue_id, ue_context->esm_ctx.T3489.id, ue_context->esm_ctx.T3489.sec);
+./src/nas/esm/esm_data_context.c:void nas_stop_T3489(esm_context_t * const esm_ctx)
+./src/nas/esm/esm_data_context.c:  if ((esm_ctx) && (esm_ctx->T3489.id != NAS_TIMER_INACTIVE_ID)) {
+./src/nas/esm/esm_data_context.c:    emm_context_t        *emm_context   = PARENT_STRUCT(esm_ctx, struct emm_context_s, esm_ctx);
+./src/nas/esm/esm_data_context.c:    esm_ctx->T3489.id = nas_timer_stop (esm_ctx->T3489.id, (void**)&nas_timer_callback_args);
+./src/nas/esm/esm_data_context.c:    if (NAS_TIMER_INACTIVE_ID == esm_ctx->T3489.id) {
+./src/nas/esm/esm_data_context.c:void free_esm_context_content(esm_context_t * esm_ctx)
+./src/nas/esm/esm_data_context.c:  if (esm_ctx) {
+./src/nas/esm/esm_data_context.c:    nas_stop_T3489(esm_ctx);
+./src/nas/esm/esm_data_context.c:  emm_context_t        *emm_context   = PARENT_STRUCT(esm_context, struct emm_context_s, esm_ctx);
+./src/nas/esm/PdnDisconnect.c:  if (emm_context->esm_ctx.n_active_pdns > 1) {
+./src/nas/esm/esm_data.h:void nas_stop_T3489(esm_context_t * const esm_ctx);
+./src/nas/esm/esm_data.h:void free_esm_context_content(esm_context_t * esm_ctx);
+./src/nas/esm/esm_data.h:void esm_init_context(struct esm_context_s *esm_ctx);
+./src/nas/esm/esm_ebr_context.c:  esm_context_t                          *esm_ctx = NULL;
+./src/nas/esm/esm_ebr_context.c:  esm_ctx = &emm_context->esm_ctx;
+./src/nas/esm/esm_ebr_context.c:    else if (esm_ctx->n_active_ebrs > BEARERS_PER_UE) {
+./src/nas/esm/esm_ebr_context.c:      esm_ctx->n_active_ebrs += 1;
+./src/nas/esm/esm_ebr_context.c:          esm_ctx->is_emergency = true;
+./src/nas/esm/esm_ebr_context.c:      } else if (esm_ctx->pdn[*pid].data == NULL) {
+./src/nas/esm/esm_ebr_context.c:    //if (esm_ctx->n_active_ebrs == 0) {
+./src/nas/esm/PdnConnectivity.c:      ue_mm_context->emm_context.esm_ctx.n_pdns += 1;
+./src/nas/esm/PdnConnectivity.c:    ue_mm_context->emm_context.esm_ctx.n_pdns -= 1;
+./src/nas/esm/sap/esm_recv.c:  if (!emm_context->esm_ctx.esm_proc_data) {
+./src/nas/esm/sap/esm_recv.c:    emm_context->esm_ctx.esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*emm_context->esm_ctx.esm_proc_data));
+./src/nas/esm/sap/esm_recv.c:  struct esm_proc_data_s * esm_data = emm_context->esm_ctx.esm_proc_data;
+./src/nas/esm/sap/esm_recv.c:    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);
+./src/nas/emm/emm_data.h:  struct esm_context_s     esm_ctx;
+./src/nas/emm/emm_data.h:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)  __attribute__ ((nonnull)) ;
+./src/nas/emm/emmData.h:  struct esm_context_s     esm_ctx;
+./src/nas/emm/emmData.h:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)  __attribute__ ((nonnull)) ;
+./src/nas/emm/sap/emm_cn.c:  struct apn_configuration_s* apn_config = mme_app_select_apn(ue_mm_context, emm_ctx->esm_ctx.esm_proc_data->apn);
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->pdn_cid = pdn_cid;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.qci       = apn_config->subscribed_qos.qci;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.pci       = apn_config->subscribed_qos.allocation_retention_priority.pre_emp_capability;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.pl        = apn_config->subscribed_qos.allocation_retention_priority.priority_level;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.pvi       = apn_config->subscribed_qos.allocation_retention_priority.pre_emp_vulnerability;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.gbr.br_ul = 0;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.gbr.br_dl = 0;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.mbr.br_ul = 0;
+./src/nas/emm/sap/emm_cn.c:    emm_ctx->esm_ctx.esm_proc_data->bearer_qos.mbr.br_dl = 0;
+./src/nas/emm/sap/emm_cn.c:// TODO  "Better to throw emm_ctx->esm_ctx.esm_proc_data as a parameter or as a hidden parameter ?"
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->pti,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->pdn_cid,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->request_type,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->apn,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->pdn_type,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data->pdn_addr,
+./src/nas/emm/sap/emm_cn.c:        &emm_ctx->esm_ctx.esm_proc_data->bearer_qos,
+./src/nas/emm/sap/emm_cn.c:        (emm_ctx->esm_ctx.esm_proc_data->pco.num_protocol_or_container_id ) ? &emm_ctx->esm_ctx.esm_proc_data->pco:NULL,
+./src/nas/emm/sap/emm_cn.c:        rc = esm_proc_default_eps_bearer_context (emm_ctx, emm_ctx->esm_ctx.esm_proc_data->pti, pdn_cid, &new_ebi, emm_ctx->esm_ctx.esm_proc_data->bearer_qos.qci, &esm_cause);
+./src/nas/emm/sap/emm_cn.c:      nas_itti_pdn_connectivity_req (emm_ctx->esm_ctx.esm_proc_data->pti, msg_pP->ue_id, pdn_cid, &emm_ctx->_imsi,
+./src/nas/emm/sap/emm_cn.c:        emm_ctx->esm_ctx.esm_proc_data, emm_ctx->esm_ctx.esm_proc_data->request_type);
+./src/nas/emm/emm_data_ctx.c:void emm_init_context(struct emm_context_s * const emm_ctx, const bool init_esm_ctxt)
+./src/nas/emm/emm_data_ctx.c:  if (init_esm_ctxt) {
+./src/nas/emm/emm_data_ctx.c:    esm_init_context(&emm_ctx->esm_ctx);
+./src/nas/emm/emm_data_ctx.c:    //esm_context_dump(&emm_context->esm_ctx, indent_spaces, bstr_dump);
