@@ -211,10 +211,22 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
   // default APN selection
   /*struct apn_configuration_s* apn_config = mme_app_select_apn(ue_mm_context, emm_ctx->esm_ctx.esm_proc_data->apn);*/
 
-  struct esm_context_s * esm_p;
-  esm_get_inplace(emm_ctx->_guti,&esm_p);
-  struct apn_configuration_s* apn_config = mme_app_select_apn(ue_mm_context, esm_p->esm_proc_data->apn);
-
+//  struct esm_context_s * esm_p;
+//  esm_get_inplace(emm_ctx->_guti,&esm_p);
+//  struct apn_configuration_s* apn_config = mme_app_select_apn(ue_mm_context, esm_p->esm_proc_data->apn);
+/*by dukl*/
+  bool runOver = false;
+  struct apn_configuration_s * apn_config = NULL;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_MASA;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).ue_mm_context = ue_mm_context;
+  GUTI_DATA_IND(esm_inter_message_p).apn_config = &apn_config;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  printf("--------------------------emm_cn.c--------------test8-------------------\n");
+  printf("%p\n",apn_config);
   if (!apn_config) {
     /*
      * Unfortunately we didn't find our default APN...
@@ -254,7 +266,7 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
     /*emm_ctx->esm_ctx.esm_proc_data->bearer_qos.gbr.br_dl = 0;*/
     /*emm_ctx->esm_ctx.esm_proc_data->bearer_qos.mbr.br_ul = 0;*/
     /*emm_ctx->esm_ctx.esm_proc_data->bearer_qos.mbr.br_dl = 0;*/
-
+/*
       esm_p->esm_proc_data->pdn_cid = pdn_cid;
       esm_p->esm_proc_data->bearer_qos.qci       = apn_config->subscribed_qos.qci;
       esm_p->esm_proc_data->bearer_qos.pci       = apn_config->subscribed_qos.allocation_retention_priority.pre_emp_capability;
@@ -264,6 +276,18 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
       esm_p->esm_proc_data->bearer_qos.gbr.br_dl = 0;
       esm_p->esm_proc_data->bearer_qos.mbr.br_ul = 0;
       esm_p->esm_proc_data->bearer_qos.mbr.br_dl = 0;
+*/
+/*by dukl*/
+  bool runOver = false;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_SET_PROC_DATA;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).pdn_cid = pdn_cid;
+  GUTI_DATA_IND(esm_inter_message_p).apn_config_calling = apn_config;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  printf("--------------------------emm_cn.c--------------test4-------------------\n");
       // TODO  "Better to throw emm_ctx->esm_ctx.esm_proc_data as a parameter or as a hidden parameter ?"
       //
       //
@@ -280,7 +304,7 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
               /*&emm_ctx->esm_ctx.esm_proc_data->bearer_qos,*/
               /*(emm_ctx->esm_ctx.esm_proc_data->pco.num_protocol_or_container_id ) ? &emm_ctx->esm_ctx.esm_proc_data->pco:NULL,*/
               /*&esm_cause);*/
-
+/*
       rc = esm_proc_pdn_connectivity_request (emm_ctx,
               esm_p->esm_proc_data->pti,
               esm_p->esm_proc_data->pdn_cid,
@@ -292,14 +316,43 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
               &esm_p->esm_proc_data->bearer_qos,
               (esm_p->esm_proc_data->pco.num_protocol_or_container_id ) ? &esm_p->esm_proc_data->pco:NULL,
               &esm_cause);
-
+			  */
+/*by dukl*/
+  runOver = false;
+  esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_EPPCR;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).emm_ctx = emm_ctx;
+  GUTI_DATA_IND(esm_inter_message_p).esm_cause = &esm_cause;
+  GUTI_DATA_IND(esm_inter_message_p).apn_config_calling = apn_config;
+  GUTI_DATA_IND(esm_inter_message_p).rc = &rc;
+  send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  printf("&runOver = %p\n",&runOver);
+  while(!runOver);
+  printf("\n%d\n",rc);
+  printf("--------------------------emm_cn.c--------------test5-------------------\n");
     if (rc != RETURNerror) {
       /*
        * Create local default EPS bearer context
        */
       if ((!is_pdn_connectivity) || ((is_pdn_connectivity) && (EPS_BEARER_IDENTITY_UNASSIGNED == ue_mm_context->pdn_contexts[pdn_cid]->default_ebi))) {
         /*rc = esm_proc_default_eps_bearer_context (emm_ctx, emm_ctx->esm_ctx.esm_proc_data->pti, pdn_cid, &new_ebi, emm_ctx->esm_ctx.esm_proc_data->bearer_qos.qci, &esm_cause);*/
-        rc = esm_proc_default_eps_bearer_context (emm_ctx, esm_p->esm_proc_data->pti, pdn_cid, &new_ebi, esm_p->esm_proc_data->bearer_qos.qci, &esm_cause);
+ //       rc = esm_proc_default_eps_bearer_context (emm_ctx, esm_p->esm_proc_data->pti, pdn_cid, &new_ebi, esm_p->esm_proc_data->bearer_qos.qci, &esm_cause);
+/*by dukl*/
+  runOver = false;
+  esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_EPDEBC;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).emm_ctx = emm_ctx;
+  GUTI_DATA_IND(esm_inter_message_p).esm_cause = &esm_cause;
+  GUTI_DATA_IND(esm_inter_message_p).pdn_cid = pdn_cid;
+  GUTI_DATA_IND(esm_inter_message_p).new_ebi = &new_ebi;
+  GUTI_DATA_IND(esm_inter_message_p).rc = &rc;
+  send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  printf("--------------------------emm_cn.c--------------test6-------------------\n");
       }
 
       if (rc != RETURNerror) {
@@ -311,9 +364,21 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
     }
     if (!is_pdn_connectivity) {
       /*nas_itti_pdn_connectivity_req (emm_ctx->esm_ctx.esm_proc_data->pti, msg_pP->ue_id, pdn_cid, &emm_ctx->_imsi,*/
-      nas_itti_pdn_connectivity_req (esm_p->esm_proc_data->pti, msg_pP->ue_id, pdn_cid, &emm_ctx->_imsi,
+  //    nas_itti_pdn_connectivity_req (esm_p->esm_proc_data->pti, msg_pP->ue_id, pdn_cid, &emm_ctx->_imsi,
         /*emm_ctx->esm_ctx.esm_proc_data, emm_ctx->esm_ctx.esm_proc_data->request_type);*/
-        esm_p->esm_proc_data, esm_p->esm_proc_data->request_type);
+  //      esm_p->esm_proc_data, esm_p->esm_proc_data->request_type);
+/*by dukl*/
+  runOver = false;
+  esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_NIPCNTR;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).ue_id = msg_pP->ue_id;
+  GUTI_DATA_IND(esm_inter_message_p).imsi = &emm_ctx->_imsi;
+  GUTI_DATA_IND(esm_inter_message_p).pdn_cid = pdn_cid;
+  send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  printf("--------------------------emm_cn.c--------------test7-------------------\n");
     } else {
 
     }

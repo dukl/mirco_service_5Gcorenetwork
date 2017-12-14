@@ -394,7 +394,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-AreaScopeOfMDT.c.o"
   "CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-CGI.c.o"
   "CMakeFiles/S1AP_LIB.dir/CMakeFiles/r10.5/S1ap-GTP-TEID.c.o"
-  "CMakeFiles/S1AP_LIB.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/s1ap_common.c.o"
+  "CMakeFiles/S1AP_LIB.dir/home/dukl/mirco_service_5Gcorenetwork/src/s1ap/s1ap_common.c.o"
   "libS1AP_LIB.pdb"
   "libS1AP_LIB.a"
 )

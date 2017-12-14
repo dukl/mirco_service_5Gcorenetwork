@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme
+CMAKE_SOURCE_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build
+CMAKE_BINARY_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/UDP_SERVER.dir/depend.make
@@ -57,41 +57,41 @@ include CMakeFiles/UDP_SERVER.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/UDP_SERVER.dir/flags.make
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o: CMakeFiles/UDP_SERVER.dir/flags.make
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o: CMakeFiles/UDP_SERVER.dir/flags.make
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c > CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c > CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.i
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c -o CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c -o CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.s
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires:
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires:
 
-.PHONY : CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
+.PHONY : CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides: CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
-	$(MAKE) -f CMakeFiles/UDP_SERVER.dir/build.make CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides.build
-.PHONY : CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides: CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
+	$(MAKE) -f CMakeFiles/UDP_SERVER.dir/build.make CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides.build
+.PHONY : CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides
 
-CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides.build: CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
+CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.provides.build: CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
 
 
 # Object files for target UDP_SERVER
 UDP_SERVER_OBJECTS = \
-"CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o"
+"CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o"
 
 # External object files for target UDP_SERVER
 UDP_SERVER_EXTERNAL_OBJECTS =
 
-libUDP_SERVER.a: CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
+libUDP_SERVER.a: CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o
 libUDP_SERVER.a: CMakeFiles/UDP_SERVER.dir/build.make
 libUDP_SERVER.a: CMakeFiles/UDP_SERVER.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libUDP_SERVER.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libUDP_SERVER.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/UDP_SERVER.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UDP_SERVER.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,7 +100,7 @@ CMakeFiles/UDP_SERVER.dir/build: libUDP_SERVER.a
 
 .PHONY : CMakeFiles/UDP_SERVER.dir/build
 
-CMakeFiles/UDP_SERVER.dir/requires: CMakeFiles/UDP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
+CMakeFiles/UDP_SERVER.dir/requires: CMakeFiles/UDP_SERVER.dir/home/dukl/mirco_service_5Gcorenetwork/src/udp/udp_primitives_server.c.o.requires
 
 .PHONY : CMakeFiles/UDP_SERVER.dir/requires
 
@@ -109,6 +109,6 @@ CMakeFiles/UDP_SERVER.dir/clean:
 .PHONY : CMakeFiles/UDP_SERVER.dir/clean
 
 CMakeFiles/UDP_SERVER.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/UDP_SERVER.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dukl/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/UDP_SERVER.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/UDP_SERVER.dir/depend
 

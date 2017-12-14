@@ -62,7 +62,10 @@
 #include "esm_proc.h"
 #include "esm_cause.h"
 #include "mme_config.h"
-
+#include "common_defs.h"
+#include "esm_data.h"
+#include "esm_pt.h"
+#include "emm_sap.h"
 
 /****************************************************************************/
 /****************  E X T E R N A L    D E F I N I T I O N S  ****************/
@@ -202,19 +205,32 @@ esm_recv_pdn_connectivity_request (
   /*
    * Get PDN connection and EPS bearer context data structure to setup
    */
-   struct esm_context_s * esm_p;
-   esm_get_inplace(emm_context->_guti,&esm_p);
+//   struct esm_context_s * esm_p;
+//   esm_get_inplace(emm_context->_guti,&esm_p);
 
  /*if (!emm_context->esm_ctx.esm_proc_data) {*/
-  if (!esm_p->esm_proc_data) {
+//  if (!esm_p->esm_proc_data) {
     /*emm_context->esm_ctx.esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*emm_context->esm_ctx.esm_proc_data));*/
-    esm_p->esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*esm_p->esm_proc_data));
+//    esm_p->esm_proc_data  = (esm_proc_data_t *) calloc(1, sizeof(*esm_p->esm_proc_data));
 
-  }
+//  }
 
   /*struct esm_proc_data_s * esm_data = emm_context->esm_ctx.esm_proc_data;*/
-  struct esm_proc_data_s * esm_data = esm_p->esm_proc_data;
-
+//  struct esm_proc_data_s * esm_data = esm_p->esm_proc_data;
+    struct esm_proc_data_s * esm_data = NULL;
+/*by dukl*/
+	bool runOver = false;
+	MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+	GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_CALLOC_PROC_DATA;
+	GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+	GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+	GUTI_DATA_IND(esm_inter_message_p).esm_data = &esm_data;
+	int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+	while(!runOver);
+printf("---------------------------------------esm_recv.c--------------------------------\n\n");
+  printf("test1\n");
+  printf("%p\n",esm_data);
+printf("---------------------------------------esm_recv.c--------------------------------\n\n");
   esm_data->pti = pti;
   /*
    * Get the PDN connectivity request type
@@ -232,6 +248,7 @@ esm_recv_pdn_connectivity_request (
      */
     esm_data->request_type = -1;
     OAILOG_ERROR (LOG_NAS_ESM, "ESM-SAP   - Invalid PDN request type (INITIAL/HANDOVER/EMERGENCY)\n");
+	printf("-----------------------------------after test1------------------error----------------\n\n");
     OAILOG_FUNC_RETURN (LOG_NAS_ESM, ESM_CAUSE_INVALID_MANDATORY_INFO);
   }
 
@@ -286,11 +303,12 @@ esm_recv_pdn_connectivity_request (
       OAILOG_FUNC_RETURN (LOG_NAS_ESM, esm_cause);
     }
   }
-
+printf("----------------before eppcr()-------\n");
 #if ORIGINAL_CODE
   /*
    * Execute the PDN connectivity procedure requested by the UE
    */
+  printf("----------------esm_proc_pdn_connectivity_request()------------\n");
   int pid = esm_proc_pdn_connectivity_request (emm_context, pti, request_type,
       &esm_data->apn,
       esm_data->pdn_type,
@@ -309,6 +327,7 @@ esm_recv_pdn_connectivity_request (
     }
   }
 #else
+  printf("------------don't run eppcr()--------\n");
   nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, esm_data, esm_data->request_type);
   esm_cause = ESM_CAUSE_SUCCESS;
 #endif
@@ -453,11 +472,21 @@ esm_cause_t esm_recv_information_response (
   if (pid != RETURNerror) {
 
     // Continue with pdn connectivity request
-    struct esm_context_s * esm_p;
-    esm_get_inplace(emm_context->_guti,&esm_p);
+//    struct esm_context_s * esm_p;
+//    esm_get_inplace(emm_context->_guti,&esm_p);
     /*nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, emm_context->esm_ctx.esm_proc_data, emm_context->esm_ctx.esm_proc_data->request_type);*/
-    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, esm_p->esm_proc_data, esm_p->esm_proc_data->request_type);
-
+//    nas_itti_pdn_config_req(pti, ue_id, &emm_context->_imsi, esm_p->esm_proc_data, esm_p->esm_proc_data->request_type);
+/*by dukl*/
+	bool runOver = false;
+	MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+	GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_NIPCR;
+	GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+	GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+	GUTI_DATA_IND(esm_inter_message_p).pti = pti;
+	GUTI_DATA_IND(esm_inter_message_p).imsi = &emm_context->_imsi;
+	GUTI_DATA_IND(esm_inter_message_p).ue_id = ue_id;
+	int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+	while(!runOver);
     esm_cause = ESM_CAUSE_SUCCESS;
   }
 

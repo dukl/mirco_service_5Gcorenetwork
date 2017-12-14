@@ -171,7 +171,14 @@ int nas_init (mme_config_t * mme_config_p)
     OAILOG_ERROR (LOG_NAS, "TASK ESM SAP create task failed\n");
     OAILOG_FUNC_RETURN (LOG_NAS, RETURNerror);
     }
+  if (itti_create_task (TASK_GUTI_RECEIVER, &guti_msg_process, NULL) < 0) {
+    OAILOG_ERROR (LOG_NAS, "TASK GUTI RECEIVER create task failed\n");
+    OAILOG_FUNC_RETURN (LOG_NAS, RETURNerror);
+    }
 
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_TEST;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
 
   OAILOG_DEBUG (LOG_NAS, "Initializing NAS task interface: DONE\n");
   return 0;

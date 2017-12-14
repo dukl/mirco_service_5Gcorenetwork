@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o"
-  "CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o"
+  "CMakeFiles/S6A.dir/home/dukl/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
   "libS6A.pdb"
   "libS6A.a"
 )

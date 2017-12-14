@@ -62,4 +62,6 @@ void esm_sap_initialize(void);
 
 //int esm_sap_send(esm_sap_t *msg);
 void *  esm_sap_message_process(__attribute__((unused)) void *args);
+void *  guti_msg_process(__attribute__((unused)) void *args);
+
 #endif /* __ESM_SAP_H__*/

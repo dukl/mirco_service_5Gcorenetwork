@@ -812,5 +812,5 @@ clean:
 regen: regenerate-from-asn1-source
 
 regenerate-from-asn1-source:
-	asn1c -gen-PER -fcompound-names /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-CommonDataTypes.asn /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-Constants.asn /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-IEs.asn /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-PDU.asn
+	asn1c -gen-PER -fcompound-names /home/dukl/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-CommonDataTypes.asn /home/dukl/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-Constants.asn /home/dukl/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-IEs.asn /home/dukl/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-PDU.asn
 

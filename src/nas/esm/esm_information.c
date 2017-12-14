@@ -66,7 +66,7 @@
 /*
    Timer handlers
 */
-static void _esm_information_t3489_handler (void *);
+ void _esm_information_t3489_handler (void *);
 
 /* Maximum value of the deactivate EPS bearer context request
    retransmission counter */
@@ -124,8 +124,8 @@ int esm_proc_esm_information_response (emm_context_t * ue_context, pti_t pti, co
   OAILOG_FUNC_IN (LOG_NAS_ESM);
   int                                     rc = RETURNok;
 
-  struct esm_context_s * esm_p;
-  esm_get_inplace(ue_context->_guti,&esm_p);
+//  struct esm_context_s * esm_p;
+//  esm_get_inplace(ue_context->_guti,&esm_p);
   /*
    * Stop T3489 timer if running
    */
@@ -133,37 +133,51 @@ int esm_proc_esm_information_response (emm_context_t * ue_context, pti_t pti, co
   /*nas_stop_T3489(esm_get(ue_context->_guti));*/
   /*nas_stop_T3489(esm_p);*/
 
-  if (apn) {
+//  if (apn) {
     /*if (ue_context->esm_ctx.esm_proc_data->apn) {*/
-    if (esm_p->esm_proc_data->apn) {
+//    if (esm_p->esm_proc_data->apn) {
       /*bdestroy_wrapper(&ue_context->esm_ctx.esm_proc_data->apn);*/
-      bdestroy_wrapper(&esm_p->esm_proc_data->apn);
-    }
+//      bdestroy_wrapper(&esm_p->esm_proc_data->apn);
+//    }
     /*ue_context->esm_ctx.esm_proc_data->apn = bstrcpy(apn);*/
-    esm_p->esm_proc_data->apn = bstrcpy(apn);
-  }
+//    esm_p->esm_proc_data->apn = bstrcpy(apn);
+//  }
+/*by dukl*/
+  bool runOver = false;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_EPEIR;
+  GUTI_DATA_IND(esm_inter_message_p).guti = ue_context->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).apn = apn;
+  GUTI_DATA_IND(esm_inter_message_p).pco = pco;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
 
-  if ((pco) && (pco->num_protocol_or_container_id)) {
+
+//  if ((pco) && (pco->num_protocol_or_container_id)) {
     /*if (ue_context->esm_ctx.esm_proc_data->pco.num_protocol_or_container_id) {*/
-    if (esm_p->esm_proc_data->pco.num_protocol_or_container_id) {
+//    if (esm_p->esm_proc_data->pco.num_protocol_or_container_id) {
       /*clear_protocol_configuration_options(&ue_context->esm_ctx.esm_proc_data->pco);*/
-      clear_protocol_configuration_options(&esm_p->esm_proc_data->pco);
-    }
+//      clear_protocol_configuration_options(&esm_p->esm_proc_data->pco);
+//    }
     /*copy_protocol_configuration_options(&ue_context->esm_ctx.esm_proc_data->pco, pco);*/
-    copy_protocol_configuration_options(&esm_p->esm_proc_data->pco, pco);
-  }
+//    copy_protocol_configuration_options(&esm_p->esm_proc_data->pco, pco);
+/*by dukl*/
+	  /*
+  runOver = false;
+  esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_IFPCO;
+  GUTI_DATA_IND(esm_inter_message_p).guti = ue_context->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).pco = 
+  send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  */
 
-  esm_nas_stop_T3489(ue_context->_guti);
+//  }
+
+//  esm_nas_stop_T3489(ue_context->_guti);
   *esm_cause = ESM_CAUSE_SUCCESS;
-
-	  printf("-----------------------------------------------in esm_information.c esm_proc_esm_information_response();--------------\n\n");
-	  printf("n_active_ebrs:%d\n",esm_p->n_active_ebrs);
-	  printf("n_active_pdns:%d\n",esm_p->n_active_pdns);
-	  printf("n_pdns:%d\n",esm_p->n_pdns);
-	  printf("is_emergency:%d\n",esm_p->is_emergency);
-	  printf("timer id:%ld",esm_p->T3489.id);
-	  printf("sec:%ld",esm_p->T3489.sec);
-	  printf("-----------------------------------------------in esm_information.c  esm_proc_esm_information_response();--------------\n\n");
 
   OAILOG_FUNC_RETURN (LOG_NAS_ESM, rc);
 }
@@ -201,7 +215,7 @@ int esm_proc_esm_information_response (emm_context_t * ue_context, pti_t pti, co
  **      Others:    None                                       **
  **                                                                        **
  ***************************************************************************/
-static void _esm_information_t3489_handler (void *args)
+ void _esm_information_t3489_handler (void *args)
 {
   OAILOG_FUNC_IN (LOG_NAS_ESM);
 
@@ -233,10 +247,21 @@ static void _esm_information_t3489_handler (void *args)
          * Stop timer T3489
          */
         /*esm_ebr_timer_data->ctx->esm_ctx.T3489.id = NAS_TIMER_INACTIVE_ID;*/
-        struct esm_context_s * esm_p;
-        esm_get_inplace(esm_ebr_timer_data->ctx->_guti,&esm_p);
+       // struct esm_context_s * esm_p;
+       // esm_get_inplace(esm_ebr_timer_data->ctx->_guti,&esm_p);
         /*esm_ebr_timer_data->ctx->esm_ctx.T3489.id = NAS_TIMER_INACTIVE_ID;*/
-        esm_p->T3489.id = NAS_TIMER_INACTIVE_ID;
+       // esm_p->T3489.id = NAS_TIMER_INACTIVE_ID;
+
+/*by dukl*/
+  bool runOver = false;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_SET_T3489_ID;
+  GUTI_DATA_IND(esm_inter_message_p).guti = esm_ebr_timer_data->ctx->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+
+
         /*
          * Re-start T3489 timer
          */
@@ -296,8 +321,8 @@ _esm_information (
   MSC_LOG_TX_MESSAGE (MSC_NAS_ESM_MME, MSC_NAS_EMM_MME, NULL, 0, "0 EMMESM_UNITDATA_REQ (ESM_INFORMATION_REQUEST) ue id " MME_UE_S1AP_ID_FMT " ", ue_id);
   rc = emm_sap_send (&emm_sap);
 
-  struct esm_context_s * esm_p;
-  esm_get_inplace(ue_context->_guti,&esm_p);
+//  struct esm_context_s * esm_p;
+//  esm_get_inplace(ue_context->_guti,&esm_p);
 
 
   if (rc != RETURNerror) {
@@ -307,13 +332,28 @@ _esm_information (
        * Start T3489 timer
        */
       /*ue_context->esm_ctx.T3489.id = nas_timer_start (ue_context->esm_ctx.T3489.sec, 0 [>usec<],_esm_information_t3489_handler, data);*/
-      esm_p->T3489.id = nas_timer_start (esm_p->T3489.sec, 0 /*usec*/,_esm_information_t3489_handler, data);
-      MSC_LOG_EVENT (MSC_NAS_EMM_MME, "T3489 started UE " MME_UE_S1AP_ID_FMT " ", ue_id);
+//      esm_p->T3489.id = nas_timer_start (esm_p->T3489.sec, 0 /*usec*/,_esm_information_t3489_handler, data);
+//      MSC_LOG_EVENT (MSC_NAS_EMM_MME, "T3489 started UE " MME_UE_S1AP_ID_FMT " ", ue_id);
 
-      OAILOG_INFO (LOG_NAS_EMM, "UE " MME_UE_S1AP_ID_FMT "Timer T3489 (%lx) expires in %ld seconds\n",
+//      OAILOG_INFO (LOG_NAS_EMM, "UE " MME_UE_S1AP_ID_FMT "Timer T3489 (%lx) expires in %ld seconds\n",
               /*ue_id, ue_context->esm_ctx.T3489.id, ue_context->esm_ctx.T3489.sec);*/
-                  ue_id, esm_p->T3489.id, esm_p->T3489.sec);
-      esm_nas_stop_T3489(ue_context->_guti);
+//                  ue_id, esm_p->T3489.id, esm_p->T3489.sec);
+//      esm_nas_stop_T3489(ue_context->_guti);
+
+/*by dukl*/
+  bool runOver = false;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_NTS_ENST;
+  GUTI_DATA_IND(esm_inter_message_p).guti = ue_context->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).data = data;
+  GUTI_DATA_IND(esm_inter_message_p).ue_id = ue_id;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+printf("-------------------------esm_information.c-------------------------\n\n");
+printf("test2\n");
+printf("-------------------------esm_information.c-------------------------\n\n");
+
   }else {
       bdestroy_wrapper(&data->msg);
       free_wrapper((void**)data);

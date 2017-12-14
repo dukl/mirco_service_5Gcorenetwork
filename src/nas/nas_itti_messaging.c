@@ -199,7 +199,7 @@ void nas_itti_pdn_connectivity_req(
   AssertFatal(imsi_pP       != NULL, "imsi_pP param is NULL");
   AssertFatal(proc_data_pP  != NULL, "proc_data_pP param is NULL");
 
-
+  printf("--------------nipcntr()------------\n");
   message_p = itti_alloc_new_message(TASK_NAS_MME, NAS_PDN_CONNECTIVITY_REQ);
 
   hexa_to_ascii((uint8_t *)imsi_pP->u.value,
@@ -254,7 +254,7 @@ void nas_itti_pdn_connectivity_req(
         ue_idP, NAS_PDN_CONNECTIVITY_REQ(message_p).imsi);
 
   itti_send_msg_to_task(TASK_MME_APP, INSTANCE_DEFAULT, message_p);
-
+printf("---------NAS_PDN_CONNECTIVITY_REQ----to---TASK_MME_APP--ok\n");
   OAILOG_FUNC_OUT(LOG_NAS);
 }
 

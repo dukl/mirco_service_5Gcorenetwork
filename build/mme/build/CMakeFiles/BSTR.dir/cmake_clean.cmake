@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o"
-  "CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o"
-  "CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o"
-  "CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
+  "CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o"
+  "CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o"
+  "CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o"
+  "CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
   "libBSTR.pdb"
   "libBSTR.a"
 )

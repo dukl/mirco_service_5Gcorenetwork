@@ -141,10 +141,23 @@ esm_proc_pdn_disconnect_request (
    * Get UE's ESM context
    */
 
-  struct esm_context_s * esm_p;
-  esm_get_inplace(emm_context->_guti,&esm_p);
+//  struct esm_context_s * esm_p;
+//  esm_get_inplace(emm_context->_guti,&esm_p);
+
+/*by dukl*/
+  bool runOver = false;
+  bool isTrue = false;
+  MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+  GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_IS_NAP_MORETHAN_ONE;
+  GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+  GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+  GUTI_DATA_IND(esm_inter_message_p).isTrue = &isTrue;
+  int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+  while(!runOver);
+  if(isTrue){
+
   /*if (emm_context->esm_ctx.n_active_pdns > 1) {*/
-  if (esm_p->n_active_pdns > 1) {
+//  if (esm_p->n_active_pdns > 1) {
     /*
      * Get the identifier of the PDN connection entry assigned to the
      * * * * procedure transaction identity

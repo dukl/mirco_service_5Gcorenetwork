@@ -30,8 +30,8 @@
 /*******************************************************************************
  * This file had been created by asn1tostruct.py script v1.0.2
  * Please do not modify this file but regenerate it via script.
- * Created on: 2017-12-12 17:27:51.992440 by dukl
- * from ['/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-PDU-Contents.asn']
+ * Created on: 2017-12-14 17:23:18.448948 by dukl
+ * from ['/home/dukl/mirco_service_5Gcorenetwork/src/s1ap/messages/asn1/r10.5/S1AP-PDU-Contents.asn']
  ******************************************************************************/
 #include "s1ap_common.h"
 

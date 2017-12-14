@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hss_db.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/db/db_connector.c.o"
-  "CMakeFiles/hss_db.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/db/db_epc_equipment.c.o"
-  "CMakeFiles/hss_db.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/db/db_subscription_data.c.o"
+  "CMakeFiles/hss_db.dir/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/db/db_connector.c.o"
+  "CMakeFiles/hss_db.dir/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/db/db_epc_equipment.c.o"
+  "CMakeFiles/hss_db.dir/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/db/db_subscription_data.c.o"
   "libhss_db.pdb"
   "libhss_db.a"
 )

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/oai_hss.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/hss_main.c.o"
+  "CMakeFiles/oai_hss.dir/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/hss_main.c.o"
   "oai_hss.pdb"
   "oai_hss"
 )

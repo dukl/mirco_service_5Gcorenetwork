@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw
+CMAKE_SOURCE_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build
+CMAKE_BINARY_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GTPV1U.dir/depend.make
@@ -57,93 +57,93 @@ include CMakeFiles/GTPV1U.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GTPV1U.dir/flags.make
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o: CMakeFiles/GTPV1U.dir/flags.make
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o: CMakeFiles/GTPV1U.dir/flags.make
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o: /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c > CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c > CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.i
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.s
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires:
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires:
 
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
-	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides.build
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
+	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides.build
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o
-
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o: CMakeFiles/GTPV1U.dir/flags.make
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c > CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires:
-
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
-	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides.build
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides
-
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o
 
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o: CMakeFiles/GTPV1U.dir/flags.make
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o: CMakeFiles/GTPV1U.dir/flags.make
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o: /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c > CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c > CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.i
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c -o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.s
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires:
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires:
 
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
-	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides.build
-.PHONY : CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
+	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides.build
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides
 
-CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o
+
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o: CMakeFiles/GTPV1U.dir/flags.make
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o: /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c > CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.i
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c -o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.s
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires:
+
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
+	$(MAKE) -f CMakeFiles/GTPV1U.dir/build.make CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides.build
+.PHONY : CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides
+
+CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.provides.build: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
 
 
 # Object files for target GTPV1U
 GTPV1U_OBJECTS = \
-"CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o" \
-"CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o" \
-"CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
+"CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o" \
+"CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o" \
+"CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
 
 # External object files for target GTPV1U
 GTPV1U_EXTERNAL_OBJECTS =
 
-libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o
-libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o
-libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
+libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o
+libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o
+libGTPV1U.a: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
 libGTPV1U.a: CMakeFiles/GTPV1U.dir/build.make
 libGTPV1U.a: CMakeFiles/GTPV1U.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libGTPV1U.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libGTPV1U.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GTPV1U.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GTPV1U.dir/link.txt --verbose=$(VERBOSE)
 
@@ -152,9 +152,9 @@ CMakeFiles/GTPV1U.dir/build: libGTPV1U.a
 
 .PHONY : CMakeFiles/GTPV1U.dir/build
 
-CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
-CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
-CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
+CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o.requires
+CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o.requires
+CMakeFiles/GTPV1U.dir/requires: CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o.requires
 
 .PHONY : CMakeFiles/GTPV1U.dir/requires
 
@@ -163,6 +163,6 @@ CMakeFiles/GTPV1U.dir/clean:
 .PHONY : CMakeFiles/GTPV1U.dir/clean
 
 CMakeFiles/GTPV1U.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/GTPV1U.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oai/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/GTPV1U.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GTPV1U.dir/depend
 

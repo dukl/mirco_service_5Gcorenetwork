@@ -362,7 +362,7 @@ _pdn_connectivity_create (
      * Create new PDN connection
      */
     pdn_context_t *pdn_context = mme_app_create_pdn_context(ue_mm_context, pdn_cid, context_identifier);
-
+printf("pdn_context = %p\n",pdn_context);
     if (pdn_context ) {
         /*
          * Increment the number of PDN connections
@@ -371,6 +371,20 @@ _pdn_connectivity_create (
         struct esm_context_s* esm_p;
         esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
         esm_p->n_pdns+=1;
+	    /*by dukl*/
+		/*
+	    bool runOver = false;
+	    MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+		GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_PDN_PLUS;
+		GUTI_DATA_IND(esm_inter_message_p).guti = ue_mm_context->emm_context._guti;
+		GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+		int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+		printf("----------------in PdnConeectivity.c-----------\n");
+		while(!runOver);
+		*/
+printf("----------------------------------PdnConnectivity.c------------------------\n\n");
+printf("test3\n");
+printf("----------------------------------PdnConnectivity.c------------------------\n\n");
         /*ue_mm_context->emm_context.esm_ctx.n_pdns += 1;*/
         /*
          * Set the procedure transaction identity
@@ -513,9 +527,18 @@ proc_tid_t _pdn_connectivity_delete (emm_context_t * emm_context, pdn_cid_t pdn_
      * Decrement the number of PDN connections
      */
 
-    struct esm_context_s* esm_p;
-    esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
-    esm_p->n_pdns -= 1;
+    //struct esm_context_s* esm_p;
+    //esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
+    //esm_p->n_pdns -= 1;
+	/*by dukl*/
+	bool runOver = false;
+	MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+	GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_PDN_SUB;
+	GUTI_DATA_IND(esm_inter_message_p).guti = ue_mm_context->emm_context._guti;
+	GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+	int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+	while(!runOver);
+
     /*
      * Release allocated PDN connection data
      */

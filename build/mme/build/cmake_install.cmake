@@ -1,4 +1,4 @@
-# Install script for directory: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme
+# Install script for directory: /home/dukl/mirco_service_5Gcorenetwork/build/mme
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/tests/cmake_install.cmake")
+  include("/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/tests/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

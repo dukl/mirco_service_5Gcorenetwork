@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme
+CMAKE_SOURCE_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build
+CMAKE_BINARY_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SGW.dir/depend.make
@@ -57,327 +57,327 @@ include CMakeFiles/SGW.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SGW.dir/flags.make
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o
 
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o: CMakeFiles/SGW.dir/flags.make
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o: CMakeFiles/SGW.dir/flags.make
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c > CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c > CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.i
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c -o CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c -o CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.s
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires:
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires:
 
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
-	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides.build
-.PHONY : CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
+	$(MAKE) -f CMakeFiles/SGW.dir/build.make CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides.build
+.PHONY : CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides
 
-CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o
+CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.provides.build: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o
 
 
 # Object files for target SGW
 SGW_OBJECTS = \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o" \
-"CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o"
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o" \
+"CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o"
 
 # External object files for target SGW
 SGW_EXTERNAL_OBJECTS =
 
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o
-libSGW.a: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o
+libSGW.a: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o
 libSGW.a: CMakeFiles/SGW.dir/build.make
 libSGW.a: CMakeFiles/SGW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libSGW.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libSGW.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SGW.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SGW.dir/link.txt --verbose=$(VERBOSE)
 
@@ -386,18 +386,18 @@ CMakeFiles/SGW.dir/build: libSGW.a
 
 .PHONY : CMakeFiles/SGW.dir/build
 
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
-CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_config.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_lite_paa.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pcef_emulation.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_pco.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_procedures.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/pgw_ue_ip_address_alloc.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/s11_causes.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_config.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_context_manager.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_handlers.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/sgw_task.c.o.requires
+CMakeFiles/SGW.dir/requires: CMakeFiles/SGW.dir/home/dukl/mirco_service_5Gcorenetwork/src/sgw/spgw_config.c.o.requires
 
 .PHONY : CMakeFiles/SGW.dir/requires
 
@@ -406,6 +406,6 @@ CMakeFiles/SGW.dir/clean:
 .PHONY : CMakeFiles/SGW.dir/clean
 
 CMakeFiles/SGW.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/SGW.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dukl/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/SGW.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SGW.dir/depend
 

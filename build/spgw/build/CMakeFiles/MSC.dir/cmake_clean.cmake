@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MSC.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/msc/msc.c.o"
+  "CMakeFiles/MSC.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/msc/msc.c.o"
   "libMSC.pdb"
   "libMSC.a"
 )

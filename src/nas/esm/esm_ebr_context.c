@@ -123,7 +123,7 @@ esm_ebr_context_create (
 
   OAILOG_FUNC_IN (LOG_NAS_ESM);
   /*esm_ctx = &emm_context->esm_ctx;*/
-  esm_ctx ;
+//  esm_ctx ;
   esm_get_inplace(emm_context->_guti,&esm_ctx);
   ue_mm_context_t      *ue_mm_context = PARENT_STRUCT(emm_context, struct ue_mm_context_s, emm_context);
 
@@ -138,7 +138,21 @@ esm_ebr_context_create (
     /*
      * Check the total number of active EPS bearers
      */
-    else if (esm_ctx->n_active_ebrs > BEARERS_PER_UE) {
+    else{
+/*by dukl*/
+		/*
+		bool runOver = false;
+		bool isTrue = false;
+		MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+		GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_IS_NAE_MORETHAN_BPE;
+		GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+		GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+		GUTI_DATA_IND(esm_inter_message_p).isTrue = &isTrue;
+		int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+		while(!runOver);
+		if(isTrue){
+		*/
+	 if (esm_ctx->n_active_ebrs > BEARERS_PER_UE) {
       OAILOG_WARNING (LOG_NAS_ESM , "ESM-PROC  - The total number of active EPS" "bearers is exceeded\n");
       OAILOG_FUNC_RETURN (LOG_NAS_ESM, ESM_EBI_UNASSIGNED);
     } else {
@@ -153,6 +167,7 @@ esm_ebr_context_create (
         OAILOG_FUNC_RETURN (LOG_NAS_ESM, ESM_EBI_UNASSIGNED);
       }
     }
+		}
   }
 
   if (bidx < BEARERS_PER_UE) {
@@ -173,6 +188,16 @@ esm_ebr_context_create (
        * Increment the total number of active EPS bearers
        */
       esm_ctx->n_active_ebrs += 1;
+/*by dukl*/
+	  /*
+		bool runOver = false;
+		MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+		GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_NAE_PLUS;
+		GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+		GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+		int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+		while(!runOver);
+		*/
       /*
        * Increment the number of EPS bearer for this PDN connection
        */
@@ -209,6 +234,16 @@ esm_ebr_context_create (
          */
         if (pdn->is_emergency) {
           esm_ctx->is_emergency = true;
+/*by dukl*/
+		  /*
+		bool runOver = false;
+		MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
+		GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_TRUE_EMERGENCY;
+		GUTI_DATA_IND(esm_inter_message_p).guti = emm_context->_guti;
+		GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
+		int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+		while(!runOver);
+		*/
         }
       }
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_common.c.o"
-  "CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_itti_messaging.c.o"
-  "CMakeFiles/SCTP_SERVER.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/sctp/sctp_primitives_server.c.o"
+  "CMakeFiles/SCTP_SERVER.dir/home/oai/mirco_service_5Gcorenetwork/src/sctp/sctp_common.c.o"
+  "CMakeFiles/SCTP_SERVER.dir/home/oai/mirco_service_5Gcorenetwork/src/sctp/sctp_itti_messaging.c.o"
+  "CMakeFiles/SCTP_SERVER.dir/home/oai/mirco_service_5Gcorenetwork/src/sctp/sctp_primitives_server.c.o"
   "libSCTP_SERVER.pdb"
   "libSCTP_SERVER.a"
 )

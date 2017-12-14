@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_cc_ies.c.o"
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_common_ies.c.o"
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_mm_ies.c.o"
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gmm_ies.c.o"
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gprs_common_ies.c.o"
-  "CMakeFiles/3GPP_TYPES.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_sm_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_cc_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_common_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_mm_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gmm_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_gprs_common_ies.c.o"
+  "CMakeFiles/3GPP_TYPES.dir/home/dukl/mirco_service_5Gcorenetwork/src/common/3gpp_24.008_sm_ies.c.o"
   "lib3GPP_TYPES.pdb"
   "lib3GPP_TYPES.a"
 )

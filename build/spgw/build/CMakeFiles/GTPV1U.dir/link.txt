@@ -1,2 +1,2 @@
-/usr/bin/ar qc libGTPV1U.a  CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
+/usr/bin/ar qc libGTPV1U.a  CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o
 /usr/bin/ranlib libGTPV1U.a

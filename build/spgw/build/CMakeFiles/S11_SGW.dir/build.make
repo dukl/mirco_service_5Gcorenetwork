@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw
+CMAKE_SOURCE_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build
+CMAKE_BINARY_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/S11_SGW.dir/depend.make
@@ -57,145 +57,145 @@ include CMakeFiles/S11_SGW.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/S11_SGW.dir/flags.make
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o: CMakeFiles/S11_SGW.dir/flags.make
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o: CMakeFiles/S11_SGW.dir/flags.make
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c > CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c > CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.i
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.s
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires:
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires:
 
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
-	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides.build
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
+	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides.build
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
-
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o: CMakeFiles/S11_SGW.dir/flags.make
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c > CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires:
-
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
-	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides.build
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
 
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o: CMakeFiles/S11_SGW.dir/flags.make
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o: CMakeFiles/S11_SGW.dir/flags.make
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c > CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c > CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.i
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.s
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires:
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires:
 
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
-	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides.build
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
+	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides.build
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o
-
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o: CMakeFiles/S11_SGW.dir/flags.make
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c > CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires:
-
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
-	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides.build
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides
-
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
 
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o: CMakeFiles/S11_SGW.dir/flags.make
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o: CMakeFiles/S11_SGW.dir/flags.make
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c > CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c > CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.i
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c -o CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.s
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires:
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires:
 
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
-	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides.build
-.PHONY : CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
+	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides.build
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides
 
-CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o
+
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o: CMakeFiles/S11_SGW.dir/flags.make
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c > CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.i
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.s
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires:
+
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
+	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides.build
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o
+
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o: CMakeFiles/S11_SGW.dir/flags.make
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c > CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.i
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c -o CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.s
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires:
+
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
+	$(MAKE) -f CMakeFiles/S11_SGW.dir/build.make CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides.build
+.PHONY : CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides
+
+CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.provides.build: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o
 
 
 # Object files for target S11_SGW
 S11_SGW_OBJECTS = \
-"CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o" \
-"CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o" \
-"CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o" \
-"CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o" \
-"CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o"
+"CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o" \
+"CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o" \
+"CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o" \
+"CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o" \
+"CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o"
 
 # External object files for target S11_SGW
 S11_SGW_EXTERNAL_OBJECTS =
 
-libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
-libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
-libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o
-libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o
-libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o
+libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o
+libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o
+libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o
+libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o
+libS11_SGW.a: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o
 libS11_SGW.a: CMakeFiles/S11_SGW.dir/build.make
 libS11_SGW.a: CMakeFiles/S11_SGW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libS11_SGW.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libS11_SGW.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/S11_SGW.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/S11_SGW.dir/link.txt --verbose=$(VERBOSE)
 
@@ -204,11 +204,11 @@ CMakeFiles/S11_SGW.dir/build: libS11_SGW.a
 
 .PHONY : CMakeFiles/S11_SGW.dir/build
 
-CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
-CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
-CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
-CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
-CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
+CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_common.c.o.requires
+CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_ie_formatter.c.o.requires
+CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw.c.o.requires
+CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_session_manager.c.o.requires
+CMakeFiles/S11_SGW.dir/requires: CMakeFiles/S11_SGW.dir/home/oai/mirco_service_5Gcorenetwork/src/s11/s11_sgw_bearer_manager.c.o.requires
 
 .PHONY : CMakeFiles/S11_SGW.dir/requires
 
@@ -217,6 +217,6 @@ CMakeFiles/S11_SGW.dir/clean:
 .PHONY : CMakeFiles/S11_SGW.dir/clean
 
 CMakeFiles/S11_SGW.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/S11_SGW.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oai/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/S11_SGW.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/S11_SGW.dir/depend
 

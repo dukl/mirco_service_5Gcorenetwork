@@ -114,7 +114,6 @@ typedef union msg_s {
 #include <messages_def.h>
 #undef MESSAGE_DEF
 } msg_t;
-
 typedef uint16_t MessageHeaderSize;
 
 typedef struct itti_lte_time_s {

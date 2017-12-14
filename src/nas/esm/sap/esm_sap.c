@@ -71,11 +71,15 @@
 /****************  E X T E R N A L    D E F I N I T I O N S  ****************/
 /****************************************************************************/
 extern int _pdn_connectivity_delete (emm_context_t * ctx, int pid);
+extern  void _esm_information_t3489_handler(void *);
 /****************************************************************************/
 /*******************  L O C A L    D E F I N I T I O N S  *******************/
 /****************************************************************************/
-
-
+void get_apn_config_pt(MessageDef * message_p,struct apn_configuration_s ** apn_config){
+	struct apn_configuration_s ** p;
+    p = GUTI_DATA_IND(message_p).apn_config;
+	*apn_config = *p;
+}
 static int _esm_sap_recv (
   int msg_type,
   bool is_standalone,
@@ -1100,4 +1104,221 @@ _esm_sap_send (
   }
 
   OAILOG_FUNC_RETURN (LOG_NAS_ESM, rc);
+}
+
+void * guti_msg_process(void * args_p){
+
+	itti_mark_task_ready (TASK_GUTI_RECEIVER);
+	while(1){
+		MessageDef * message_p = NULL;
+		itti_receive_msg(TASK_GUTI_RECEIVER,&message_p);
+
+        esm_imsg_primitive_t primitive = GUTI_DATA_IND(message_p).primitive;
+        guti_t guti = GUTI_DATA_IND(message_p).guti;
+		struct esm_context_s * esm_p;
+		bool * runOver = GUTI_DATA_IND(message_p).runOver;
+		bool * isTrue = NULL;
+        mme_ue_s1ap_id_t ue_id;
+        struct apn_configuration_s** apn_config;
+        struct apn_configuration_s * apn_config_calling = NULL;
+        struct emm_context_s * emm_ctx = NULL;
+        pdn_cid_t pdn_cid;
+		int * rc;
+        esm_cause_t * esm_cause;
+        imsi_t * imsi = NULL;
+		switch(primitive){
+			
+			case ESM_IMSG_TEST:
+				printf("TASK_GUTI_RECEIVER has got a message!\n");
+				break;
+			case ESM_IMSG_PDN_PLUS:
+				printf("ESM_IMSG_PDN_PLUS\n");
+				esm_get_inplace(guti,&esm_p);
+				printf("%d\n",esm_p->n_pdns);
+				esm_p->n_pdns+=1;
+				printf("%d\n",esm_p->n_pdns);
+                *runOver = true;
+				break;
+			case ESM_IMSG_PDN_SUB:
+				esm_get_inplace(guti,&esm_p);
+				esm_p->n_pdns-=1;
+                *runOver = true;
+				break;
+			case ESM_IMSG_EPEIR:
+				printf("ESM_IMSG_EPEIR\n");
+				esm_get_inplace(guti,&esm_p);
+				const_bstring const apn = GUTI_DATA_IND(message_p).apn;
+				const protocol_configuration_options_t * pco = GUTI_DATA_IND(message_p).pco;
+				if(apn){
+					if(esm_p->esm_proc_data->apn){
+						bdestroy_wrapper(&esm_p->esm_proc_data->apn);
+					}
+					esm_p->esm_proc_data->apn = bstrcpy(apn);
+				}
+				if((pco)&&(pco->num_protocol_or_container_id)){
+			     	if(esm_p->esm_proc_data->pco.num_protocol_or_container_id){
+						clear_protocol_configuration_options(&esm_p->esm_proc_data->pco);
+				    }
+					copy_protocol_configuration_options(&esm_p->esm_proc_data->pco,pco);
+				}
+				esm_nas_stop_T3489(guti);
+				*runOver = true;
+				break;
+			case ESM_IMSG_SET_T3489_ID:
+				printf("ESM_IMSG_SET_T3489_ID\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_p->T3489.id = NAS_TIMER_INACTIVE_ID;
+				*runOver = true;
+				break;
+			case ESM_IMSG_NTS_ENST:
+				printf("ESM_IMSG_NTS_ENST\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_ebr_timer_data_t * data = GUTI_DATA_IND(message_p).data;
+				ue_id = GUTI_DATA_IND(message_p).ue_id;
+				esm_p->T3489.id = nas_timer_start(esm_p->T3489.sec,0,_esm_information_t3489_handler,data);
+				MSC_LOG_EVENT(MSC_NAS_EMM_MME,"T3489 started UE ",MME_UE_S1AP_ID_FMT " ",ue_id);
+				OAILOG_INFO(LOG_NAS_EMM,"UE " MME_UE_S1AP_ID_FMT "Timer T3489 (%lx) expires in %ld seconds\n",ue_id,esm_p->T3489.id,esm_p->T3489.sec);
+				esm_nas_stop_T3489(guti);
+				*runOver = true;
+				break;
+			case ESM_IMSG_IS_NAP_MORETHAN_ONE:
+				printf("ESM_IMSG_IS_NAP_MORETHAN_ONE\n");
+				esm_get_inplace(guti,&esm_p);
+				isTrue = GUTI_DATA_IND(message_p).isTrue;
+				if(esm_p->n_active_pdns > 1)
+				  *isTrue = true;
+				*runOver = true;
+				break;
+			case ESM_IMSG_IS_NAE_MORETHAN_BPE:
+				printf("ESM_IMSG_IS_NAE_MORETHAN_BPE\n");
+				esm_get_inplace(guti,&esm_p);
+				isTrue = GUTI_DATA_IND(message_p).isTrue;
+				if(esm_p->n_active_ebrs > BEARERS_PER_UE)
+				  *isTrue = true;
+				*runOver = true;
+				break;
+			case ESM_IMSG_NAE_PLUS:
+				printf("ESM_IMSG_NAE_PLUS\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_p->n_active_ebrs += 1;
+				*runOver = true;
+				break;
+			case ESM_IMSG_TRUE_EMERGENCY:
+				printf("ESM_IMSG_TRUE_EMERGENCY\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_p->is_emergency = true;
+				*runOver = true;
+				break;
+			case ESM_IMSG_NIPCR:
+				printf("ESM_IMSG_NIPCR\n");
+				esm_get_inplace(guti,&esm_p);
+				proc_tid_t pti = GUTI_DATA_IND(message_p).pti;
+				imsi = GUTI_DATA_IND(message_p).imsi;
+                ue_id = GUTI_DATA_IND(message_p).ue_id;
+				printf("--------------------------before--------nipcr()-------------------\n");
+				nas_itti_pdn_config_req(pti,ue_id,imsi,esm_p->esm_proc_data,esm_p->esm_proc_data->request_type);
+				printf("---------------------------after--------nipcr()-------------------\n");
+				*runOver = true;
+				break;
+			case ESM_IMSG_CALLOC_PROC_DATA:
+				printf("ESM_IMSG_CALLOC_PROC_DATA\n");
+				esm_get_inplace(guti,&esm_p);
+				struct esm_proc_data_s ** esm_data = GUTI_DATA_IND(message_p).esm_data;
+                if(!esm_p->esm_proc_data){
+					esm_p->esm_proc_data = (esm_proc_data_t *)calloc(1,sizeof(*esm_p->esm_proc_data));
+				}
+				*esm_data = esm_p->esm_proc_data;
+				*runOver = true;
+				break;
+			case ESM_IMSG_MASA:
+				printf("ESM_IMSG_MASA\n");
+				esm_get_inplace(guti,&esm_p);
+				struct ue_mm_context_t * ue_mm_context = GUTI_DATA_IND(message_p).ue_mm_context;
+				apn_config = GUTI_DATA_IND(message_p).apn_config;
+				*apn_config = mme_app_select_apn(ue_mm_context,esm_p->esm_proc_data->apn);
+				printf("apn_config:%p\n",apn_config);
+				printf("*apn_config:%p\n",*apn_config);
+				*runOver = true;
+				break;
+			case ESM_IMSG_SET_PROC_DATA:
+				printf("ESM_IMSG_SET_PROC_DATA\n");
+				esm_get_inplace(guti,&esm_p);
+			    apn_config_calling = GUTI_DATA_IND(message_p).apn_config_calling;
+                pdn_cid = GUTI_DATA_IND(message_p).pdn_cid;
+				printf("---------------esm_sap.c-------------ok\n");
+				printf("apn_config:%p\n",apn_config_calling);
+			//	printf("*apn_config:%p\n",*apn_config);
+                esm_p->esm_proc_data->pdn_cid = pdn_cid;
+				printf("---------------esm_sap.c-------------ok\n");
+			//	struct apn_configuration_s * t;
+			//	get_apn_config_pt(message_p,&t);
+			//	printf("%d\n",t->subscribed_qos.qci);
+                esm_p->esm_proc_data->bearer_qos.qci = (apn_config_calling)->subscribed_qos.qci;
+                esm_p->esm_proc_data->bearer_qos.pci = (apn_config_calling)->subscribed_qos.allocation_retention_priority.pre_emp_capability;
+                esm_p->esm_proc_data->bearer_qos.pl = (apn_config_calling)->subscribed_qos.allocation_retention_priority.priority_level;
+                esm_p->esm_proc_data->bearer_qos.pvi = (apn_config_calling)->subscribed_qos.allocation_retention_priority.pre_emp_vulnerability;
+				printf("---------------esm_sap.c-------------ok\n");
+				esm_p->esm_proc_data->bearer_qos.gbr.br_ul = 0;
+				esm_p->esm_proc_data->bearer_qos.gbr.br_dl = 0;
+				esm_p->esm_proc_data->bearer_qos.mbr.br_ul = 0;
+				esm_p->esm_proc_data->bearer_qos.mbr.br_dl = 0;
+				*runOver = true;
+				printf("---------------esm_sap.c-------------ok\n");
+				break;
+			case ESM_IMSG_EPPCR:
+				printf("ESM_IMSG_EPPCR\n");
+				esm_get_inplace(guti,&esm_p);
+                apn_config_calling = GUTI_DATA_IND(message_p).apn_config_calling;
+				rc = GUTI_DATA_IND(message_p).rc;
+				printf("runOver = %p\n",runOver);
+			    esm_cause = GUTI_DATA_IND(message_p).esm_cause;
+				emm_ctx = GUTI_DATA_IND(message_p).emm_ctx;
+				printf("begin\n");
+				*rc = esm_proc_pdn_connectivity_request(emm_ctx,
+							esm_p->esm_proc_data->pti,
+							esm_p->esm_proc_data->pdn_cid,
+							(apn_config_calling)->context_identifier,
+							esm_p->esm_proc_data->request_type,
+							esm_p->esm_proc_data->apn,
+							esm_p->esm_proc_data->pdn_type,
+							esm_p->esm_proc_data->pdn_addr,
+							&esm_p->esm_proc_data->bearer_qos,
+							(esm_p->esm_proc_data->pco.num_protocol_or_container_id) ? &esm_p->esm_proc_data->pco:NULL,
+							esm_cause);
+				*runOver = true;
+				printf("ESM_IMSG_EPPCR over\n");
+				break;
+			case ESM_IMSG_EPDEBC:
+				printf("ESM_IMSG_EPDEBC\n");
+				esm_get_inplace(guti,&esm_p);
+				rc = GUTI_DATA_IND(message_p).rc;
+				esm_cause = GUTI_DATA_IND(message_p).esm_cause;
+				emm_ctx = GUTI_DATA_IND(message_p).emm_ctx;
+                pdn_cid = GUTI_DATA_IND(message_p).pdn_cid;
+                ebi_t * new_ebi = GUTI_DATA_IND(message_p).new_ebi;
+				*rc = esm_proc_default_eps_bearer_context(emm_ctx,
+							esm_p->esm_proc_data->pti,
+							pdn_cid,
+							new_ebi,
+							esm_p->esm_proc_data->bearer_qos.qci,
+							esm_cause);
+				*runOver = true;
+				break;
+			case ESM_IMSG_NIPCNTR:
+				printf("ESM_IMSG_NIPCNTR\n");
+				esm_get_inplace(guti,&esm_p);
+				proc_tid_t pdn_cid = GUTI_DATA_IND(message_p).pdn_cid;
+				imsi = GUTI_DATA_IND(message_p).imsi;
+                ue_id = GUTI_DATA_IND(message_p).ue_id;
+				printf("--------------------------before--------nipcntr()-------------------\n");
+				nas_itti_pdn_connectivity_req(esm_p->esm_proc_data->pti,ue_id,pdn_cid,imsi,esm_p->esm_proc_data,esm_p->esm_proc_data->request_type);
+				printf("---------------------------after--------nipcntr()-------------------\n");
+				*runOver = true;
+				break;
+		}
+        itti_free (ITTI_MSG_ORIGIN_ID (message_p), message_p);
+        message_p = NULL;
+
+	}
+
 }

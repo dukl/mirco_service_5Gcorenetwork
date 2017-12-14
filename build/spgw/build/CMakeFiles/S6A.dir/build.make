@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw
+CMAKE_SOURCE_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build
+CMAKE_BINARY_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/S6A.dir/depend.make
@@ -57,197 +57,197 @@ include CMakeFiles/S6A.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/S6A.dir/flags.make
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.i
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.s
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires:
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires:
 
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o
-
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires:
-
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o
 
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.i
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.s
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires:
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires:
 
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o
-
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires:
-
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o
 
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.i
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.s
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires:
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires:
 
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o
-
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires:
-
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides
-
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o
 
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o: CMakeFiles/S6A.dir/flags.make
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c > CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.i
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c -o CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.s
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires:
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires:
 
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
-	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides.build
-.PHONY : CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides
 
-CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides.build: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o
+
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.i
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.s
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires:
+
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o
+
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.i
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.s
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires:
+
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o
+
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o: CMakeFiles/S6A.dir/flags.make
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o: /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c > CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.i
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c -o CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.s
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires:
+
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
+	$(MAKE) -f CMakeFiles/S6A.dir/build.make CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides.build
+.PHONY : CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides
+
+CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.provides.build: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o
 
 
 # Object files for target S6A
 S6A_OBJECTS = \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o" \
-"CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o" \
+"CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o"
 
 # External object files for target S6A
 S6A_EXTERNAL_OBJECTS =
 
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o
-libS6A.a: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o
+libS6A.a: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o
 libS6A.a: CMakeFiles/S6A.dir/build.make
 libS6A.a: CMakeFiles/S6A.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libS6A.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libS6A.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/S6A.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/S6A.dir/link.txt --verbose=$(VERBOSE)
 
@@ -256,13 +256,13 @@ CMakeFiles/S6A.dir/build: libS6A.a
 
 .PHONY : CMakeFiles/S6A.dir/build
 
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
-CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_auth_info.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_dict.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_error.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_peer.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_subscription_data.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_task.c.o.requires
+CMakeFiles/S6A.dir/requires: CMakeFiles/S6A.dir/home/oai/mirco_service_5Gcorenetwork/src/s6a/s6a_up_loc.c.o.requires
 
 .PHONY : CMakeFiles/S6A.dir/requires
 
@@ -271,6 +271,6 @@ CMakeFiles/S6A.dir/clean:
 .PHONY : CMakeFiles/S6A.dir/clean
 
 CMakeFiles/S6A.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/S6A.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oai/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/S6A.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/S6A.dir/depend
 

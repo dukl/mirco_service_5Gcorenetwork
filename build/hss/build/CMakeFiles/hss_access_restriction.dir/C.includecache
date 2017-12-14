@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.c
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.c
 stdlib.h
 -
 stdio.h
@@ -16,17 +16,17 @@ string.h
 stdint.h
 -
 conversion.h
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/conversion.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/conversion.h
 access_restriction.h
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.h
 log.h
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/log.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/log.h
 
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/access_restriction/access_restriction.h
 
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/utils/conversion.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/utils/conversion.h
 
-/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/oai_hss/utils/log.h
+/home/oai/mirco_service_5Gcorenetwork/src/oai_hss/utils/log.h
 stdarg.h
 -
 syslog.h

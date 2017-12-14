@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw
+CMAKE_SOURCE_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build
+CMAKE_BINARY_DIR = /home/oai/mirco_service_5Gcorenetwork/build/spgw/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CN_UTILS.dir/depend.make
@@ -57,301 +57,301 @@ include CMakeFiles/CN_UTILS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CN_UTILS.dir/flags.make
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
 
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o: CMakeFiles/CN_UTILS.dir/flags.make
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o: CMakeFiles/CN_UTILS.dir/flags.make
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o: /home/oai/mirco_service_5Gcorenetwork/src/utils/log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o   -c /home/oai/mirco_service_5Gcorenetwork/src/utils/log.c
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c > CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.i
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/oai/mirco_service_5Gcorenetwork/src/utils/log.c > CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.i
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c -o CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.s
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/oai/mirco_service_5Gcorenetwork/src/utils/log.c -o CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.s
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires:
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires:
 
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
-	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides.build
-.PHONY : CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
+	$(MAKE) -f CMakeFiles/CN_UTILS.dir/build.make CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides.build
+.PHONY : CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides
 
-CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o
+CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.provides.build: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o
 
 
 # Object files for target CN_UTILS
 CN_UTILS_OBJECTS = \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o" \
-"CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o"
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o" \
+"CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o"
 
 # External object files for target CN_UTILS
 CN_UTILS_EXTERNAL_OBJECTS =
 
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
-libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o
+libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o
 libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/build.make
 libCN_UTILS.a: CMakeFiles/CN_UTILS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libCN_UTILS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libCN_UTILS.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/CN_UTILS.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CN_UTILS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -360,17 +360,17 @@ CMakeFiles/CN_UTILS.dir/build: libCN_UTILS.a
 
 .PHONY : CMakeFiles/CN_UTILS.dir/build
 
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
-CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/async_system.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/conversions.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/digest.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/dynamic_memory_check.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/enum_string.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/mcc_mnc_itu.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/pid_file.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/shared_ts_log.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVEncoder.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/TLVDecoder.c.o.requires
+CMakeFiles/CN_UTILS.dir/requires: CMakeFiles/CN_UTILS.dir/home/oai/mirco_service_5Gcorenetwork/src/utils/log.c.o.requires
 
 .PHONY : CMakeFiles/CN_UTILS.dir/requires
 
@@ -379,6 +379,6 @@ CMakeFiles/CN_UTILS.dir/clean:
 .PHONY : CMakeFiles/CN_UTILS.dir/clean
 
 CMakeFiles/CN_UTILS.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/CN_UTILS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oai/mirco_service_5Gcorenetwork/build/spgw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build /home/oai/mirco_service_5Gcorenetwork/build/spgw/build/CMakeFiles/CN_UTILS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CN_UTILS.dir/depend
 

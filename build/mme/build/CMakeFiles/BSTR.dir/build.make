@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme
+CMAKE_SOURCE_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build
+CMAKE_BINARY_DIR = /home/dukl/mirco_service_5Gcorenetwork/build/mme/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BSTR.dir/depend.make
@@ -57,119 +57,119 @@ include CMakeFiles/BSTR.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BSTR.dir/flags.make
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o: CMakeFiles/BSTR.dir/flags.make
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o: CMakeFiles/BSTR.dir/flags.make
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c > CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c > CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.i
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.s
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires:
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires:
 
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
-	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides.build
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
+	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides.build
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
-
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o: CMakeFiles/BSTR.dir/flags.make
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c > CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires:
-
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
-	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides.build
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides
-
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
 
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o: CMakeFiles/BSTR.dir/flags.make
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o: CMakeFiles/BSTR.dir/flags.make
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c > CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c > CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.i
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.s
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires:
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires:
 
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
-	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides.build
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
+	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides.build
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
 
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o: CMakeFiles/BSTR.dir/flags.make
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o   -c /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o: CMakeFiles/BSTR.dir/flags.make
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c > CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c > CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.i
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c -o CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.s
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires:
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires:
 
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
-	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides.build
-.PHONY : CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
+	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides.build
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides
 
-CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
+
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o: CMakeFiles/BSTR.dir/flags.make
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o: /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o   -c /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c > CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.i
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c -o CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.s
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires:
+
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
+	$(MAKE) -f CMakeFiles/BSTR.dir/build.make CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides.build
+.PHONY : CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides
+
+CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.provides.build: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
 
 
 # Object files for target BSTR
 BSTR_OBJECTS = \
-"CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o" \
-"CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o" \
-"CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o" \
-"CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
+"CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o" \
+"CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o" \
+"CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o" \
+"CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o"
 
 # External object files for target BSTR
 BSTR_EXTERNAL_OBJECTS =
 
-libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
-libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
-libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
-libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
+libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o
+libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o
+libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o
+libBSTR.a: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o
 libBSTR.a: CMakeFiles/BSTR.dir/build.make
 libBSTR.a: CMakeFiles/BSTR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libBSTR.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libBSTR.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/BSTR.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BSTR.dir/link.txt --verbose=$(VERBOSE)
 
@@ -178,10 +178,10 @@ CMakeFiles/BSTR.dir/build: libBSTR.a
 
 .PHONY : CMakeFiles/BSTR.dir/build
 
-CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
-CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
-CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
-CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
+CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstraux.c.o.requires
+CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/bstrlib.c.o.requires
+CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/buniutil.c.o.requires
+CMakeFiles/BSTR.dir/requires: CMakeFiles/BSTR.dir/home/dukl/mirco_service_5Gcorenetwork/src/utils/bstr/utf8util.c.o.requires
 
 .PHONY : CMakeFiles/BSTR.dir/requires
 
@@ -190,6 +190,6 @@ CMakeFiles/BSTR.dir/clean:
 .PHONY : CMakeFiles/BSTR.dir/clean
 
 CMakeFiles/BSTR.dir/depend:
-	cd /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/BSTR.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dukl/mirco_service_5Gcorenetwork/build/mme/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build /home/dukl/mirco_service_5Gcorenetwork/build/mme/build/CMakeFiles/BSTR.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/BSTR.dir/depend
 

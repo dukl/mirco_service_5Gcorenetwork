@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/intertask_interface.c.o"
-  "CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/backtrace.c.o"
-  "CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/memory_pools.c.o"
-  "CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/signals.c.o"
-  "CMakeFiles/ITTI.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/common/itti/timer.c.o"
+  "CMakeFiles/ITTI.dir/home/oai/mirco_service_5Gcorenetwork/src/common/itti/intertask_interface.c.o"
+  "CMakeFiles/ITTI.dir/home/oai/mirco_service_5Gcorenetwork/src/common/itti/backtrace.c.o"
+  "CMakeFiles/ITTI.dir/home/oai/mirco_service_5Gcorenetwork/src/common/itti/memory_pools.c.o"
+  "CMakeFiles/ITTI.dir/home/oai/mirco_service_5Gcorenetwork/src/common/itti/signals.c.o"
+  "CMakeFiles/ITTI.dir/home/oai/mirco_service_5Gcorenetwork/src/common/itti/timer.c.o"
   "libITTI.pdb"
   "libITTI.a"
 )

@@ -1,4 +1,4 @@
-# Install script for directory: /home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/test
+# Install script for directory: /home/dukl/mirco_service_5Gcorenetwork/src/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

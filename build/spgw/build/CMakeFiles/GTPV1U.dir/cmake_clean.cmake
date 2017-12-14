@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o"
-  "CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o"
-  "CMakeFiles/GTPV1U.dir/home/dukl/HistoryCodes/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
+  "CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_task.c.o"
+  "CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtpv1u_teid_pool.c.o"
+  "CMakeFiles/GTPV1U.dir/home/oai/mirco_service_5Gcorenetwork/src/gtpv1-u/gtp_tunnel_libgtpnl.c.o"
   "libGTPV1U.pdb"
   "libGTPV1U.a"
 )
