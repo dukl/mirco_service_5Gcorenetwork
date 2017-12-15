@@ -175,6 +175,10 @@ int nas_init (mme_config_t * mme_config_p)
     OAILOG_ERROR (LOG_NAS, "TASK GUTI RECEIVER create task failed\n");
     OAILOG_FUNC_RETURN (LOG_NAS, RETURNerror);
     }
+  if (itti_create_task (TASK_TMP_MSG_PROC, &esm_tmp_message_process, NULL) < 0) {
+    OAILOG_ERROR (LOG_NAS, "TASK GUTI RECEIVER create task failed\n");
+    OAILOG_FUNC_RETURN (LOG_NAS, RETURNerror);
+    }
 
   MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
   GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_TEST;

@@ -396,8 +396,8 @@ clean: CMakeFiles/ITTI.dir/clean
 # Target rules for target CMakeFiles/spgw.dir
 
 # All Build rule for target.
-CMakeFiles/spgw.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/spgw.dir/all: CMakeFiles/CN_UTILS.dir/all
+CMakeFiles/spgw.dir/all: CMakeFiles/GTPV1U.dir/all
 CMakeFiles/spgw.dir/all: CMakeFiles/MSC.dir/all
 CMakeFiles/spgw.dir/all: CMakeFiles/GTPV2C.dir/all
 CMakeFiles/spgw.dir/all: CMakeFiles/BSTR.dir/all

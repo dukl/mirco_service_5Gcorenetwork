@@ -75,11 +75,7 @@ extern  void _esm_information_t3489_handler(void *);
 /****************************************************************************/
 /*******************  L O C A L    D E F I N I T I O N S  *******************/
 /****************************************************************************/
-void get_apn_config_pt(MessageDef * message_p,struct apn_configuration_s ** apn_config){
-	struct apn_configuration_s ** p;
-    p = GUTI_DATA_IND(message_p).apn_config;
-	*apn_config = *p;
-}
+
 static int _esm_sap_recv (
   int msg_type,
   bool is_standalone,
@@ -1131,14 +1127,7 @@ void * guti_msg_process(void * args_p){
 			case ESM_IMSG_TEST:
 				printf("TASK_GUTI_RECEIVER has got a message!\n");
 				break;
-			case ESM_IMSG_PDN_PLUS:
-				printf("ESM_IMSG_PDN_PLUS\n");
-				esm_get_inplace(guti,&esm_p);
-				printf("%d\n",esm_p->n_pdns);
-				esm_p->n_pdns+=1;
-				printf("%d\n",esm_p->n_pdns);
-                *runOver = true;
-				break;
+
 			case ESM_IMSG_PDN_SUB:
 				esm_get_inplace(guti,&esm_p);
 				esm_p->n_pdns-=1;
@@ -1189,26 +1178,9 @@ void * guti_msg_process(void * args_p){
 				  *isTrue = true;
 				*runOver = true;
 				break;
-			case ESM_IMSG_IS_NAE_MORETHAN_BPE:
-				printf("ESM_IMSG_IS_NAE_MORETHAN_BPE\n");
-				esm_get_inplace(guti,&esm_p);
-				isTrue = GUTI_DATA_IND(message_p).isTrue;
-				if(esm_p->n_active_ebrs > BEARERS_PER_UE)
-				  *isTrue = true;
-				*runOver = true;
-				break;
-			case ESM_IMSG_NAE_PLUS:
-				printf("ESM_IMSG_NAE_PLUS\n");
-				esm_get_inplace(guti,&esm_p);
-				esm_p->n_active_ebrs += 1;
-				*runOver = true;
-				break;
-			case ESM_IMSG_TRUE_EMERGENCY:
-				printf("ESM_IMSG_TRUE_EMERGENCY\n");
-				esm_get_inplace(guti,&esm_p);
-				esm_p->is_emergency = true;
-				*runOver = true;
-				break;
+
+
+
 			case ESM_IMSG_NIPCR:
 				printf("ESM_IMSG_NIPCR\n");
 				esm_get_inplace(guti,&esm_p);
@@ -1250,10 +1222,9 @@ void * guti_msg_process(void * args_p){
 			//	printf("*apn_config:%p\n",*apn_config);
                 esm_p->esm_proc_data->pdn_cid = pdn_cid;
 				printf("---------------esm_sap.c-------------ok\n");
-			//	struct apn_configuration_s * t;
-			//	get_apn_config_pt(message_p,&t);
-			//	printf("%d\n",t->subscribed_qos.qci);
-                esm_p->esm_proc_data->bearer_qos.qci = (apn_config_calling)->subscribed_qos.qci;
+		
+                esm_p->esm_proc_data->bearer_qos.qci = apn_config_calling->subscribed_qos.qci;
+				printf("---------------esm_sap.c-------------ok\n");
                 esm_p->esm_proc_data->bearer_qos.pci = (apn_config_calling)->subscribed_qos.allocation_retention_priority.pre_emp_capability;
                 esm_p->esm_proc_data->bearer_qos.pl = (apn_config_calling)->subscribed_qos.allocation_retention_priority.priority_level;
                 esm_p->esm_proc_data->bearer_qos.pvi = (apn_config_calling)->subscribed_qos.allocation_retention_priority.pre_emp_vulnerability;
@@ -1321,4 +1292,48 @@ void * guti_msg_process(void * args_p){
 
 	}
 
+}
+void * esm_tmp_message_process(void * args_p){
+	itti_mark_task_ready (TASK_TMP_MSG_PROC);
+	while(1){
+		MessageDef * message_p = NULL;
+		itti_receive_msg(TASK_TMP_MSG_PROC,&message_p);
+        esm_imsg_primitive_t primitive = GUTI_DATA_IND(message_p).primitive;
+        guti_t guti = GUTI_DATA_IND(message_p).guti;
+		struct esm_context_s * esm_p;
+		bool * runOver = GUTI_DATA_IND(message_p).runOver;
+		bool * isTrue = NULL;
+		switch(primitive){
+			case ESM_IMSG_PDN_PLUS:
+				printf("ESM_IMSG_PDN_PLUS\n");
+				esm_get_inplace(guti,&esm_p);
+				printf("%d\n",esm_p->n_pdns);
+				esm_p->n_pdns+=1;
+				printf("%d\n",esm_p->n_pdns);
+                *runOver = true;
+				break;
+			case ESM_IMSG_IS_NAE_MORETHAN_BPE:
+				printf("ESM_IMSG_IS_NAE_MORETHAN_BPE\n");
+				esm_get_inplace(guti,&esm_p);
+				isTrue = GUTI_DATA_IND(message_p).isTrue;
+				if(esm_p->n_active_ebrs > BEARERS_PER_UE)
+				  *isTrue = true;
+				*runOver = true;
+				break;
+			case ESM_IMSG_NAE_PLUS:
+				printf("ESM_IMSG_NAE_PLUS\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_p->n_active_ebrs += 1;
+				*runOver = true;
+				break;
+			case ESM_IMSG_TRUE_EMERGENCY:
+				printf("ESM_IMSG_TRUE_EMERGENCY\n");
+				esm_get_inplace(guti,&esm_p);
+				esm_p->is_emergency = true;
+				*runOver = true;
+				break;
+		}
+        itti_free (ITTI_MSG_ORIGIN_ID (message_p), message_p);
+        message_p = NULL;
+	}
 }

@@ -75,6 +75,8 @@
 #include "mme_app_apn_selection.h"
 #include "nas_itti_messaging.h"
 
+//struct apn_configuration_s * apn_config = NULL;
+
 extern int emm_cn_wrapper_attach_accept (emm_context_t * emm_context);
 
 static int _emm_cn_authentication_res (emm_cn_auth_res_t * const msg);
@@ -268,6 +270,8 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
     /*emm_ctx->esm_ctx.esm_proc_data->bearer_qos.mbr.br_dl = 0;*/
 /*
       esm_p->esm_proc_data->pdn_cid = pdn_cid;
+//	  printf("----------------apn_config----core-dump--------\n");
+	  printf("%p\n",apn_config);
       esm_p->esm_proc_data->bearer_qos.qci       = apn_config->subscribed_qos.qci;
       esm_p->esm_proc_data->bearer_qos.pci       = apn_config->subscribed_qos.allocation_retention_priority.pre_emp_capability;
       esm_p->esm_proc_data->bearer_qos.pl        = apn_config->subscribed_qos.allocation_retention_priority.priority_level;
@@ -278,6 +282,7 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
       esm_p->esm_proc_data->bearer_qos.mbr.br_dl = 0;
 */
 /*by dukl*/
+	  
   bool runOver = false;
   MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
   GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_SET_PROC_DATA;
@@ -288,6 +293,7 @@ static int _emm_cn_pdn_config_res (emm_cn_pdn_config_res_t * msg_pP)
   int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
   while(!runOver);
   printf("--------------------------emm_cn.c--------------test4-------------------\n");
+  
       // TODO  "Better to throw emm_ctx->esm_ctx.esm_proc_data as a parameter or as a hidden parameter ?"
       //
       //

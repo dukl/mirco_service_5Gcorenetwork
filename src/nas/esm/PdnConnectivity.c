@@ -368,20 +368,20 @@ printf("pdn_context = %p\n",pdn_context);
          * Increment the number of PDN connections
          */
         /*ue_mm_context->emm_context.esm_ctx.n_pdns += 1;*/
-        struct esm_context_s* esm_p;
-        esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
-        esm_p->n_pdns+=1;
+    //    struct esm_context_s* esm_p;
+    //    esm_get_inplace(ue_mm_context->emm_context._guti,&esm_p);
+    //    esm_p->n_pdns+=1;
 	    /*by dukl*/
-		/*
+		
 	    bool runOver = false;
 	    MessageDef * esm_inter_message_p = itti_alloc_new_message(TASK_GUTI_SENDER,GUTI_MSG_TEST);
 		GUTI_DATA_IND(esm_inter_message_p).primitive = ESM_IMSG_PDN_PLUS;
 		GUTI_DATA_IND(esm_inter_message_p).guti = ue_mm_context->emm_context._guti;
 		GUTI_DATA_IND(esm_inter_message_p).runOver = &runOver;
-		int send_res = itti_send_msg_to_task(TASK_GUTI_RECEIVER,INSTANCE_DEFAULT,esm_inter_message_p);
+		int send_res = itti_send_msg_to_task(TASK_TMP_MSG_PROC,INSTANCE_DEFAULT,esm_inter_message_p);
 		printf("----------------in PdnConeectivity.c-----------\n");
 		while(!runOver);
-		*/
+		
 printf("----------------------------------PdnConnectivity.c------------------------\n\n");
 printf("test3\n");
 printf("----------------------------------PdnConnectivity.c------------------------\n\n");
